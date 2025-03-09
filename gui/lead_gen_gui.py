@@ -1,10 +1,10 @@
 import os
+import sys
 import logging
 import threading
 import tkinter as tk
 from tkinter import ttk, scrolledtext, messagebox, StringVar
 from dotenv import load_dotenv
-import sys
 import traceback
 
 # Ensure logs directory exists
@@ -24,7 +24,6 @@ load_dotenv()
 # Import the LinkedIn scraper from the scrapers package
 try:
     # Make sure the parent directory is in the Python path
-    import sys
     import os
     
     # Add the root directory to the path if not already there
@@ -52,67 +51,13 @@ try:
 except ImportError as e:
     logger.warning(f"Optional module import error: {str(e)}")
     # We'll continue even if these modules aren't available
-I'll split the GUI code into manageable chunks that you can copy over to VSCode. Here's the first chunk:
-
-### Chunk 1: Imports and initialization
-
-```python
-import os
-import logging
-import threading
-import tkinter as tk
-from tkinter import ttk, scrolledtext, messagebox, StringVar
-from dotenv import load_dotenv
-import sys
-import traceback
-
-# Ensure logs directory exists
-os.makedirs('logs', exist_ok=True)
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    filename='logs/gui.log'
-)
-logger = logging.getLogger('lead_gen_gui')
-
-# Load environment variables
-load_dotenv()
-
-# Import the LinkedIn scraper from the scrapers package
-try:
-    # Make sure the parent directory is in the Python path
-    import sys
-    import os
-    
-    # Add the root directory to the path if not already there
-    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    if root_dir not in sys.path:
-        sys.path.insert(0, root_dir)
-    
-    # Now try to import from the modular scrapers package
-    from scrapers.linkedin import LinkedInScraper
-    logger.info("Successfully imported LinkedInScraper from modular scrapers package")
-except ImportError as e:
-    logger.error(f"Failed to import LinkedInScraper: {str(e)}")
-    messagebox.showerror("Import Error", 
-                        f"Could not import LinkedInScraper.\n\nError: {str(e)}\n\n"
-                        f"Please ensure the scrapers/linkedin package exists with the necessary files.")
-
-# Import other modules dynamically
-try:
-    from scrapers.reddit.scraper import RedditScraper, run_reddit_scraper
-    from analysis.lead_scorer import LeadScorer, run_lead_scorer
-    from communication.message_generator import MessageGenerator, run_message_generator
-    from reporting.email_reporter import EmailReporter, run_email_reporter
-    from utils.sheets_manager import get_sheets_client
-    logger.info("Successfully imported all optional modules")
-except ImportError as e:
-    logger.warning(f"Optional module import error: {str(e)}")
-    # We'll continue even if these modules aren't available
-
 class LeadGenerationGUI:
+    # ...
+
+    def create_coaching_tab(self):
+        coaching_tab = ttk.Frame(self.notebook)
+        self.notebook.add(coaching_tab, text="Coaching")
+
     """GUI for controlling lead generation tasks."""
     
     def __init__(self, root):
@@ -164,121 +109,6 @@ class LeadGenerationGUI:
 
         self.create_widgets()
         logger.info("GUI Initialized")
-    def create_widgets(self):
-        """Create GUI elements."""
-        self.notebook = ttk.Notebook(self.root)
-        self.notebook.pack(fill=tk.BOTH, expand=True)
-        
-        self.create_main_tab()
-        self.create_linkedin_tab()
-        self.create_coaching_tab()
-        self.create_reddit_tab()
-        self.create_lead_scoring_tab()
-        self.create_message_tab()
-        self.create_email_tab()
-        self.create_logs_tab()
-    
-    def create_main_tab(self):
-        """Create controls for running scripts."""
-        main_tab = ttk.Frame(self.notebook)
-        self.notebook.add(main_tab, text="Lead Gen Tasks")
-
-        # Add a logo or title header
-        title_frame = ttk.Frame(main_tab)
-        title_frame.pack(fill=tk.X, pady=20)
-        
-        ttk.Label(title_frame, text="Peak Transformation Coaching LTD", 
-                 font=("Arial", 16, "bold")).pack()
-        ttk.Label(title_frame, text="Professional Lead Generation Tool", 
-                 font=("Arial", 12)).pack()
-        
-        # Divider
-        ttk.Separator(main_tab, orient='horizontal').pack(fill=tk.X, padx=20, pady=10)
-        
-        # Main buttons
-        buttons_frame = ttk.Frame(main_tab)
-        buttons_frame.pack(fill=tk.BOTH, expand=True, padx=40, pady=20)
-
-        ttk.Button(buttons_frame, text="LinkedIn Lead Generation", 
-                  command=self.show_linkedin_tab, width=30).pack(pady=10)
-        ttk.Button(buttons_frame, text="Coaching Prospect Finder", 
-                  command=self.show_coaching_tab, width=30).pack(pady=10)
-        ttk.Button(buttons_frame, text="Run Reddit Scraper", 
-                  command=self.show_reddit_tab, width=30).pack(pady=10)
-        ttk.Button(buttons_frame, text="Score Leads", 
-                  command=self.show_lead_scoring_tab, width=30).pack(pady=10)
-        ttk.Button(buttons_frame, text="Generate AI Messages", 
-                  command=self.show_message_tab, width=30).pack(pady=10)
-        ttk.Button(buttons_frame, text="Send Email Report", 
-                  command=self.show_email_tab, width=30).pack(pady=10)
-        
-        # Footer with version info
-        ttk.Label(main_tab, text="v1.2.0 | © 2025 Peak Transformation Coaching LTD", 
-                 font=("Arial", 8)).pack(side=tk.BOTTOM, pady=10)
-    
-    def create_linkedin_tab(self):
-        """Create LinkedIn specific controls."""
-        linkedin_tab = ttk.Frame(self.notebook)
-        self.notebook.add(linkedin_tab, text="LinkedIn Scraper")
-        
-        # Create form for LinkedIn parameters
-        form_frame = ttk.LabelFrame(linkedin_tab, text="Search Parameters", padding=20)
-        form_frame.pack(fill=tk.X, padx=20, pady=10)
-        
-        # Industry field
-        ttk.Label(form_frame, text="Industry:").grid(row=0, column=0, sticky=tk.W, pady=5)
-        industry_entry = ttk.Entry(form_frame, textvariable=self.industry_var, width=30)
-        industry_entry.grid(row=0, column=1, sticky=tk.W, pady=5, padx=5)
-        
-        # Industry dropdown suggestions
-        ttk.Label(form_frame, text="Suggestions:").grid(row=0, column=2, sticky=tk.W, pady=5, padx=5)
-        industry_combo = ttk.Combobox(form_frame, values=[
-            "Technology", "Finance", "Healthcare", "Education", "Consulting", 
-            "Media", "Marketing", "Entrepreneurship", "Human Resources"
-        ])
-        industry_combo.bind("<<ComboboxSelected>>", 
-                          lambda e: self.industry_var.set(industry_combo.get()))
-        industry_combo.grid(row=0, column=3, sticky=tk.W, pady=5, padx=5)
-        
-        # Role field
-        ttk.Label(form_frame, text="Role:").grid(row=1, column=0, sticky=tk.W, pady=5)
-        role_entry = ttk.Entry(form_frame, textvariable=self.role_var, width=30)
-        role_entry.grid(row=1, column=1, sticky=tk.W, pady=5, padx=5)
-        
-        # Role dropdown suggestions
-        ttk.Label(form_frame, text="Suggestions:").grid(row=1, column=2, sticky=tk.W, pady=5, padx=5)
-        role_combo = ttk.Combobox(form_frame, values=[
-            "CEO", "CTO", "CFO", "Director", "Manager", "Executive", 
-            "VP", "President", "Founder", "Owner", "Leader"
-        ])
-        role_combo.bind("<<ComboboxSelected>>", 
-                      lambda e: self.role_var.set(role_combo.get()))
-        role_combo.grid(row=1, column=3, sticky=tk.W, pady=5, padx=5)
-        
-        # Number of pages
-        ttk.Label(form_frame, text="Pages to scrape:").grid(row=2, column=0, sticky=tk.W, pady=5)
-        pages_entry = ttk.Entry(form_frame, textvariable=self.num_pages_var, width=10)
-        pages_entry.grid(row=2, column=1, sticky=tk.W, pady=5, padx=5)
-        
-        # Run button
-        ttk.Button(form_frame, text="Start Scraping", 
-                  command=self.run_linkedin_with_params).grid(row=3, column=0, columnspan=4, pady=20)
-        
-        # Results frame
-        results_frame = ttk.LabelFrame(linkedin_tab, text="Results", padding=10)
-        results_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=10)
-        
-        self.linkedin_results = scrolledtext.ScrolledText(results_frame, height=15)
-        self.linkedin_results.pack(fill=tk.BOTH, expand=True)
-        
-        # Add a save button for results
-        button_frame = ttk.Frame(linkedin_tab)
-        button_frame.pack(fill=tk.X, padx=20, pady=10)
-        
-        ttk.Button(button_frame, text="Save Results to CSV", 
-                  command=self.save_linkedin_results).pack(side=tk.LEFT, padx=5)
-        ttk.Button(button_frame, text="Clear Results", 
-                  command=self.clear_linkedin_results).pack(side=tk.LEFT, padx=5)
     def create_widgets(self):
         """Create GUI elements."""
         self.notebook = ttk.Notebook(self.root)
@@ -521,7 +351,7 @@ class LeadGenerationGUI:
                   command=self.view_reddit_results).pack(side=tk.LEFT, padx=5)
         ttk.Button(button_frame, text="Clear Results", 
                   command=self.clear_reddit_results).pack(side=tk.LEFT, padx=5)
-        def create_lead_scoring_tab(self):
+    def create_lead_scoring_tab(self):
         """Create lead scoring tab."""
         scoring_tab = ttk.Frame(self.notebook)
         self.notebook.add(scoring_tab, text="Lead Scoring")
@@ -684,24 +514,24 @@ class LeadGenerationGUI:
                   command=self.clear_logs).pack(side=tk.LEFT, padx=5)
     def show_linkedin_tab(self):
         """Switch to LinkedIn tab."""
-        self.notebook.select(1)  # Index 1 is the LinkedIn tab
-    
+        self.notebook.select(1)  # Adjust index if needed
+
     def show_coaching_tab(self):
         """Switch to Coaching Prospects tab."""
         self.notebook.select(2)  # Index 2 is the Coaching tab
-        
+
     def show_reddit_tab(self):
         """Switch to Reddit tab."""
         self.notebook.select(3)  # Index 3 is the Reddit tab
-        
+
     def show_lead_scoring_tab(self):
         """Switch to Lead Scoring tab."""
         self.notebook.select(4)  # Index 4 is the Lead Scoring tab
-        
+
     def show_message_tab(self):
         """Switch to Message Generator tab."""
         self.notebook.select(5)  # Index 5 is the Message Generator tab
-        
+
     def show_email_tab(self):
         """Switch to Email Reports tab."""
         self.notebook.select(6)  # Index 6 is the Email Reports tab
@@ -741,8 +571,8 @@ class LeadGenerationGUI:
             return result
         except Exception as e:
             logger.error(f"Error running {task_name}: {str(e)}")
-            self.root.after(0, lambda: messagebox.showerror("Task Error", f"Error running {task_name}: {str(e)}"))   
-        def run_linkedin_with_params(self):
+            self.root.after(0, lambda: messagebox.showerror("Task Error", f"Error running {task_name}: {str(e)}"))
+    def run_linkedin_with_params(self):
         """Run LinkedIn scraper with parameters from the form."""
         if not self.linkedin_scraper:
             messagebox.showerror("Error", "LinkedIn scraper not initialized")
@@ -813,7 +643,7 @@ class LeadGenerationGUI:
     def clear_linkedin_results(self):
         """Clear LinkedIn results."""
         self.linkedin_results.delete(1.0, tk.END)
-        logger.info("LinkedIn results cleared")  
+        logger.info("LinkedIn results cleared")
     def search_coaching_by_keyword(self):
         """Search LinkedIn for coaching prospects using keyword."""
         if not self.linkedin_scraper:
@@ -1063,7 +893,7 @@ class LeadGenerationGUI:
     def clear_reddit_results(self):
         """Clear Reddit results."""
         self.reddit_results.delete(1.0, tk.END)
-        logger.info("Reddit results cleared")  
+        logger.info("Reddit results cleared")
     def run_lead_scorer(self):
         """Run lead scoring with the configured parameters."""
         try:
@@ -1205,7 +1035,7 @@ class LeadGenerationGUI:
     def clear_scoring_results(self):
         """Clear scoring results."""
         self.scoring_results.delete(1.0, tk.END)
-        logger.info("Scoring results cleared")   
+        logger.info("Scoring results cleared")
     def run_message_generator(self):
         """Run message generator with the configured parameters."""
         try:
@@ -1341,7 +1171,7 @@ class LeadGenerationGUI:
     def clear_message_results(self):
         """Clear message generation results."""
         self.message_results.delete(1.0, tk.END)
-        logger.info("Message results cleared") 
+        logger.info("Message results cleared")
     def run_email_reporter(self):
         """Run email reporter with the configured parameters."""
         try:
@@ -1502,4 +1332,4 @@ class LeadGenerationGUI:
 if __name__ == "__main__":
     root = tk.Tk()
     app = LeadGenerationGUI(root)
-    root.mainloop()                 
+    root.mainloop()

@@ -955,3 +955,117 @@ Stacktrace:
 2025-03-09 08:21:54,602 - linkedin.scraper - INFO - Extracted 1 profiles from page 2
 2025-03-09 08:21:54,603 - linkedin.utils - INFO - Saved 4 profiles to data/linkedin_leads.csv
 2025-03-09 08:21:54,603 - lead_gen_gui - INFO - Coaching prospect search for 'burnout' completed successfully.
+2025-03-09 10:01:33,688 - main - INFO - All required dependencies are installed
+2025-03-09 10:01:33,694 - main - ERROR - Error starting GUI: invalid syntax (lead_gen_gui.py, line 35)
+2025-03-09 10:02:28,530 - main - INFO - All required dependencies are installed
+2025-03-09 10:02:28,533 - main - ERROR - Error starting GUI: invalid syntax (lead_gen_gui.py, line 12)
+2025-03-09 10:04:00,124 - main - INFO - All required dependencies are installed
+2025-03-09 10:04:00,129 - main - ERROR - Error starting GUI: invalid syntax (lead_gen_gui.py, line 57)
+2025-03-09 10:05:05,137 - main - INFO - All required dependencies are installed
+2025-03-09 10:05:05,140 - main - ERROR - Error starting GUI: invalid syntax (lead_gen_gui.py, line 55)
+2025-03-09 10:05:43,425 - main - INFO - All required dependencies are installed
+2025-03-09 10:05:43,435 - main - ERROR - Error starting GUI: expected an indented block after function definition on line 465 (lead_gen_gui.py, line 466)
+2025-03-09 10:06:29,822 - main - INFO - All required dependencies are installed
+2025-03-09 10:06:29,838 - main - ERROR - Error starting GUI: expected an indented block after function definition on line 686 (lead_gen_gui.py, line 687)
+2025-03-09 10:06:52,256 - main - INFO - All required dependencies are installed
+2025-03-09 10:06:52,270 - main - ERROR - Error starting GUI: expected an indented block after function definition on line 686 (lead_gen_gui.py, line 687)
+2025-03-09 10:08:20,840 - main - INFO - All required dependencies are installed
+2025-03-09 10:08:20,848 - main - ERROR - Error starting GUI: unindent does not match any outer indentation level (lead_gen_gui.py, line 709)
+2025-03-09 10:08:54,743 - main - INFO - All required dependencies are installed
+2025-03-09 10:08:54,938 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 10:08:55,431 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 10:08:55,541 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 10:08:55,542 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 10:08:57,173 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 10:08:57,173 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 10:08:57,256 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'create_lead_scoring_tab'
+2025-03-09 10:23:00,828 - main - INFO - All required dependencies are installed
+2025-03-09 10:23:00,903 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 10:23:00,962 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 10:23:01,044 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 10:23:01,044 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 10:23:02,179 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 10:23:02,180 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 10:23:02,264 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'create_lead_scoring_tab'
+2025-03-09 10:39:20,304 - main - INFO - All required dependencies are installed
+2025-03-09 10:39:20,307 - main - ERROR - Error starting GUI: inconsistent use of tabs and spaces in indentation (lead_gen_gui.py, line 222)
+2025-03-09 10:41:48,754 - main - INFO - All required dependencies are installed
+2025-03-09 10:41:48,758 - main - ERROR - Error starting GUI: inconsistent use of tabs and spaces in indentation (lead_gen_gui.py, line 228)
+2025-03-09 10:43:15,988 - main - INFO - All required dependencies are installed
+2025-03-09 10:43:15,992 - main - ERROR - Error starting GUI: inconsistent use of tabs and spaces in indentation (lead_gen_gui.py, line 355)
+2025-03-09 10:43:56,303 - main - INFO - All required dependencies are installed
+2025-03-09 10:43:56,309 - main - ERROR - Error starting GUI: inconsistent use of tabs and spaces in indentation (lead_gen_gui.py, line 516)
+2025-03-09 10:46:00,067 - main - INFO - All required dependencies are installed
+2025-03-09 10:46:00,140 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 10:46:00,200 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 10:46:00,281 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 10:46:00,281 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 10:46:01,405 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 10:46:01,405 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 10:46:01,417 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
+2025-03-09 10:48:48,257 - main - INFO - All required dependencies are installed
+2025-03-09 10:48:48,327 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 10:48:48,385 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 10:48:48,466 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 10:48:48,467 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 10:48:49,580 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 10:48:49,580 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 10:48:49,591 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
+2025-03-09 10:55:27,835 - main - INFO - All required dependencies are installed
+2025-03-09 10:55:27,910 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 10:55:27,976 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 10:55:28,063 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 10:55:28,063 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 10:55:29,176 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 10:55:29,176 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 10:55:29,187 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
+2025-03-09 10:58:02,185 - main - INFO - All required dependencies are installed
+2025-03-09 10:58:02,241 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 10:58:02,299 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 10:58:02,383 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 10:58:02,383 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 10:58:03,597 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 10:58:03,597 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 10:58:03,608 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
+2025-03-09 11:18:07,180 - main - INFO - All required dependencies are installed
+2025-03-09 11:18:07,255 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 11:18:07,318 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 11:18:07,400 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 11:18:07,400 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 11:18:08,637 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 11:18:08,637 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 11:18:08,773 - lead_gen_gui - INFO - GUI Initialized
+2025-03-09 11:18:24,829 - lead_gen_gui - INFO - Starting Reddit scraper...
+2025-03-09 11:18:25,098 - reddit_scraper - INFO - Successfully connected to Reddit API
+2025-03-09 11:18:25,099 - reddit_scraper - INFO - Reddit scraper initialized with 5 subreddits and 5 keywords
+2025-03-09 11:18:25,100 - reddit_scraper - INFO - Scraping subreddit: r/Entrepreneur
+2025-03-09 11:18:25,317 - reddit_scraper - ERROR - Error scraping subreddit r/Entrepreneur: received 401 HTTP response
+2025-03-09 11:18:25,319 - reddit_scraper - INFO - Scraping subreddit: r/Productivity
+2025-03-09 11:18:25,509 - reddit_scraper - ERROR - Error scraping subreddit r/Productivity: received 401 HTTP response
+2025-03-09 11:18:25,511 - reddit_scraper - INFO - Scraping subreddit: r/MentalHealth
+2025-03-09 11:18:25,718 - reddit_scraper - ERROR - Error scraping subreddit r/MentalHealth: received 401 HTTP response
+2025-03-09 11:18:25,720 - reddit_scraper - INFO - Scraping subreddit: r/WorkReform
+2025-03-09 11:18:25,917 - reddit_scraper - ERROR - Error scraping subreddit r/WorkReform: received 401 HTTP response
+2025-03-09 11:18:25,919 - reddit_scraper - INFO - Scraping subreddit: r/careerguidance
+2025-03-09 11:18:26,093 - reddit_scraper - ERROR - Error scraping subreddit r/careerguidance: received 401 HTTP response
+2025-03-09 11:18:26,094 - reddit_scraper - INFO - Collected a total of 0 leads from 5 subreddits
+2025-03-09 11:18:26,094 - reddit_scraper - INFO - Searching Reddit for query: 'burnout'
+2025-03-09 11:18:26,289 - reddit_scraper - ERROR - Error searching Reddit for 'burnout': received 401 HTTP response
+2025-03-09 11:18:26,294 - reddit_scraper - INFO - Searching Reddit for query: 'work stress'
+2025-03-09 11:18:26,509 - reddit_scraper - ERROR - Error searching Reddit for 'work stress': received 401 HTTP response
+2025-03-09 11:18:26,509 - reddit_scraper - INFO - Searching Reddit for query: 'career transition'
+2025-03-09 11:18:26,719 - reddit_scraper - ERROR - Error searching Reddit for 'career transition': received 401 HTTP response
+2025-03-09 11:18:26,721 - reddit_scraper - INFO - Searching Reddit for query: 'work-life balance'
+2025-03-09 11:18:26,918 - reddit_scraper - ERROR - Error searching Reddit for 'work-life balance': received 401 HTTP response
+2025-03-09 11:18:26,922 - reddit_scraper - INFO - Searching Reddit for query: 'leadership'
+2025-03-09 11:18:27,108 - reddit_scraper - ERROR - Error searching Reddit for 'leadership': received 401 HTTP response
+2025-03-09 11:18:27,110 - reddit_scraper - INFO - Collected a total of 0 unique leads from 5 keyword searches
+2025-03-09 11:18:27,111 - reddit_scraper - INFO - Combined results: 0 unique leads
+2025-03-09 11:18:27,111 - reddit_scraper - WARNING - No leads to save to CSV
+2025-03-09 11:18:27,111 - lead_gen_gui - INFO - Reddit scraper completed successfully.
+2025-03-09 11:18:36,037 - lead_gen_gui - INFO - Starting Message generation...
+2025-03-09 11:18:36,345 - sheets_manager - INFO - Successfully connected to Google Sheets
+2025-03-09 11:18:36,346 - message_generator - INFO - Starting message generation with model gpt-4
+2025-03-09 11:18:36,347 - message_generator - INFO - Initialized MessageGenerator with model: gpt-4
+2025-03-09 11:18:36,348 - message_generator - ERROR - Error running message generator: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-03-09 11:18:36,349 - lead_gen_gui - INFO - Message generation completed successfully.
