@@ -1,1070 +1,4 @@
-2025-03-08 14:16:44,467 - main - INFO - All required dependencies are installed
-2025-03-08 14:16:44,544 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:16:46,234 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:16:46,235 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:16:46,235 - linkedin_scraper - INFO - Fetching ChromeDriver for Chrome version: 134.0.6998.36
-2025-03-08 14:16:46,323 - linkedin_scraper - INFO - Downloading ChromeDriver from: https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.35/linux64/chromedriver-linux64.zip
-2025-03-08 14:16:47,701 - linkedin_scraper - INFO - ChromeDriver successfully downloaded and installed.
-2025-03-08 14:16:47,704 - linkedin_scraper - ERROR - WebDriver failed to start: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
 
-2025-03-08 14:16:47,704 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to start Chrome WebDriver. Ensure Chrome and ChromeDriver are compatible.
-2025-03-08 14:18:25,442 - main - INFO - All required dependencies are installed
-2025-03-08 14:18:25,521 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:18:27,558 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:18:27,560 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:18:27,560 - linkedin_scraper - INFO - Fetching ChromeDriver for Chrome version: 134.0.6998.36
-2025-03-08 14:18:27,632 - linkedin_scraper - INFO - Downloading Windows ChromeDriver from: https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.35/win64/chromedriver-win64.zip
-2025-03-08 14:18:29,018 - linkedin_scraper - ERROR - Failed to download ChromeDriver: [WinError 183] Cannot create a file when that file already exists: 'D:/lead_gen_tool/chromedriver-win64' -> 'D:/lead_gen_tool/chromedriver.exe'
-2025-03-08 14:18:29,021 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to install ChromeDriver for version 134.0.6998.36. Try manually downloading from: https://googlechromelabs.github.io/chrome-for-testing/
-2025-03-08 14:21:13,895 - main - INFO - All required dependencies are installed
-2025-03-08 14:21:13,974 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:21:15,944 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:21:15,944 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:21:15,945 - linkedin_scraper - INFO - Checking for available ChromeDriver versions for Chrome 134.0.6998.36...
-2025-03-08 14:21:16,048 - linkedin_scraper - ERROR - Failed to find available ChromeDriver versions: 'version'
-2025-03-08 14:21:16,050 - linkedin_scraper - ERROR - No valid ChromeDriver version found.
-2025-03-08 14:21:16,050 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to install ChromeDriver for version 134.0.6998.36. Try manually downloading from: https://googlechromelabs.github.io/chrome-for-testing/
-2025-03-08 14:22:31,397 - main - INFO - All required dependencies are installed
-2025-03-08 14:22:31,482 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:22:32,590 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:22:32,591 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:22:32,593 - linkedin_scraper - INFO - Checking for available ChromeDriver versions for Chrome 134.0.6998.36...
-2025-03-08 14:22:32,676 - linkedin_scraper - INFO - Using closest available ChromeDriver version: 134.0.6998.35
-2025-03-08 14:22:32,677 - linkedin_scraper - INFO - Downloading ChromeDriver from: https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.35/win64/chromedriver-win64.zip
-2025-03-08 14:22:32,678 - linkedin_scraper - INFO - ChromeDriver already exists. Skipping download.
-2025-03-08 14:22:32,678 - linkedin_scraper - ERROR - WebDriver failed to start: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
-
-2025-03-08 14:22:32,679 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to start Chrome WebDriver. Ensure Chrome and ChromeDriver are compatible.
-2025-03-08 14:27:59,074 - main - INFO - All required dependencies are installed
-2025-03-08 14:27:59,154 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:28:02,577 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:28:02,578 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:28:02,578 - linkedin_scraper - INFO - Downloading ChromeDriver from: https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.36/win64/chromedriver-win64.zip
-2025-03-08 14:28:04,659 - linkedin_scraper - INFO - ChromeDriver downloaded. Extracting...
-2025-03-08 14:28:04,803 - linkedin_scraper - INFO - Renamed ChromeDriver to chromedriver.exe
-2025-03-08 14:28:04,803 - linkedin_scraper - INFO - Windows ChromeDriver successfully downloaded and installed.
-2025-03-08 14:28:04,805 - linkedin_scraper - ERROR - WebDriver failed to start: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
-
-2025-03-08 14:28:04,805 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to start Chrome WebDriver. Ensure Chrome and ChromeDriver are compatible.
-2025-03-08 14:31:09,960 - main - INFO - All required dependencies are installed
-2025-03-08 14:31:10,045 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:31:11,460 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:31:11,460 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:31:11,461 - linkedin_scraper - INFO - Downloading ChromeDriver from: https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.36/win64/chromedriver-win64.zip
-2025-03-08 14:31:11,464 - linkedin_scraper - INFO - Deleted old ChromeDriver.
-2025-03-08 14:31:12,733 - linkedin_scraper - INFO - ChromeDriver downloaded. Extracting...
-2025-03-08 14:31:12,897 - linkedin_scraper - INFO - Windows ChromeDriver successfully downloaded and installed.
-2025-03-08 14:31:12,899 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to install ChromeDriver for version 134.0.6998.36. Try manually downloading from: https://googlechromelabs.github.io/chrome-for-testing/
-2025-03-08 14:33:10,827 - main - INFO - All required dependencies are installed
-2025-03-08 14:33:10,906 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:33:12,071 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:33:12,071 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:33:12,072 - linkedin_scraper - INFO - Downloading ChromeDriver from: https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.36/win64/chromedriver-win64.zip
-2025-03-08 14:33:13,220 - linkedin_scraper - INFO - ChromeDriver downloaded. Extracting...
-2025-03-08 14:33:13,403 - linkedin_scraper - INFO - Windows ChromeDriver successfully downloaded and installed.
-2025-03-08 14:33:13,404 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to install ChromeDriver for version 134.0.6998.36. Try manually downloading from: https://googlechromelabs.github.io/chrome-for-testing/
-2025-03-08 14:33:40,436 - main - INFO - All required dependencies are installed
-2025-03-08 14:33:40,518 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:33:41,516 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:33:41,516 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:33:41,517 - linkedin_scraper - INFO - Downloading ChromeDriver from: https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.36/win64/chromedriver-win64.zip
-2025-03-08 14:33:41,520 - linkedin_scraper - INFO - Deleted old ChromeDriver.
-2025-03-08 14:33:42,680 - linkedin_scraper - INFO - ChromeDriver downloaded. Extracting...
-2025-03-08 14:33:42,821 - linkedin_scraper - INFO - Windows ChromeDriver successfully downloaded and installed.
-2025-03-08 14:33:42,823 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to install ChromeDriver for version 134.0.6998.36. Try manually downloading from: https://googlechromelabs.github.io/chrome-for-testing/
-2025-03-08 14:35:26,943 - main - INFO - All required dependencies are installed
-2025-03-08 14:35:27,021 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:35:28,404 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:35:28,404 - linkedin_scraper - INFO - Detected Chrome version (File Properties): 134.0.6998.36
-2025-03-08 14:35:28,405 - linkedin_scraper - INFO - Downloading ChromeDriver from: https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.36/win64/chromedriver-win64.zip
-2025-03-08 14:35:28,408 - linkedin_scraper - INFO - Deleted old ChromeDriver.
-2025-03-08 14:35:29,556 - linkedin_scraper - INFO - ChromeDriver downloaded. Extracting...
-2025-03-08 14:35:29,802 - linkedin_scraper - INFO - Renamed ChromeDriver to chromedriver.exe
-2025-03-08 14:35:29,802 - linkedin_scraper - INFO - Windows ChromeDriver successfully downloaded and installed.
-2025-03-08 14:35:29,803 - linkedin_scraper - ERROR - WebDriver failed to start: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
-
-2025-03-08 14:35:29,805 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: Failed to start Chrome WebDriver. Ensure Chrome and ChromeDriver are compatible.
-2025-03-08 14:38:24,411 - main - INFO - All required dependencies are installed
-2025-03-08 14:38:24,494 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:38:25,857 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:38:27,011 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 14:38:27,011 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 14:40:07,544 - main - INFO - All required dependencies are installed
-2025-03-08 14:40:07,629 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:40:09,148 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:40:10,251 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 14:40:12,345 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: LinkedInScraper.scrape_by_industry_and_role() missing 2 required positional arguments: 'industry' and 'role'
-2025-03-08 14:43:34,345 - main - INFO - All required dependencies are installed
-2025-03-08 14:43:34,426 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:43:35,885 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:43:35,885 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: 'LeadGenerationGUI' object has no attribute 'linkedin_scraper'
-2025-03-08 14:45:35,586 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:45:35,586 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: 'LeadGenerationGUI' object has no attribute 'linkedin_scraper'
-2025-03-08 14:45:42,516 - main - INFO - All required dependencies are installed
-2025-03-08 14:45:43,721 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 14:45:43,735 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:45:45,842 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:45:45,842 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 14:45:50,678 - linkedin_scraper - INFO - Next button not found. Stopping pagination.
-2025-03-08 14:45:50,678 - linkedin_scraper - INFO - Scraped 0 profiles.
-2025-03-08 14:45:50,679 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 14:47:59,289 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:47:59,289 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 14:48:14,883 - linkedin_scraper - INFO - Scraped 0 profiles.
-2025-03-08 14:48:14,883 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 14:51:57,290 - main - INFO - All required dependencies are installed
-2025-03-08 14:51:58,611 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 14:51:58,622 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:52:02,116 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:52:02,117 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 14:52:06,861 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 14:52:06,906 - linkedin_scraper - INFO - Next button not found. Stopping pagination.
-2025-03-08 14:52:06,906 - linkedin_scraper - INFO - Scraped 0 profiles.
-2025-03-08 14:52:06,906 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 14:54:11,862 - main - INFO - All required dependencies are installed
-2025-03-08 14:54:13,105 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 14:54:13,119 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:54:14,930 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:54:14,931 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 14:54:21,504 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 14:54:21,524 - linkedin_scraper - INFO - Next button not found. Stopping pagination.
-2025-03-08 14:54:21,525 - linkedin_scraper - INFO - Scraped 0 profiles.
-2025-03-08 14:54:21,526 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 14:58:02,443 - main - INFO - All required dependencies are installed
-2025-03-08 14:58:03,731 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 14:58:03,744 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:58:06,461 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:58:06,461 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 14:58:06,468 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 14:58:06,468 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 14:58:10,782 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:58:10,782 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 14:58:10,794 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 14:58:10,794 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 14:58:17,708 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-03-08 14:58:17,708 - linkedin_scraper - ERROR - Login failed: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username"]"}
-  (Session info: chrome=134.0.6998.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF613E9DF75+26693]
-	(No symbol) [0x00007FF613DFEAC0]
-	(No symbol) [0x00007FF613C891CA]
-	(No symbol) [0x00007FF613CDF747]
-	(No symbol) [0x00007FF613CDF97C]
-	(No symbol) [0x00007FF613D333C7]
-	(No symbol) [0x00007FF613D0792F]
-	(No symbol) [0x00007FF613D300B8]
-	(No symbol) [0x00007FF613D076C3]
-	(No symbol) [0x00007FF613CD0490]
-	(No symbol) [0x00007FF613CD1743]
-	GetHandleVerifier [0x00007FF6141F435D+3525677]
-	GetHandleVerifier [0x00007FF614207F2B+3606523]
-	GetHandleVerifier [0x00007FF6141FCED3+3561379]
-	GetHandleVerifier [0x00007FF613F67BFA+853194]
-	(No symbol) [0x00007FF613E098FF]
-	(No symbol) [0x00007FF613E05664]
-	(No symbol) [0x00007FF613E05806]
-	(No symbol) [0x00007FF613DF4D79]
-	BaseThreadInitThunk [0x00007FFB42F3E8D7+23]
-	RtlUserThreadStart [0x00007FFB43C7BF2C+44]
-
-2025-03-08 14:58:19,907 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: LinkedIn login failed. CAPTCHA may be required.
-2025-03-08 14:58:25,567 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:58:25,567 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 14:58:26,717 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000217BBAAC290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bedd05651401d7d1b8fea7bfacd4a5ee/url
-2025-03-08 14:58:31,842 - main - INFO - All required dependencies are installed
-2025-03-08 14:58:33,029 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 14:58:33,041 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 14:58:34,727 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 14:58:34,727 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 14:58:34,738 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 14:58:34,738 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 14:58:50,056 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 14:58:57,982 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 14:59:13,430 - linkedin_scraper - INFO - Scraped 0 profiles.
-2025-03-08 14:59:13,430 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 15:03:44,702 - main - INFO - All required dependencies are installed
-2025-03-08 15:03:46,217 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:03:46,235 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:03:57,134 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:03:57,134 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 15:03:57,145 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 15:03:57,146 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 15:04:12,592 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 15:04:20,094 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 15:04:35,508 - linkedin_scraper - INFO - Scraped 0 profiles.
-2025-03-08 15:04:35,508 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 15:08:36,914 - main - INFO - All required dependencies are installed
-2025-03-08 15:08:38,209 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:08:38,227 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:08:39,651 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:08:39,651 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 15:08:39,662 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 15:08:39,662 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 15:08:54,997 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 15:09:03,168 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 15:09:18,540 - linkedin_scraper - INFO - Scraped 0 profiles.
-2025-03-08 15:09:18,540 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 15:13:42,074 - main - INFO - All required dependencies are installed
-2025-03-08 15:13:43,389 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:13:43,403 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:13:45,329 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:13:45,330 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 15:13:45,340 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 15:13:45,340 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 15:14:02,873 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 15:14:02,873 - linkedin_scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Entrepreneurship%20CEO
-2025-03-08 15:14:10,756 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 15:14:10,758 - linkedin_scraper - INFO - Processing page 1 of 3
-2025-03-08 15:14:26,610 - linkedin_scraper - WARNING - No search results found or LinkedIn has changed their HTML structure
-2025-03-08 15:14:26,713 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:14:26,735 - linkedin_scraper - INFO - Found 0 profile containers on page 1
-2025-03-08 15:14:28,403 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 15:14:33,404 - linkedin_scraper - INFO - Processing page 2 of 3
-2025-03-08 15:14:48,824 - linkedin_scraper - WARNING - No search results found or LinkedIn has changed their HTML structure
-2025-03-08 15:14:48,857 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:14:48,881 - linkedin_scraper - INFO - Found 0 profile containers on page 2
-2025-03-08 15:14:50,056 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 15:14:55,057 - linkedin_scraper - INFO - Processing page 3 of 3
-2025-03-08 15:15:09,672 - linkedin_scraper - WARNING - No search results found or LinkedIn has changed their HTML structure
-2025-03-08 15:15:09,697 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:15:09,714 - linkedin_scraper - INFO - Found 0 profile containers on page 3
-2025-03-08 15:15:09,714 - linkedin_scraper - INFO - Scraped 0 profiles.
-2025-03-08 15:15:09,715 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 15:19:22,619 - main - INFO - All required dependencies are installed
-2025-03-08 15:19:23,918 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:19:23,932 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:19:28,001 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:19:28,001 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 15:19:28,015 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 15:19:28,016 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 15:19:44,469 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 15:19:44,470 - linkedin_scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Entrepreneurship%20CEO&origin=GLOBAL_SEARCH_HEADER&sid=kgM
-2025-03-08 15:19:52,707 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 15:19:52,707 - linkedin_scraper - INFO - Processing page 1 of 3
-2025-03-08 15:20:08,446 - linkedin_scraper - WARNING - No search results found or LinkedIn has changed their HTML structure
-2025-03-08 15:20:08,510 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:20:08,895 - linkedin_scraper - INFO - Found 0 profile containers on page 1
-2025-03-08 15:20:10,108 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 15:20:15,109 - linkedin_scraper - INFO - Processing page 2 of 3
-2025-03-08 15:37:52,360 - main - INFO - All required dependencies are installed
-2025-03-08 15:37:53,630 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:37:53,644 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:38:08,654 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:38:08,654 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 15:38:15,022 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:38:15,022 - lead_gen_gui - ERROR - Error running LinkedIn Scraper: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 15:39:46,820 - main - INFO - All required dependencies are installed
-2025-03-08 15:39:48,064 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:39:48,075 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:39:49,787 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:39:56,421 - linkedin_scraper - INFO - Scraping page 1 of 3
-2025-03-08 15:40:01,742 - linkedin_scraper - WARNING - No profiles found. Trying alternative selectors...
-2025-03-08 15:40:01,758 - linkedin_scraper - ERROR - No profiles found on page.
-2025-03-08 15:40:01,758 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 15:45:12,446 - main - INFO - All required dependencies are installed
-2025-03-08 15:45:12,455 - lead_gen_gui - ERROR - Module import error: No module named 'linkedin_scraper'
-2025-03-08 15:45:28,090 - main - ERROR - Error starting GUI: cannot import name 'run_gui' from 'gui.lead_gen_gui' (D:\lead_gen_tool\gui\lead_gen_gui.py)
-2025-03-08 15:47:27,165 - main - INFO - All required dependencies are installed
-2025-03-08 15:47:27,172 - lead_gen_gui - ERROR - Module import error: No module named 'linkedin_scraper'
-2025-03-08 15:47:30,008 - main - ERROR - Error starting GUI: name 'run_gui' is not defined
-2025-03-08 15:50:00,687 - main - INFO - All required dependencies are installed
-2025-03-08 15:50:01,890 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:50:01,891 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 15:50:01,901 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'run_reddit_scraper'
-2025-03-08 15:52:57,755 - main - INFO - All required dependencies are installed
-2025-03-08 15:52:57,765 - lead_gen_gui - ERROR - Module import error: No module named 'win32api'
-2025-03-08 15:52:59,042 - lead_gen_gui - ERROR - Failed to initialize LinkedIn Scraper: name 'LinkedInScraper' is not defined
-2025-03-08 15:53:00,357 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:53:10,839 - main - INFO - All required dependencies are installed
-2025-03-08 15:53:12,113 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:53:12,117 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 15:53:12,137 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:53:20,276 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:53:20,276 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 15:53:20,284 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 15:53:20,284 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 15:53:36,805 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 15:53:36,810 - linkedin_scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Entrepreneurship%20CEO&origin=GLOBAL_SEARCH_HEADER&sid=kgM
-2025-03-08 15:53:44,898 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 15:53:44,898 - linkedin_scraper - INFO - Scraping page 1 of 3
-2025-03-08 15:53:53,974 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:53:56,265 - linkedin_scraper - INFO - Extracted 0 profiles from page 1
-2025-03-08 15:53:57,439 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 15:54:02,441 - linkedin_scraper - INFO - Scraping page 2 of 3
-2025-03-08 15:54:11,191 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:54:13,236 - linkedin_scraper - INFO - Extracted 0 profiles from page 2
-2025-03-08 15:54:14,452 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 15:54:19,454 - linkedin_scraper - INFO - Scraping page 3 of 3
-2025-03-08 15:54:27,820 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:54:29,721 - linkedin_scraper - INFO - Extracted 0 profiles from page 3
-2025-03-08 15:54:29,722 - linkedin_scraper - INFO - Scraped 0 profiles total.
-2025-03-08 15:54:29,725 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 15:57:45,140 - main - INFO - All required dependencies are installed
-2025-03-08 15:57:46,335 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 15:57:46,336 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 15:57:46,360 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 15:57:48,948 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 15:57:48,953 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 15:57:48,953 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 15:58:05,321 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 15:58:05,322 - linkedin_scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Entrepreneurship%20CEO
-2025-03-08 15:58:13,594 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 15:58:13,594 - linkedin_scraper - INFO - Scraping page 1 of 3
-2025-03-08 15:58:21,359 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:58:21,394 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 15:58:21,419 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 15:58:21,442 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 15:58:21,466 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 15:58:21,488 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 15:58:21,509 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 15:58:21,532 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 15:58:21,555 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 15:58:21,575 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 15:58:21,595 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 15:58:21,595 - linkedin_scraper - INFO - Extracted 0 profiles from page 1
-2025-03-08 15:58:22,746 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 15:58:27,747 - linkedin_scraper - INFO - Scraping page 2 of 3
-2025-03-08 15:58:36,800 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:58:36,829 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 15:58:36,853 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 15:58:36,882 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 15:58:36,908 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 15:58:36,930 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 15:58:36,954 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 15:58:36,993 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 15:58:37,018 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 15:58:37,040 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 15:58:37,064 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 15:58:37,064 - linkedin_scraper - INFO - Extracted 0 profiles from page 2
-2025-03-08 15:58:38,196 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 15:58:43,198 - linkedin_scraper - INFO - Scraping page 3 of 3
-2025-03-08 15:58:51,401 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 15:58:51,428 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 15:58:51,452 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 15:58:51,476 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 15:58:51,499 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 15:58:51,522 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 15:58:51,547 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 15:58:51,571 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 15:58:51,593 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 15:58:51,615 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 15:58:51,639 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 15:58:51,639 - linkedin_scraper - INFO - Extracted 0 profiles from page 3
-2025-03-08 15:58:51,640 - linkedin_scraper - INFO - Scraped 0 profiles total.
-2025-03-08 15:58:51,642 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 16:03:18,049 - main - INFO - All required dependencies are installed
-2025-03-08 16:03:19,303 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 16:03:19,303 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 16:03:19,328 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 16:03:21,452 - lead_gen_gui - INFO - Starting LinkedIn Scraper...
-2025-03-08 16:03:21,458 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 16:03:21,458 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 16:03:38,061 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 16:03:38,061 - linkedin_scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Entrepreneurship%20CEO
-2025-03-08 16:03:46,108 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 16:03:46,257 - linkedin_scraper - INFO - Scraping page 1 of 3
-2025-03-08 16:04:03,418 - linkedin_scraper - INFO - Found 4 profile links with JavaScript on page 1
-2025-03-08 16:04:03,418 - linkedin_scraper - INFO - Added profile from JS extraction: Unknown - https://www.linkedin.com/in/chris-irwin-74150a31
-2025-03-08 16:04:03,418 - linkedin_scraper - INFO - Added profile from JS extraction: Chris Irwin
-View Chris Irwin’s profile - https://www.linkedin.com/in/chris-irwin-74150a31
-2025-03-08 16:04:03,419 - linkedin_scraper - INFO - Added profile from JS extraction: Unknown - https://www.linkedin.com/in/terry-graham-zircotec-67b6633
-2025-03-08 16:04:03,419 - linkedin_scraper - INFO - Added profile from JS extraction: Terry Graham (Zircotec)
-View Terry Graham (Zircotec)’s profile - https://www.linkedin.com/in/terry-graham-zircotec-67b6633
-2025-03-08 16:04:03,465 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:04:03,600 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:04:03,740 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:04:03,880 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:04:04,039 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:04:04,195 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:04:04,349 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:04:04,490 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:04:04,647 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:04:04,787 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:04:04,927 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:04:04,928 - linkedin_scraper - INFO - Extracted 0 profiles from page 1
-2025-03-08 16:04:06,163 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 16:04:11,173 - linkedin_scraper - INFO - Scraping page 2 of 3
-2025-03-08 16:04:28,002 - linkedin_scraper - INFO - Found 3 profile links with JavaScript on page 2
-2025-03-08 16:04:28,003 - linkedin_scraper - INFO - Added profile from JS extraction: Unknown - https://www.linkedin.com/in/matthew-g-baker
-2025-03-08 16:04:28,005 - linkedin_scraper - INFO - Added profile from JS extraction: Matthew Baker
-View Matthew Baker’s profile - https://www.linkedin.com/in/matthew-g-baker
-2025-03-08 16:04:28,005 - linkedin_scraper - INFO - Added profile from JS extraction: Provides services - Search Engine Optimization (SEO), Lead Generation, Social Media Marketing, Marketing Consulting, Advertising, Content Marketing, Brand Marketing, Content Strategy, Email Marketing - https://www.linkedin.com/in/ACoAAAqpDYABqC80Nym0-O3unh7mhteDtZonhdc
-2025-03-08 16:04:28,042 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:04:28,162 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:04:28,302 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:04:28,458 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:04:28,614 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:04:28,781 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:04:28,927 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:04:29,079 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:04:29,220 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:04:29,359 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:04:29,498 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:04:29,499 - linkedin_scraper - INFO - Extracted 0 profiles from page 2
-2025-03-08 16:04:30,671 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 16:04:35,672 - linkedin_scraper - INFO - Scraping page 3 of 3
-2025-03-08 16:04:50,996 - linkedin_scraper - INFO - Found 4 profile links with JavaScript on page 3
-2025-03-08 16:04:50,996 - linkedin_scraper - INFO - Added profile from JS extraction: Unknown - https://www.linkedin.com/in/ebrima-saidy-742b3558
-2025-03-08 16:04:50,997 - linkedin_scraper - INFO - Added profile from JS extraction: Ebrima Saidy
-View Ebrima Saidy’s profile - https://www.linkedin.com/in/ebrima-saidy-742b3558
-2025-03-08 16:04:50,997 - linkedin_scraper - INFO - Added profile from JS extraction: Rennie Schafer - https://www.linkedin.com/in/rennie-schafer-b1903a10
-2025-03-08 16:04:50,997 - linkedin_scraper - INFO - Added profile from JS extraction: Rennie Schafer
-View Rennie Schafer’s profile - https://www.linkedin.com/in/rennie-schafer-b1903a10
-2025-03-08 16:04:51,017 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:04:51,139 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:04:51,297 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:04:51,453 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:04:51,606 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:04:51,764 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:04:51,950 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:04:52,089 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:04:52,228 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:04:52,370 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:04:52,512 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:04:52,512 - linkedin_scraper - INFO - Extracted 0 profiles from page 3
-2025-03-08 16:04:52,512 - linkedin_scraper - INFO - Scraped 6 unique profiles total.
-2025-03-08 16:04:52,520 - lead_gen_gui - INFO - LinkedIn Scraper completed successfully.
-2025-03-08 16:14:20,640 - main - INFO - All required dependencies are installed
-2025-03-08 16:14:20,644 - main - ERROR - Error starting GUI: unterminated string literal (detected at line 288) (lead_gen_gui.py, line 288)
-2025-03-08 16:16:19,184 - main - INFO - All required dependencies are installed
-2025-03-08 16:16:20,425 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 16:16:20,426 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 16:16:20,440 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'run_reddit_scraper'
-2025-03-08 16:20:04,475 - main - INFO - All required dependencies are installed
-2025-03-08 16:20:05,704 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 16:20:05,704 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 16:20:05,710 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
-2025-03-08 16:22:35,430 - main - INFO - All required dependencies are installed
-2025-03-08 16:22:36,664 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 16:22:36,664 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 16:22:36,717 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 16:23:01,587 - lead_gen_gui - INFO - Starting LinkedIn search for Entrepreneurship CEO...
-2025-03-08 16:23:01,588 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Entrepreneurship, role: CEO
-2025-03-08 16:23:01,598 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 16:23:01,598 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 16:23:19,194 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 16:23:19,203 - linkedin_scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Entrepreneurship%20CEO&origin=GLOBAL_SEARCH_HEADER&sid=kgM
-2025-03-08 16:23:27,177 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 16:23:27,329 - linkedin_scraper - INFO - Scraping page 1 of 3
-2025-03-08 16:23:44,598 - linkedin_scraper - INFO - Found 4 profile links with JavaScript on page 1
-2025-03-08 16:23:44,598 - linkedin_scraper - INFO - Added profile: Unknown - https://www.linkedin.com/in/chris-irwin-74150a31
-2025-03-08 16:23:44,601 - linkedin_scraper - INFO - Added profile: Chris Irwin
-View Chris Irwin’s profile - https://www.linkedin.com/in/chris-irwin-74150a31
-2025-03-08 16:23:44,601 - linkedin_scraper - INFO - Added profile: Unknown - https://www.linkedin.com/in/terry-graham-zircotec-67b6633
-2025-03-08 16:23:44,602 - linkedin_scraper - INFO - Added profile: Terry Graham (Zircotec)
-View Terry Graham (Zircotec)’s profile - https://www.linkedin.com/in/terry-graham-zircotec-67b6633
-2025-03-08 16:23:44,630 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:23:44,774 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:23:44,930 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:23:45,109 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:23:45,212 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:23:45,355 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:23:45,558 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:23:45,696 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:23:45,836 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:23:45,990 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:23:46,148 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:23:46,148 - linkedin_scraper - INFO - Extracted 0 profiles from page 1
-2025-03-08 16:23:47,343 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 16:23:52,360 - linkedin_scraper - INFO - Scraping page 2 of 3
-2025-03-08 16:24:09,229 - linkedin_scraper - INFO - Found 2 profile links with JavaScript on page 2
-2025-03-08 16:24:09,229 - linkedin_scraper - INFO - Added profile: Unknown - https://www.linkedin.com/in/ebrima-saidy-742b3558
-2025-03-08 16:24:09,230 - linkedin_scraper - INFO - Added profile: Ebrima Saidy
-View Ebrima Saidy’s profile - https://www.linkedin.com/in/ebrima-saidy-742b3558
-2025-03-08 16:24:09,274 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:24:09,414 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:24:09,569 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:24:09,726 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:24:09,879 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:24:10,018 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:24:10,220 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:24:10,348 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:24:10,485 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:24:10,624 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:24:10,806 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:24:10,806 - linkedin_scraper - INFO - Extracted 0 profiles from page 2
-2025-03-08 16:24:11,972 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 16:24:16,973 - linkedin_scraper - INFO - Scraping page 3 of 3
-2025-03-08 16:24:35,491 - linkedin_scraper - INFO - Found 4 profile links with JavaScript on page 3
-2025-03-08 16:24:35,491 - linkedin_scraper - INFO - Added profile: Rennie Schafer - https://www.linkedin.com/in/rennie-schafer-b1903a10
-2025-03-08 16:24:35,492 - linkedin_scraper - INFO - Added profile: Rennie Schafer
-View Rennie Schafer’s profile - https://www.linkedin.com/in/rennie-schafer-b1903a10
-2025-03-08 16:24:35,492 - linkedin_scraper - INFO - Added profile: Unknown - https://www.linkedin.com/in/jette-nygaard-andersen
-2025-03-08 16:24:35,492 - linkedin_scraper - INFO - Added profile: Jette Nygaard-Andersen
-View Jette Nygaard-Andersen’s profile - https://www.linkedin.com/in/jette-nygaard-andersen
-2025-03-08 16:24:35,510 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:24:35,638 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:24:35,763 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:24:35,957 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:24:36,077 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:24:36,246 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:24:36,384 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:24:36,524 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:24:36,665 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:24:36,833 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:24:37,007 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:24:37,007 - linkedin_scraper - INFO - Extracted 0 profiles from page 3
-2025-03-08 16:24:37,008 - linkedin_scraper - INFO - Scraped 5 unique profiles total.
-2025-03-08 16:24:37,009 - linkedin_scraper - INFO - Saved 5 profiles to data/linkedin_leads.csv
-2025-03-08 16:24:37,011 - lead_gen_gui - INFO - LinkedIn search for Entrepreneurship CEO completed successfully.
-2025-03-08 16:24:45,593 - lead_gen_gui - INFO - LinkedIn results save function called
-2025-03-08 16:33:17,121 - main - INFO - All required dependencies are installed
-2025-03-08 16:33:17,197 - main - ERROR - Error starting GUI: cannot import name 'LeadGenerationGUI' from 'gui.lead_gen_gui' (D:\lead_gen_tool\gui\lead_gen_gui.py)
-2025-03-08 16:34:54,932 - main - INFO - All required dependencies are installed
-2025-03-08 16:34:56,154 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 16:34:56,154 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 16:34:56,203 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 16:35:09,801 - lead_gen_gui - INFO - Starting LinkedIn search for Finance Director...
-2025-03-08 16:35:09,801 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Finance, role: Director
-2025-03-08 16:35:09,809 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 16:35:09,809 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 16:35:26,329 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 16:35:26,339 - linkedin_scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Finance%20Director&origin=GLOBAL_SEARCH_HEADER&sid=kgM
-2025-03-08 16:35:37,437 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 16:35:37,572 - linkedin_scraper - INFO - Scraping page 1 of 3
-2025-03-08 16:35:40,871 - linkedin_scraper - WARNING - JavaScript extraction failed: Message: javascript error: Cannot read properties of undefined (reading 'trim')
-  (Session info: chrome=134.0.6998.36)
-Stacktrace:
-	GetHandleVerifier [0x00007FF613E9DF75+26693]
-	(No symbol) [0x00007FF613DFEAC0]
-	(No symbol) [0x00007FF613C891CA]
-	(No symbol) [0x00007FF613C90B2C]
-	(No symbol) [0x00007FF613C93C8C]
-	(No symbol) [0x00007FF613D313F2]
-	(No symbol) [0x00007FF613D078EA]
-	(No symbol) [0x00007FF613D300B8]
-	(No symbol) [0x00007FF613D076C3]
-	(No symbol) [0x00007FF613CD0490]
-	(No symbol) [0x00007FF613CD1743]
-	GetHandleVerifier [0x00007FF6141F435D+3525677]
-	GetHandleVerifier [0x00007FF614207F2B+3606523]
-	GetHandleVerifier [0x00007FF6141FCED3+3561379]
-	GetHandleVerifier [0x00007FF613F67BFA+853194]
-	(No symbol) [0x00007FF613E098FF]
-	(No symbol) [0x00007FF613E05664]
-	(No symbol) [0x00007FF613E05806]
-	(No symbol) [0x00007FF613DF4D79]
-	BaseThreadInitThunk [0x00007FFB42F3E8D7+23]
-	RtlUserThreadStart [0x00007FFB43C7BF2C+44]
-
-2025-03-08 16:35:40,900 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:35:41,129 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:35:41,232 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:35:41,333 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:35:41,432 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:35:41,537 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:35:41,642 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:35:41,755 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:35:41,887 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:35:42,029 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:35:42,187 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:35:42,187 - linkedin_scraper - INFO - Extracted 0 profiles from page 1
-2025-03-08 16:35:47,236 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 16:35:52,237 - linkedin_scraper - INFO - Scraping page 2 of 3
-2025-03-08 16:35:55,450 - linkedin_scraper - INFO - Found 0 profile links with JavaScript on page 2
-2025-03-08 16:35:55,486 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:35:55,598 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:35:55,734 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:35:55,852 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:35:55,954 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:35:56,068 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:35:56,173 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:35:56,270 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:35:56,369 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:35:56,470 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:35:56,576 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:35:56,576 - linkedin_scraper - INFO - Extracted 0 profiles from page 2
-2025-03-08 16:36:01,341 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 16:36:06,342 - linkedin_scraper - INFO - Scraping page 3 of 3
-2025-03-08 16:36:09,519 - linkedin_scraper - WARNING - JavaScript extraction failed: Message: javascript error: Cannot read properties of undefined (reading 'trim')
-  (Session info: chrome=134.0.6998.36)
-Stacktrace:
-	GetHandleVerifier [0x00007FF613E9DF75+26693]
-	(No symbol) [0x00007FF613DFEAC0]
-	(No symbol) [0x00007FF613C891CA]
-	(No symbol) [0x00007FF613C90B2C]
-	(No symbol) [0x00007FF613C93C8C]
-	(No symbol) [0x00007FF613D313F2]
-	(No symbol) [0x00007FF613D078EA]
-	(No symbol) [0x00007FF613D300B8]
-	(No symbol) [0x00007FF613D076C3]
-	(No symbol) [0x00007FF613CD0490]
-	(No symbol) [0x00007FF613CD1743]
-	GetHandleVerifier [0x00007FF6141F435D+3525677]
-	GetHandleVerifier [0x00007FF614207F2B+3606523]
-	GetHandleVerifier [0x00007FF6141FCED3+3561379]
-	GetHandleVerifier [0x00007FF613F67BFA+853194]
-	(No symbol) [0x00007FF613E098FF]
-	(No symbol) [0x00007FF613E05664]
-	(No symbol) [0x00007FF613E05806]
-	(No symbol) [0x00007FF613DF4D79]
-	BaseThreadInitThunk [0x00007FFB42F3E8D7+23]
-	RtlUserThreadStart [0x00007FFB43C7BF2C+44]
-
-2025-03-08 16:36:09,540 - linkedin_scraper - INFO - Found 10 profiles using selector: li.ember-view
-2025-03-08 16:36:09,649 - linkedin_scraper - WARNING - Profile 1: Could not extract any data
-2025-03-08 16:36:09,750 - linkedin_scraper - WARNING - Profile 2: Could not extract any data
-2025-03-08 16:36:09,851 - linkedin_scraper - WARNING - Profile 3: Could not extract any data
-2025-03-08 16:36:09,955 - linkedin_scraper - WARNING - Profile 4: Could not extract any data
-2025-03-08 16:36:10,056 - linkedin_scraper - WARNING - Profile 5: Could not extract any data
-2025-03-08 16:36:10,157 - linkedin_scraper - WARNING - Profile 6: Could not extract any data
-2025-03-08 16:36:10,255 - linkedin_scraper - WARNING - Profile 7: Could not extract any data
-2025-03-08 16:36:10,355 - linkedin_scraper - WARNING - Profile 8: Could not extract any data
-2025-03-08 16:36:10,476 - linkedin_scraper - WARNING - Profile 9: Could not extract any data
-2025-03-08 16:36:10,599 - linkedin_scraper - WARNING - Profile 10: Could not extract any data
-2025-03-08 16:36:10,599 - linkedin_scraper - INFO - Extracted 0 profiles from page 3
-2025-03-08 16:36:12,823 - linkedin_scraper - INFO - Scraped 0 unique profiles total.
-2025-03-08 16:36:12,824 - linkedin_scraper - INFO - Saved 0 profiles to data/linkedin_leads.csv
-2025-03-08 16:36:12,825 - lead_gen_gui - INFO - LinkedIn search for Finance Director completed successfully.
-2025-03-08 17:01:03,550 - main - INFO - All required dependencies are installed
-2025-03-08 17:01:04,786 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 17:14:03,538 - main - INFO - All required dependencies are installed
-2025-03-08 17:14:03,550 - main - ERROR - Error starting GUI: unterminated string literal (detected at line 121) (linkedin_scraper.py, line 121)
-2025-03-08 17:17:14,409 - main - INFO - All required dependencies are installed
-2025-03-08 17:17:14,422 - lead_gen_gui - ERROR - Failed to import LinkedInScraper: No module named 'linkedin_scraper'
-2025-03-08 17:17:19,727 - lead_gen_gui - ERROR - Failed to initialize LinkedIn Scraper: name 'LinkedInScraper' is not defined
-2025-03-08 17:17:25,893 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 17:19:29,634 - main - INFO - All required dependencies are installed
-2025-03-08 17:19:29,647 - main - ERROR - Error starting GUI: unterminated string literal (detected at line 121) (linkedin_scraper.py, line 121)
-2025-03-08 18:46:33,395 - main - INFO - All required dependencies are installed
-2025-03-08 18:46:33,454 - main - ERROR - Error starting GUI: unindent does not match any outer indentation level (linkedin_scraper.py, line 136)
-2025-03-08 20:03:00,401 - main - INFO - All required dependencies are installed
-2025-03-08 20:03:00,410 - main - ERROR - Error starting GUI: unindent does not match any outer indentation level (linkedin_scraper.py, line 136)
-2025-03-08 20:08:11,384 - main - INFO - All required dependencies are installed
-2025-03-08 20:08:11,392 - main - ERROR - Error starting GUI: unindent does not match any outer indentation level (linkedin_scraper.py, line 136)
-2025-03-08 20:09:08,876 - main - INFO - All required dependencies are installed
-2025-03-08 20:09:08,884 - main - ERROR - Error starting GUI: unindent does not match any outer indentation level (linkedin_scraper.py, line 136)
-2025-03-08 20:18:53,536 - main - INFO - All required dependencies are installed
-2025-03-08 20:18:53,948 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 20:18:56,021 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 20:18:56,021 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 20:18:56,066 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 20:19:13,576 - lead_gen_gui - INFO - Starting LinkedIn search for Media CEO...
-2025-03-08 20:19:13,577 - linkedin_scraper - INFO - Starting LinkedIn scrape for industry: Media, role: CEO
-2025-03-08 20:19:13,951 - linkedin_scraper - WARNING - Not logged in. Logging in first.
-2025-03-08 20:19:13,951 - linkedin_scraper - INFO - Logging into LinkedIn...
-2025-03-08 20:19:30,264 - linkedin_scraper - INFO - Successfully logged into LinkedIn.
-2025-03-08 20:19:30,275 - linkedin_scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Media%20CEO&origin=GLOBAL_SEARCH_HEADER&sid=kgM
-2025-03-08 20:19:42,586 - linkedin_scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-08 20:19:42,739 - linkedin_scraper - INFO - Scraping page 1 of 3
-2025-03-08 20:19:49,039 - linkedin_scraper - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-08 20:19:49,039 - linkedin_scraper - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-08 20:19:49,049 - linkedin_scraper - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-08 20:19:49,049 - linkedin_scraper - WARNING - No profiles extracted using either method
-2025-03-08 20:19:49,049 - linkedin_scraper - WARNING - No profiles extracted from page 1
-2025-03-08 20:19:50,402 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 20:19:55,403 - linkedin_scraper - INFO - Scraping page 2 of 3
-2025-03-08 20:19:58,583 - linkedin_scraper - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-08 20:19:58,583 - linkedin_scraper - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-08 20:19:58,590 - linkedin_scraper - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-08 20:19:58,590 - linkedin_scraper - WARNING - No profiles extracted using either method
-2025-03-08 20:19:58,590 - linkedin_scraper - WARNING - No profiles extracted from page 2
-2025-03-08 20:19:59,708 - linkedin_scraper - INFO - Clicked next button with selector: button[aria-label='Next']
-2025-03-08 20:20:04,710 - linkedin_scraper - INFO - Scraping page 3 of 3
-2025-03-08 20:20:07,908 - linkedin_scraper - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-08 20:20:07,908 - linkedin_scraper - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-08 20:20:07,915 - linkedin_scraper - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-08 20:20:07,915 - linkedin_scraper - WARNING - No profiles extracted using either method
-2025-03-08 20:20:07,915 - linkedin_scraper - WARNING - No profiles extracted from page 3
-2025-03-08 20:20:07,915 - linkedin_scraper - INFO - Scraped 0 unique profiles total.
-2025-03-08 20:20:07,915 - linkedin_scraper - INFO - Saved 0 profiles to data/linkedin_leads.csv
-2025-03-08 20:20:07,917 - lead_gen_gui - INFO - LinkedIn search for Media CEO completed successfully.
-2025-03-08 20:23:11,327 - main - INFO - All required dependencies are installed
-2025-03-08 20:23:11,336 - lead_gen_gui - ERROR - Failed to import LinkedInScraper: cannot import name 'LinkedInScraper' from 'scrapers.linkedin_scraper' (D:\lead_gen_tool\scrapers\linkedin_scraper.py)
-2025-03-08 20:23:24,905 - lead_gen_gui - ERROR - Failed to initialize LinkedIn Scraper: name 'LinkedInScraper' is not defined
-2025-03-08 20:23:26,294 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 20:25:58,978 - main - INFO - All required dependencies are installed
-2025-03-08 20:25:58,989 - main - ERROR - Error starting GUI: expected an indented block after function definition on line 343 (linkedin_scraper.py, line 344)
-2025-03-08 20:35:24,216 - main - INFO - All required dependencies are installed
-2025-03-08 20:35:24,244 - main - ERROR - Error starting GUI: 'return' outside function (linkedin_scraper.py, line 482)
-2025-03-08 20:42:05,787 - main - INFO - All required dependencies are installed
-2025-03-08 20:42:05,896 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 20:42:07,138 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 20:42:07,139 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 20:42:07,191 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 20:42:17,111 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 20:42:17,111 - lead_gen_gui - ERROR - Error in LinkedIn search: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 20:42:17,115 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
-2025-03-08 20:42:51,992 - lead_gen_gui - INFO - LinkedIn results cleared
-2025-03-08 20:44:44,414 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 20:44:44,415 - lead_gen_gui - ERROR - Error in LinkedIn search: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 20:44:44,418 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
-2025-03-08 20:45:07,976 - main - INFO - All required dependencies are installed
-2025-03-08 20:45:08,065 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 20:45:09,320 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 20:45:09,325 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 20:45:09,398 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 20:45:15,463 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 20:45:15,464 - lead_gen_gui - ERROR - Error in LinkedIn search: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 20:45:15,465 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
-2025-03-08 20:50:26,857 - main - INFO - All required dependencies are installed
-2025-03-08 20:50:26,938 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 20:50:28,222 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 20:50:28,223 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 20:50:28,279 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 20:50:36,234 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 20:50:36,235 - lead_gen_gui - ERROR - Error in LinkedIn search: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 20:50:36,236 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
-2025-03-08 20:51:42,447 - main - INFO - All required dependencies are installed
-2025-03-08 20:51:42,537 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 20:51:43,787 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 20:51:43,788 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 20:51:43,842 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 20:51:49,030 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 20:51:49,031 - lead_gen_gui - ERROR - Error in LinkedIn search: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 20:51:49,034 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
-2025-03-08 20:54:23,553 - main - INFO - All required dependencies are installed
-2025-03-08 20:54:23,636 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 20:54:24,907 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 20:54:24,907 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 20:54:24,990 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 20:54:28,514 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 20:54:28,514 - lead_gen_gui - ERROR - Error in LinkedIn search: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 20:54:28,516 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
-2025-03-08 21:01:07,683 - main - INFO - All required dependencies are installed
-2025-03-08 21:01:07,791 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 21:01:09,123 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 21:01:09,411 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 21:01:09,458 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 21:01:36,235 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 21:01:36,236 - lead_gen_gui - ERROR - Error running LinkedIn search for Technology CEO: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 21:03:46,128 - main - INFO - All required dependencies are installed
-2025-03-08 21:03:46,213 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 21:03:47,430 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 21:03:47,430 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 21:03:47,481 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 21:03:50,820 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 21:03:50,820 - lead_gen_gui - ERROR - Error running LinkedIn search for Technology CEO: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 21:06:07,846 - main - INFO - All required dependencies are installed
-2025-03-08 21:06:07,932 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 21:06:09,140 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 21:06:09,140 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 21:06:09,196 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 21:06:12,781 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 21:06:12,781 - lead_gen_gui - ERROR - Error running LinkedIn search for Technology CEO: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 21:06:22,693 - lead_gen_gui - INFO - Starting LinkedIn search for Finance Executive...
-2025-03-08 21:06:22,694 - lead_gen_gui - ERROR - Error running LinkedIn search for Finance Executive: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 21:08:03,250 - main - INFO - All required dependencies are installed
-2025-03-08 21:08:03,333 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 21:08:04,552 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 21:08:04,552 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 21:08:04,608 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 21:08:13,164 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 21:08:13,165 - lead_gen_gui - ERROR - Error running LinkedIn search for Technology CEO: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 21:10:23,311 - main - INFO - All required dependencies are installed
-2025-03-08 21:10:23,398 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 21:10:24,844 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 21:10:24,844 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 21:10:24,889 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 21:10:30,613 - lead_gen_gui - INFO - Starting LinkedIn search for Healthcare Director...
-2025-03-08 21:10:30,613 - lead_gen_gui - ERROR - Error running LinkedIn search for Healthcare Director: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 21:12:27,157 - main - INFO - All required dependencies are installed
-2025-03-08 21:12:27,174 - lead_gen_gui - ERROR - Failed to import LinkedInScraper: No module named 'win32api'
-2025-03-08 21:12:27,249 - lead_gen_gui - ERROR - Failed to initialize LinkedIn Scraper: LinkedInScraper module not found
-2025-03-08 21:12:30,820 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 21:13:02,927 - main - INFO - All required dependencies are installed
-2025-03-08 21:13:03,024 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 21:13:04,261 - linkedin_scraper - INFO - Successfully initialized WebDriver with ChromeDriver at D:/lead_gen_tool/chromedriver.exe.
-2025-03-08 21:13:04,261 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-08 21:13:04,315 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 21:13:09,479 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-08 21:13:09,479 - lead_gen_gui - ERROR - Error running LinkedIn search for Technology CEO: 'LinkedInScraper' object has no attribute 'scrape_by_industry_and_role'
-2025-03-08 21:26:53,578 - main - INFO - All required dependencies are installed
-2025-03-08 21:26:53,678 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from scrapers package
-2025-03-08 21:26:53,762 - linkedin_scraper - ERROR - WebDriver failed to start: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
-
-2025-03-08 21:26:53,762 - lead_gen_gui - ERROR - Failed to initialize LinkedIn Scraper: Failed to start Chrome WebDriver: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
-
-2025-03-08 21:27:03,260 - lead_gen_gui - INFO - GUI Initialized
-2025-03-08 22:52:17,457 - main - INFO - All required dependencies are installed
-2025-03-08 22:52:17,495 - main - ERROR - Error starting GUI: invalid syntax (scraper.py, line 57)
-2025-03-09 07:41:24,569 - main - INFO - All required dependencies are installed
-2025-03-09 07:41:25,399 - lead_gen_gui - ERROR - Failed to import LinkedInScraper: cannot import name 'extract_additional_info' from 'scrapers.linkedin.extractors' (D:\lead_gen_tool\scrapers\linkedin\extractors.py)
-2025-03-09 07:47:40,820 - main - INFO - All required dependencies are installed
-2025-03-09 07:47:40,900 - lead_gen_gui - ERROR - Failed to import LinkedInScraper: cannot import name 'run_scraper' from 'scrapers.reddit.scraper' (D:\lead_gen_tool\scrapers\reddit\scraper.py)
-2025-03-09 07:47:48,691 - lead_gen_gui - ERROR - Failed to initialize LinkedIn Scraper: name 'LinkedInScraper' is not defined
-2025-03-09 07:47:50,121 - lead_gen_gui - INFO - GUI Initialized
-2025-03-09 07:48:48,685 - main - INFO - All required dependencies are installed
-2025-03-09 07:48:48,745 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 07:48:48,846 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 07:48:48,846 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 07:48:50,201 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 07:48:50,201 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 07:48:50,253 - lead_gen_gui - INFO - GUI Initialized
-2025-03-09 07:48:55,948 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-09 07:48:55,957 - linkedin.scraper - WARNING - Not logged in. Logging in first.
-2025-03-09 07:48:55,958 - linkedin.scraper - INFO - Logging into LinkedIn...
-2025-03-09 07:49:12,700 - linkedin.scraper - INFO - Successfully logged into LinkedIn.
-2025-03-09 07:49:12,700 - linkedin.scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Technology%20CEO&origin=GLOBAL_SEARCH_HEADER
-2025-03-09 07:49:25,162 - linkedin.scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-09 07:49:25,406 - linkedin.scraper - INFO - Scraping page 1 of 3
-2025-03-09 07:49:31,634 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-09 07:49:31,635 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-09 07:49:31,676 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-09 07:49:31,676 - linkedin.extractors - WARNING - No profiles extracted using either method
-2025-03-09 07:49:31,677 - linkedin.scraper - WARNING - No profiles extracted on page 1
-2025-03-09 07:49:35,453 - linkedin.scraper - INFO - Scraping page 2 of 3
-2025-03-09 07:49:38,708 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-09 07:49:38,709 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-09 07:49:38,717 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-09 07:49:38,717 - linkedin.extractors - WARNING - No profiles extracted using either method
-2025-03-09 07:49:38,717 - linkedin.scraper - WARNING - No profiles extracted on page 2
-2025-03-09 07:49:42,088 - linkedin.scraper - INFO - Scraping page 3 of 3
-2025-03-09 07:49:48,355 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-09 07:49:48,355 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-09 07:49:48,362 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-09 07:49:48,362 - linkedin.extractors - WARNING - No profiles extracted using either method
-2025-03-09 07:49:48,362 - linkedin.scraper - WARNING - No profiles extracted on page 3
-2025-03-09 07:49:48,363 - linkedin.utils - INFO - Saved 0 profiles to data/linkedin_leads.csv
-2025-03-09 07:49:48,363 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
-2025-03-09 08:07:15,281 - main - INFO - All required dependencies are installed
-2025-03-09 08:07:15,474 - main - ERROR - Error starting GUI: expected 'except' or 'finally' block (extractors.py, line 330)
-2025-03-09 08:12:28,821 - main - INFO - All required dependencies are installed
-2025-03-09 08:12:28,884 - main - ERROR - Error starting GUI: expected 'except' or 'finally' block (extractors.py, line 330)
-2025-03-09 08:14:20,558 - main - INFO - All required dependencies are installed
-2025-03-09 08:14:20,614 - main - ERROR - Error starting GUI: expected 'except' or 'finally' block (extractors.py, line 330)
-2025-03-09 08:17:34,560 - main - INFO - All required dependencies are installed
-2025-03-09 08:17:34,652 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 08:17:34,778 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 08:17:34,779 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 08:17:36,062 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 08:17:36,062 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 08:17:36,145 - lead_gen_gui - INFO - GUI Initialized
-2025-03-09 08:17:40,290 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
-2025-03-09 08:17:40,299 - linkedin.scraper - WARNING - Not logged in. Logging in first.
-2025-03-09 08:17:40,299 - linkedin.scraper - INFO - Logging into LinkedIn...
-2025-03-09 08:17:57,770 - linkedin.scraper - INFO - Successfully logged into LinkedIn.
-2025-03-09 08:17:57,770 - linkedin.scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Technology%20CEO&origin=GLOBAL_SEARCH_HEADER
-2025-03-09 08:18:10,681 - linkedin.scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-09 08:18:10,909 - linkedin.scraper - INFO - Scraping page 1 of 3
-2025-03-09 08:18:18,976 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-09 08:18:18,976 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-09 08:18:19,033 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
-2025-03-09 08:18:19,042 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,050 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,057 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,064 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,073 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,081 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,089 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,096 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,104 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,111 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:19,111 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-09 08:18:19,112 - linkedin.extractors - WARNING - No profiles extracted using either method
-2025-03-09 08:18:19,112 - linkedin.extractors - INFO - Attempting emergency profile extraction method
-2025-03-09 08:18:19,250 - linkedin.extractors - INFO - Found 12 potential profile links
-2025-03-09 08:18:25,360 - linkedin.extractors - INFO - Emergency extraction found 10 profiles
-2025-03-09 08:18:25,361 - linkedin.scraper - INFO - Extracted 5 profiles from page 1
-2025-03-09 08:18:28,904 - linkedin.scraper - INFO - Scraping page 2 of 3
-2025-03-09 08:18:32,978 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-09 08:18:32,978 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-09 08:18:33,022 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
-2025-03-09 08:18:33,029 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,038 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,045 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,054 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,062 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,070 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,078 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,086 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,093 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,101 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:33,101 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-09 08:18:33,102 - linkedin.extractors - WARNING - No profiles extracted using either method
-2025-03-09 08:18:33,102 - linkedin.extractors - INFO - Attempting emergency profile extraction method
-2025-03-09 08:18:33,203 - linkedin.extractors - INFO - Found 14 potential profile links
-2025-03-09 08:18:39,757 - linkedin.extractors - INFO - Emergency extraction found 10 profiles
-2025-03-09 08:18:39,758 - linkedin.scraper - INFO - Extracted 5 profiles from page 2
-2025-03-09 08:18:43,409 - linkedin.scraper - INFO - Scraping page 3 of 3
-2025-03-09 08:18:51,498 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-09 08:18:51,498 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-09 08:18:51,527 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
-2025-03-09 08:18:51,534 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,542 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,549 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,567 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,624 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,631 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,636 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,642 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,649 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,654 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:18:51,655 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-09 08:18:51,655 - linkedin.extractors - WARNING - No profiles extracted using either method
-2025-03-09 08:18:51,655 - linkedin.extractors - INFO - Attempting emergency profile extraction method
-2025-03-09 08:18:51,744 - linkedin.extractors - INFO - Found 16 potential profile links
-2025-03-09 08:18:58,696 - linkedin.extractors - INFO - Emergency extraction found 10 profiles
-2025-03-09 08:18:58,696 - linkedin.scraper - INFO - Extracted 6 profiles from page 3
-2025-03-09 08:18:58,698 - linkedin.utils - INFO - Saved 16 profiles to data/linkedin_leads.csv
-2025-03-09 08:18:58,698 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
-2025-03-09 08:19:24,810 - lead_gen_gui - INFO - LinkedIn results save function called
-2025-03-09 08:20:45,988 - main - INFO - All required dependencies are installed
-2025-03-09 08:20:46,053 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 08:20:46,154 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 08:20:46,154 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 08:20:47,291 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 08:20:47,291 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 08:20:47,351 - lead_gen_gui - INFO - GUI Initialized
-2025-03-09 08:20:54,072 - lead_gen_gui - INFO - Reddit scraper function called (not implemented)
-2025-03-09 08:21:05,524 - lead_gen_gui - INFO - Starting Coaching prospect search for 'burnout'...
-2025-03-09 08:21:05,532 - linkedin.scraper - WARNING - Not logged in. Logging in first.
-2025-03-09 08:21:05,533 - linkedin.scraper - INFO - Logging into LinkedIn...
-2025-03-09 08:21:22,465 - linkedin.scraper - INFO - Successfully logged into LinkedIn.
-2025-03-09 08:21:22,466 - linkedin.scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=burnout&origin=GLOBAL_SEARCH_HEADER
-2025-03-09 08:21:34,489 - linkedin.scraper - INFO - Saved LinkedIn search page HTML for debugging.
-2025-03-09 08:21:34,640 - linkedin.scraper - INFO - Scraping page 1 of 2
-2025-03-09 08:21:42,444 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-09 08:21:42,445 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-09 08:21:42,492 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
-2025-03-09 08:21:42,503 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,509 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,516 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,524 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,530 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,537 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,545 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,551 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,558 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,564 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:42,565 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-09 08:21:42,566 - linkedin.extractors - WARNING - No profiles extracted using either method
-2025-03-09 08:21:42,566 - linkedin.extractors - INFO - Attempting emergency profile extraction method
-2025-03-09 08:21:42,666 - linkedin.extractors - INFO - Found 5 potential profile links
-2025-03-09 08:21:45,617 - linkedin.extractors - INFO - Emergency extraction found 5 profiles
-2025-03-09 08:21:45,619 - linkedin.scraper - INFO - Extracted 3 profiles from page 1
-2025-03-09 08:21:49,938 - linkedin.scraper - INFO - Scraping page 2 of 2
-2025-03-09 08:21:53,995 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
-2025-03-09 08:21:53,995 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
-2025-03-09 08:21:54,027 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
-2025-03-09 08:21:54,034 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,041 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,048 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,056 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,062 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,069 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,075 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,082 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,089 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,096 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
-2025-03-09 08:21:54,096 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
-2025-03-09 08:21:54,096 - linkedin.extractors - WARNING - No profiles extracted using either method
-2025-03-09 08:21:54,097 - linkedin.extractors - INFO - Attempting emergency profile extraction method
-2025-03-09 08:21:54,194 - linkedin.extractors - INFO - Found 2 potential profile links
-2025-03-09 08:21:54,602 - linkedin.extractors - INFO - Emergency extraction found 2 profiles
-2025-03-09 08:21:54,602 - linkedin.scraper - INFO - Extracted 1 profiles from page 2
-2025-03-09 08:21:54,603 - linkedin.utils - INFO - Saved 4 profiles to data/linkedin_leads.csv
-2025-03-09 08:21:54,603 - lead_gen_gui - INFO - Coaching prospect search for 'burnout' completed successfully.
-2025-03-09 10:01:33,688 - main - INFO - All required dependencies are installed
-2025-03-09 10:01:33,694 - main - ERROR - Error starting GUI: invalid syntax (lead_gen_gui.py, line 35)
-2025-03-09 10:02:28,530 - main - INFO - All required dependencies are installed
-2025-03-09 10:02:28,533 - main - ERROR - Error starting GUI: invalid syntax (lead_gen_gui.py, line 12)
-2025-03-09 10:04:00,124 - main - INFO - All required dependencies are installed
-2025-03-09 10:04:00,129 - main - ERROR - Error starting GUI: invalid syntax (lead_gen_gui.py, line 57)
-2025-03-09 10:05:05,137 - main - INFO - All required dependencies are installed
-2025-03-09 10:05:05,140 - main - ERROR - Error starting GUI: invalid syntax (lead_gen_gui.py, line 55)
-2025-03-09 10:05:43,425 - main - INFO - All required dependencies are installed
-2025-03-09 10:05:43,435 - main - ERROR - Error starting GUI: expected an indented block after function definition on line 465 (lead_gen_gui.py, line 466)
-2025-03-09 10:06:29,822 - main - INFO - All required dependencies are installed
-2025-03-09 10:06:29,838 - main - ERROR - Error starting GUI: expected an indented block after function definition on line 686 (lead_gen_gui.py, line 687)
-2025-03-09 10:06:52,256 - main - INFO - All required dependencies are installed
-2025-03-09 10:06:52,270 - main - ERROR - Error starting GUI: expected an indented block after function definition on line 686 (lead_gen_gui.py, line 687)
-2025-03-09 10:08:20,840 - main - INFO - All required dependencies are installed
-2025-03-09 10:08:20,848 - main - ERROR - Error starting GUI: unindent does not match any outer indentation level (lead_gen_gui.py, line 709)
-2025-03-09 10:08:54,743 - main - INFO - All required dependencies are installed
-2025-03-09 10:08:54,938 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 10:08:55,431 - lead_gen_gui - INFO - Successfully imported all optional modules
-2025-03-09 10:08:55,541 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 10:08:55,542 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 10:08:57,173 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 10:08:57,173 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 10:08:57,256 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'create_lead_scoring_tab'
-2025-03-09 10:23:00,828 - main - INFO - All required dependencies are installed
-2025-03-09 10:23:00,903 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 10:23:00,962 - lead_gen_gui - INFO - Successfully imported all optional modules
-2025-03-09 10:23:01,044 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 10:23:01,044 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 10:23:02,179 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 10:23:02,180 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 10:23:02,264 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'create_lead_scoring_tab'
-2025-03-09 10:39:20,304 - main - INFO - All required dependencies are installed
-2025-03-09 10:39:20,307 - main - ERROR - Error starting GUI: inconsistent use of tabs and spaces in indentation (lead_gen_gui.py, line 222)
-2025-03-09 10:41:48,754 - main - INFO - All required dependencies are installed
-2025-03-09 10:41:48,758 - main - ERROR - Error starting GUI: inconsistent use of tabs and spaces in indentation (lead_gen_gui.py, line 228)
-2025-03-09 10:43:15,988 - main - INFO - All required dependencies are installed
-2025-03-09 10:43:15,992 - main - ERROR - Error starting GUI: inconsistent use of tabs and spaces in indentation (lead_gen_gui.py, line 355)
-2025-03-09 10:43:56,303 - main - INFO - All required dependencies are installed
-2025-03-09 10:43:56,309 - main - ERROR - Error starting GUI: inconsistent use of tabs and spaces in indentation (lead_gen_gui.py, line 516)
-2025-03-09 10:46:00,067 - main - INFO - All required dependencies are installed
-2025-03-09 10:46:00,140 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 10:46:00,200 - lead_gen_gui - INFO - Successfully imported all optional modules
-2025-03-09 10:46:00,281 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 10:46:00,281 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 10:46:01,405 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 10:46:01,405 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 10:46:01,417 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
-2025-03-09 10:48:48,257 - main - INFO - All required dependencies are installed
-2025-03-09 10:48:48,327 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 10:48:48,385 - lead_gen_gui - INFO - Successfully imported all optional modules
-2025-03-09 10:48:48,466 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 10:48:48,467 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 10:48:49,580 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 10:48:49,580 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 10:48:49,591 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
-2025-03-09 10:55:27,835 - main - INFO - All required dependencies are installed
-2025-03-09 10:55:27,910 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 10:55:27,976 - lead_gen_gui - INFO - Successfully imported all optional modules
-2025-03-09 10:55:28,063 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 10:55:28,063 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 10:55:29,176 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 10:55:29,176 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 10:55:29,187 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
-2025-03-09 10:58:02,185 - main - INFO - All required dependencies are installed
-2025-03-09 10:58:02,241 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 10:58:02,299 - lead_gen_gui - INFO - Successfully imported all optional modules
-2025-03-09 10:58:02,383 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 10:58:02,383 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 10:58:03,597 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 10:58:03,597 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 10:58:03,608 - main - ERROR - Error starting GUI: 'LeadGenerationGUI' object has no attribute 'show_linkedin_tab'
-2025-03-09 11:18:07,180 - main - INFO - All required dependencies are installed
-2025-03-09 11:18:07,255 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
-2025-03-09 11:18:07,318 - lead_gen_gui - INFO - Successfully imported all optional modules
-2025-03-09 11:18:07,400 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
-2025-03-09 11:18:07,400 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
-2025-03-09 11:18:08,637 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
-2025-03-09 11:18:08,637 - lead_gen_gui - INFO - LinkedIn Scraper initialized
-2025-03-09 11:18:08,773 - lead_gen_gui - INFO - GUI Initialized
-2025-03-09 11:18:24,829 - lead_gen_gui - INFO - Starting Reddit scraper...
-2025-03-09 11:18:25,098 - reddit_scraper - INFO - Successfully connected to Reddit API
-2025-03-09 11:18:25,099 - reddit_scraper - INFO - Reddit scraper initialized with 5 subreddits and 5 keywords
-2025-03-09 11:18:25,100 - reddit_scraper - INFO - Scraping subreddit: r/Entrepreneur
-2025-03-09 11:18:25,317 - reddit_scraper - ERROR - Error scraping subreddit r/Entrepreneur: received 401 HTTP response
-2025-03-09 11:18:25,319 - reddit_scraper - INFO - Scraping subreddit: r/Productivity
-2025-03-09 11:18:25,509 - reddit_scraper - ERROR - Error scraping subreddit r/Productivity: received 401 HTTP response
-2025-03-09 11:18:25,511 - reddit_scraper - INFO - Scraping subreddit: r/MentalHealth
-2025-03-09 11:18:25,718 - reddit_scraper - ERROR - Error scraping subreddit r/MentalHealth: received 401 HTTP response
-2025-03-09 11:18:25,720 - reddit_scraper - INFO - Scraping subreddit: r/WorkReform
-2025-03-09 11:18:25,917 - reddit_scraper - ERROR - Error scraping subreddit r/WorkReform: received 401 HTTP response
-2025-03-09 11:18:25,919 - reddit_scraper - INFO - Scraping subreddit: r/careerguidance
-2025-03-09 11:18:26,093 - reddit_scraper - ERROR - Error scraping subreddit r/careerguidance: received 401 HTTP response
-2025-03-09 11:18:26,094 - reddit_scraper - INFO - Collected a total of 0 leads from 5 subreddits
-2025-03-09 11:18:26,094 - reddit_scraper - INFO - Searching Reddit for query: 'burnout'
-2025-03-09 11:18:26,289 - reddit_scraper - ERROR - Error searching Reddit for 'burnout': received 401 HTTP response
-2025-03-09 11:18:26,294 - reddit_scraper - INFO - Searching Reddit for query: 'work stress'
-2025-03-09 11:18:26,509 - reddit_scraper - ERROR - Error searching Reddit for 'work stress': received 401 HTTP response
-2025-03-09 11:18:26,509 - reddit_scraper - INFO - Searching Reddit for query: 'career transition'
-2025-03-09 11:18:26,719 - reddit_scraper - ERROR - Error searching Reddit for 'career transition': received 401 HTTP response
-2025-03-09 11:18:26,721 - reddit_scraper - INFO - Searching Reddit for query: 'work-life balance'
-2025-03-09 11:18:26,918 - reddit_scraper - ERROR - Error searching Reddit for 'work-life balance': received 401 HTTP response
-2025-03-09 11:18:26,922 - reddit_scraper - INFO - Searching Reddit for query: 'leadership'
-2025-03-09 11:18:27,108 - reddit_scraper - ERROR - Error searching Reddit for 'leadership': received 401 HTTP response
-2025-03-09 11:18:27,110 - reddit_scraper - INFO - Collected a total of 0 unique leads from 5 keyword searches
-2025-03-09 11:18:27,111 - reddit_scraper - INFO - Combined results: 0 unique leads
-2025-03-09 11:18:27,111 - reddit_scraper - WARNING - No leads to save to CSV
-2025-03-09 11:18:27,111 - lead_gen_gui - INFO - Reddit scraper completed successfully.
-2025-03-09 11:18:36,037 - lead_gen_gui - INFO - Starting Message generation...
-2025-03-09 11:18:36,345 - sheets_manager - INFO - Successfully connected to Google Sheets
 2025-03-09 11:18:36,346 - message_generator - INFO - Starting message generation with model gpt-4
 2025-03-09 11:18:36,347 - message_generator - INFO - Initialized MessageGenerator with model: gpt-4
 2025-03-09 11:18:36,348 - message_generator - ERROR - Error running message generator: Client.__init__() got an unexpected keyword argument 'proxies'
@@ -1287,3 +221,174 @@ Stacktrace:
 2025-03-09 11:24:11,035 - message_generator - INFO - Initialized MessageGenerator with model: gpt-4
 2025-03-09 11:24:11,036 - message_generator - ERROR - Error running message generator: Client.__init__() got an unexpected keyword argument 'proxies'
 2025-03-09 11:24:11,038 - lead_gen_gui - INFO - Message generation completed successfully.
+2025-03-09 13:12:34,968 - main - INFO - All required dependencies are installed
+2025-03-09 13:12:36,127 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 13:12:36,571 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 13:12:36,683 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 13:12:36,683 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 13:12:37,938 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 13:12:37,938 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 13:12:38,059 - lead_gen_gui - INFO - GUI Initialized
+2025-03-09 13:20:11,925 - lead_gen_gui - INFO - Starting Reddit scraper...
+2025-03-09 13:20:12,081 - reddit_scraper - INFO - Successfully connected to Reddit API
+2025-03-09 13:20:12,081 - reddit_scraper - INFO - Reddit scraper initialized with 5 subreddits and 5 keywords
+2025-03-09 13:20:12,082 - reddit_scraper - INFO - Scraping subreddit: r/Entrepreneur
+2025-03-09 13:20:12,281 - reddit_scraper - ERROR - Error scraping subreddit r/Entrepreneur: received 401 HTTP response
+2025-03-09 13:20:12,282 - reddit_scraper - INFO - Scraping subreddit: r/Productivity
+2025-03-09 13:20:12,484 - reddit_scraper - ERROR - Error scraping subreddit r/Productivity: received 401 HTTP response
+2025-03-09 13:20:12,488 - reddit_scraper - INFO - Scraping subreddit: r/MentalHealth
+2025-03-09 13:20:12,695 - reddit_scraper - ERROR - Error scraping subreddit r/MentalHealth: received 401 HTTP response
+2025-03-09 13:20:12,698 - reddit_scraper - INFO - Scraping subreddit: r/WorkReform
+2025-03-09 13:20:12,914 - reddit_scraper - ERROR - Error scraping subreddit r/WorkReform: received 401 HTTP response
+2025-03-09 13:20:12,916 - reddit_scraper - INFO - Scraping subreddit: r/careerguidance
+2025-03-09 13:20:13,114 - reddit_scraper - ERROR - Error scraping subreddit r/careerguidance: received 401 HTTP response
+2025-03-09 13:20:13,117 - reddit_scraper - INFO - Collected a total of 0 leads from 5 subreddits
+2025-03-09 13:20:13,117 - reddit_scraper - INFO - Searching Reddit for query: 'burnout'
+2025-03-09 13:20:13,316 - reddit_scraper - ERROR - Error searching Reddit for 'burnout': received 401 HTTP response
+2025-03-09 13:20:13,318 - reddit_scraper - INFO - Searching Reddit for query: 'work stress'
+2025-03-09 13:20:13,486 - reddit_scraper - ERROR - Error searching Reddit for 'work stress': received 401 HTTP response
+2025-03-09 13:20:13,488 - reddit_scraper - INFO - Searching Reddit for query: 'career transition'
+2025-03-09 13:20:13,663 - reddit_scraper - ERROR - Error searching Reddit for 'career transition': received 401 HTTP response
+2025-03-09 13:20:13,668 - reddit_scraper - INFO - Searching Reddit for query: 'work-life balance'
+2025-03-09 13:20:13,861 - reddit_scraper - ERROR - Error searching Reddit for 'work-life balance': received 401 HTTP response
+2025-03-09 13:20:13,863 - reddit_scraper - INFO - Searching Reddit for query: 'leadership'
+2025-03-09 13:20:14,048 - reddit_scraper - ERROR - Error searching Reddit for 'leadership': received 401 HTTP response
+2025-03-09 13:20:14,050 - reddit_scraper - INFO - Collected a total of 0 unique leads from 5 keyword searches
+2025-03-09 13:20:14,050 - reddit_scraper - INFO - Combined results: 0 unique leads
+2025-03-09 13:20:14,050 - reddit_scraper - WARNING - No leads to save to CSV
+2025-03-09 13:20:14,051 - lead_gen_gui - INFO - Reddit scraper completed successfully.
+2025-03-09 13:33:28,430 - main - INFO - All required dependencies are installed
+2025-03-09 13:33:28,433 - main - ERROR - Error starting GUI: cannot import name 'LeadGenerationGUI' from 'gui.lead_gen_gui' (D:\SCRIPTS\lead_gen_tool\gui\lead_gen_gui.py)
+2025-03-09 14:12:56,254 - main - INFO - All required dependencies are installed
+2025-03-09 14:12:56,329 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 14:12:56,391 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 14:12:56,393 - main - ERROR - Error starting GUI: name 'LeadGenGUI' is not defined
+2025-03-09 14:16:02,169 - main - INFO - All required dependencies are installed
+2025-03-09 14:16:02,227 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 14:16:02,289 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 14:16:02,289 - main - ERROR - Error starting GUI: name 'LeadGenGUI' is not defined
+2025-03-09 14:17:51,977 - main - INFO - All required dependencies are installed
+2025-03-09 14:17:52,047 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 14:17:52,105 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 14:17:52,201 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 14:17:52,201 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 14:17:53,557 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 14:17:53,558 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 14:17:53,745 - lead_gen_gui - INFO - GUI Initialized
+2025-03-09 14:17:59,120 - lead_gen_gui - INFO - Starting Reddit scraper...
+2025-03-09 14:17:59,122 - reddit_scraper - INFO - Successfully connected to Reddit API
+2025-03-09 14:17:59,122 - reddit_scraper - INFO - Reddit scraper initialized with 5 subreddits and 5 keywords
+2025-03-09 14:17:59,122 - reddit_scraper - INFO - Scraping subreddit: r/Entrepreneur
+2025-03-09 14:17:59,317 - reddit_scraper - ERROR - Error scraping subreddit r/Entrepreneur: received 401 HTTP response
+2025-03-09 14:17:59,319 - reddit_scraper - INFO - Scraping subreddit: r/Productivity
+2025-03-09 14:17:59,891 - reddit_scraper - ERROR - Error scraping subreddit r/Productivity: received 401 HTTP response
+2025-03-09 14:17:59,894 - reddit_scraper - INFO - Scraping subreddit: r/MentalHealth
+2025-03-09 14:18:00,124 - reddit_scraper - ERROR - Error scraping subreddit r/MentalHealth: received 401 HTTP response
+2025-03-09 14:18:00,125 - reddit_scraper - INFO - Scraping subreddit: r/WorkReform
+2025-03-09 14:18:00,314 - reddit_scraper - ERROR - Error scraping subreddit r/WorkReform: received 401 HTTP response
+2025-03-09 14:18:00,316 - reddit_scraper - INFO - Scraping subreddit: r/careerguidance
+2025-03-09 14:18:00,509 - reddit_scraper - ERROR - Error scraping subreddit r/careerguidance: received 401 HTTP response
+2025-03-09 14:18:00,512 - reddit_scraper - INFO - Collected a total of 0 leads from 5 subreddits
+2025-03-09 14:18:00,512 - reddit_scraper - INFO - Searching Reddit for query: 'burnout'
+2025-03-09 14:18:00,715 - reddit_scraper - ERROR - Error searching Reddit for 'burnout': received 401 HTTP response
+2025-03-09 14:18:00,754 - reddit_scraper - INFO - Searching Reddit for query: 'work stress'
+2025-03-09 14:18:00,927 - reddit_scraper - ERROR - Error searching Reddit for 'work stress': received 401 HTTP response
+2025-03-09 14:18:00,930 - reddit_scraper - INFO - Searching Reddit for query: 'career transition'
+2025-03-09 14:18:01,108 - reddit_scraper - ERROR - Error searching Reddit for 'career transition': received 401 HTTP response
+2025-03-09 14:18:01,110 - reddit_scraper - INFO - Searching Reddit for query: 'work-life balance'
+2025-03-09 14:18:01,307 - reddit_scraper - ERROR - Error searching Reddit for 'work-life balance': received 401 HTTP response
+2025-03-09 14:18:01,309 - reddit_scraper - INFO - Searching Reddit for query: 'leadership'
+2025-03-09 14:18:01,502 - reddit_scraper - ERROR - Error searching Reddit for 'leadership': received 401 HTTP response
+2025-03-09 14:18:01,505 - reddit_scraper - INFO - Collected a total of 0 unique leads from 5 keyword searches
+2025-03-09 14:18:01,508 - reddit_scraper - INFO - Combined results: 0 unique leads
+2025-03-09 14:18:01,510 - reddit_scraper - WARNING - No leads to save to CSV
+2025-03-09 14:18:01,511 - lead_gen_gui - INFO - Reddit scraper completed successfully.
+2025-03-09 14:36:59,414 - main - INFO - All required dependencies are installed
+2025-03-09 14:36:59,484 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 14:36:59,548 - lead_gen_gui - INFO - Successfully imported all optional modules
+2025-03-09 14:36:59,629 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 14:36:59,629 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 14:37:00,772 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 14:37:00,772 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 14:37:00,890 - lead_gen_gui - INFO - GUI Initialized
+2025-03-09 14:37:06,139 - lead_gen_gui - INFO - Starting Reddit scraper...
+2025-03-09 14:37:06,140 - reddit_scraper - INFO - Initializing Reddit client (client_id=Gbuc***, user=Accomplished-Bee-60)
+2025-03-09 14:37:06,332 - reddit_scraper - ERROR - Failed to verify Reddit user: received 401 HTTP response
+2025-03-09 14:37:06,332 - reddit_scraper - INFO - Attempting direct Reddit API authentication...
+2025-03-09 14:37:06,508 - reddit_scraper - ERROR - Direct authentication failed: 401 - {"message": "Unauthorized", "error": 401}
+2025-03-09 14:37:06,509 - reddit_scraper - ERROR - Both PRAW and direct authentication failed
+2025-03-09 14:37:06,511 - reddit_scraper - INFO - Scraping r/Entrepreneur (attempt 1)...
+2025-03-09 14:37:06,691 - reddit_scraper - ERROR - Authentication error (401) scraping r/Entrepreneur: received 401 HTTP response
+2025-03-09 14:37:06,692 - reddit_scraper - INFO - Scraping r/Entrepreneur (attempt 2)...
+2025-03-09 14:37:06,907 - reddit_scraper - ERROR - Authentication error (401) scraping r/Entrepreneur: received 401 HTTP response
+2025-03-09 14:37:06,908 - reddit_scraper - INFO - Scraping r/Entrepreneur (attempt 3)...
+2025-03-09 14:37:07,081 - reddit_scraper - ERROR - Authentication error (401) scraping r/Entrepreneur: received 401 HTTP response
+2025-03-09 14:37:07,082 - reddit_scraper - INFO - No matching posts found in r/Entrepreneur
+2025-03-09 14:37:07,082 - reddit_scraper - INFO - Scraping r/Productivity (attempt 1)...
+2025-03-09 14:37:07,259 - reddit_scraper - ERROR - Authentication error (401) scraping r/Productivity: received 401 HTTP response
+2025-03-09 14:37:07,260 - reddit_scraper - INFO - Scraping r/Productivity (attempt 2)...
+2025-03-09 14:37:07,436 - reddit_scraper - ERROR - Authentication error (401) scraping r/Productivity: received 401 HTTP response
+2025-03-09 14:37:07,437 - reddit_scraper - INFO - Scraping r/Productivity (attempt 3)...
+2025-03-09 14:37:07,607 - reddit_scraper - ERROR - Authentication error (401) scraping r/Productivity: received 401 HTTP response
+2025-03-09 14:37:07,608 - reddit_scraper - INFO - No matching posts found in r/Productivity
+2025-03-09 14:37:07,608 - reddit_scraper - INFO - Scraping r/MentalHealth (attempt 1)...
+2025-03-09 14:37:07,778 - reddit_scraper - ERROR - Authentication error (401) scraping r/MentalHealth: received 401 HTTP response
+2025-03-09 14:37:07,780 - reddit_scraper - INFO - Scraping r/MentalHealth (attempt 2)...
+2025-03-09 14:37:07,931 - reddit_scraper - ERROR - Authentication error (401) scraping r/MentalHealth: received 401 HTTP response
+2025-03-09 14:37:07,933 - reddit_scraper - INFO - Scraping r/MentalHealth (attempt 3)...
+2025-03-09 14:37:08,110 - reddit_scraper - ERROR - Authentication error (401) scraping r/MentalHealth: received 401 HTTP response
+2025-03-09 14:37:08,112 - reddit_scraper - INFO - No matching posts found in r/MentalHealth
+2025-03-09 14:37:08,112 - reddit_scraper - INFO - Scraping r/WorkReform (attempt 1)...
+2025-03-09 14:37:08,266 - reddit_scraper - ERROR - Authentication error (401) scraping r/WorkReform: received 401 HTTP response
+2025-03-09 14:37:08,267 - reddit_scraper - INFO - Scraping r/WorkReform (attempt 2)...
+2025-03-09 14:37:08,462 - reddit_scraper - ERROR - Authentication error (401) scraping r/WorkReform: received 401 HTTP response
+2025-03-09 14:37:08,463 - reddit_scraper - INFO - Scraping r/WorkReform (attempt 3)...
+2025-03-09 14:37:08,745 - reddit_scraper - ERROR - Authentication error (401) scraping r/WorkReform: received 401 HTTP response
+2025-03-09 14:37:08,748 - reddit_scraper - INFO - No matching posts found in r/WorkReform
+2025-03-09 14:37:08,748 - reddit_scraper - INFO - Scraping r/careerguidance (attempt 1)...
+2025-03-09 14:37:08,970 - reddit_scraper - ERROR - Authentication error (401) scraping r/careerguidance: received 401 HTTP response
+2025-03-09 14:37:08,974 - reddit_scraper - INFO - Scraping r/careerguidance (attempt 2)...
+2025-03-09 14:37:09,167 - reddit_scraper - ERROR - Authentication error (401) scraping r/careerguidance: received 401 HTTP response
+2025-03-09 14:37:09,168 - reddit_scraper - INFO - Scraping r/careerguidance (attempt 3)...
+2025-03-09 14:37:09,363 - reddit_scraper - ERROR - Authentication error (401) scraping r/careerguidance: received 401 HTTP response
+2025-03-09 14:37:09,369 - reddit_scraper - INFO - No matching posts found in r/careerguidance
+2025-03-09 14:37:09,369 - reddit_scraper - INFO - Collected a total of 0 leads from 5 subreddits
+2025-03-09 14:37:09,371 - reddit_scraper - INFO - Searching for keyword: 'burnout' (attempt 1)...
+2025-03-09 14:37:09,562 - reddit_scraper - ERROR - Authentication error (401) searching for 'burnout': received 401 HTTP response
+2025-03-09 14:37:09,563 - reddit_scraper - INFO - Searching for keyword: 'burnout' (attempt 2)...
+2025-03-09 14:37:09,743 - reddit_scraper - ERROR - Authentication error (401) searching for 'burnout': received 401 HTTP response
+2025-03-09 14:37:09,744 - reddit_scraper - INFO - Searching for keyword: 'burnout' (attempt 3)...
+2025-03-09 14:37:09,910 - reddit_scraper - ERROR - Authentication error (401) searching for 'burnout': received 401 HTTP response
+2025-03-09 14:37:09,913 - reddit_scraper - INFO - No matching posts found for keyword 'burnout'
+2025-03-09 14:37:09,914 - reddit_scraper - INFO - Searching for keyword: 'work stress' (attempt 1)...
+2025-03-09 14:37:10,104 - reddit_scraper - ERROR - Authentication error (401) searching for 'work stress': received 401 HTTP response
+2025-03-09 14:37:10,106 - reddit_scraper - INFO - Searching for keyword: 'work stress' (attempt 2)...
+2025-03-09 14:37:10,315 - reddit_scraper - ERROR - Authentication error (401) searching for 'work stress': received 401 HTTP response
+2025-03-09 14:37:10,318 - reddit_scraper - INFO - Searching for keyword: 'work stress' (attempt 3)...
+2025-03-09 14:37:10,517 - reddit_scraper - ERROR - Authentication error (401) searching for 'work stress': received 401 HTTP response
+2025-03-09 14:37:10,522 - reddit_scraper - INFO - No matching posts found for keyword 'work stress'
+2025-03-09 14:37:10,522 - reddit_scraper - INFO - Searching for keyword: 'career transition' (attempt 1)...
+2025-03-09 14:37:10,717 - reddit_scraper - ERROR - Authentication error (401) searching for 'career transition': received 401 HTTP response
+2025-03-09 14:37:10,718 - reddit_scraper - INFO - Searching for keyword: 'career transition' (attempt 2)...
+2025-03-09 14:37:10,897 - reddit_scraper - ERROR - Authentication error (401) searching for 'career transition': received 401 HTTP response
+2025-03-09 14:37:10,898 - reddit_scraper - INFO - Searching for keyword: 'career transition' (attempt 3)...
+2025-03-09 14:37:11,064 - reddit_scraper - ERROR - Authentication error (401) searching for 'career transition': received 401 HTTP response
+2025-03-09 14:37:11,066 - reddit_scraper - INFO - No matching posts found for keyword 'career transition'
+2025-03-09 14:37:11,066 - reddit_scraper - INFO - Searching for keyword: 'work-life balance' (attempt 1)...
+2025-03-09 14:37:11,255 - reddit_scraper - ERROR - Authentication error (401) searching for 'work-life balance': received 401 HTTP response
+2025-03-09 14:37:11,256 - reddit_scraper - INFO - Searching for keyword: 'work-life balance' (attempt 2)...
+2025-03-09 14:37:11,480 - reddit_scraper - ERROR - Authentication error (401) searching for 'work-life balance': received 401 HTTP response
+2025-03-09 14:37:11,481 - reddit_scraper - INFO - Searching for keyword: 'work-life balance' (attempt 3)...
+2025-03-09 14:37:11,682 - reddit_scraper - ERROR - Authentication error (401) searching for 'work-life balance': received 401 HTTP response
+2025-03-09 14:37:11,683 - reddit_scraper - INFO - No matching posts found for keyword 'work-life balance'
+2025-03-09 14:37:11,683 - reddit_scraper - INFO - Searching for keyword: 'leadership' (attempt 1)...
+2025-03-09 14:37:11,871 - reddit_scraper - ERROR - Authentication error (401) searching for 'leadership': received 401 HTTP response
+2025-03-09 14:37:11,872 - reddit_scraper - INFO - Searching for keyword: 'leadership' (attempt 2)...
+2025-03-09 14:37:12,044 - reddit_scraper - ERROR - Authentication error (401) searching for 'leadership': received 401 HTTP response
+2025-03-09 14:37:12,046 - reddit_scraper - INFO - Searching for keyword: 'leadership' (attempt 3)...
+2025-03-09 14:37:12,226 - reddit_scraper - ERROR - Authentication error (401) searching for 'leadership': received 401 HTTP response
+2025-03-09 14:37:12,228 - reddit_scraper - INFO - No matching posts found for keyword 'leadership'
+2025-03-09 14:37:12,229 - reddit_scraper - INFO - Collected a total of 0 unique leads from 5 keyword searches
+2025-03-09 14:37:12,229 - reddit_scraper - INFO - Combined results: 0 unique leads
+2025-03-09 14:37:12,229 - reddit_scraper - WARNING - No leads to save to CSV
+2025-03-09 14:37:12,229 - lead_gen_gui - INFO - Reddit scraper completed successfully.
