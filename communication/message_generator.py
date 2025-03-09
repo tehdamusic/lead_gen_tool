@@ -22,7 +22,13 @@ class MessageGenerator:
     AI-powered message generator for personalized outreach.
     """
     
-    def __init__(self, model="gpt-4"):
+        def __init__(self, model="gpt-4"):
+        """
+        Initialize AI-powered message generator with a scoring threshold.
+        
+        Args:
+            model: OpenAI model to use for AI scoring
+        """
         self.api_key = os.getenv("OPENAI_API_KEY")
         if not self.api_key:
             logger.error("Missing OpenAI API key in .env file.")
@@ -31,22 +37,49 @@ class MessageGenerator:
         self.model = model
         logger.info(f"Initialized MessageGenerator with model: {model}")
         
-        # Initialize OpenAI client - compatible with both v1.x and earlier versions
+        # Initialize OpenAI client based on available version and capabilities
         try:
-            # First, try the newer OpenAI client (v1.x+)
-            from openai import OpenAI
-            self.client = OpenAI(api_key=self.api_key)
-            self.client_version = "v1"
-            logger.info("Using OpenAI API v1.x client")
-        except (ImportError, AttributeError):
-            # Fall back to the older API
+            import openai
+            
+            # Check OpenAI version
+            try:
+                openai_version = openai.__version__
+                logger.info(f"Using OpenAI SDK version: {openai_version}")
+            except AttributeError:
+                openai_version = "unknown"
+                logger.warning("Could not determine OpenAI SDK version")
+            
+            # Preferred approach: Use Client class (recommended for OpenAI SDK v1.x+)
+            try:
+                # First try with Client class (recommended modern approach)
+                from openai import Client
+                self.client = Client(api_key=self.api_key)
+                self.client_version = "v1"
+                logger.info("Using OpenAI Client class (recommended)")
+            except (ImportError, AttributeError) as e:
+                logger.warning(f"Client class not available: {e}")
+                
+                # Fallback to module approach for v1.x+
+                if hasattr(openai, 'chat') and hasattr(openai.chat, 'completions'):
+                    # Modern non-instantiated approach (works with v1.x+)
+                    openai.api_key = self.api_key
+                    self.client = openai
+                    self.client_version = "v1"
+                    logger.info("Using OpenAI module directly (v1.x non-instantiated approach)")
+                else:
+                    # Legacy approach for pre-1.0 versions
+                    openai.api_key = self.api_key
+                    self.client = openai
+                    self.client_version = "legacy"
+                    logger.info("Using legacy OpenAI client (pre-1.0)")
+        except Exception as e:
+            logger.error(f"Error initializing OpenAI client: {str(e)}")
+            # Last resort fallback
             import openai
             openai.api_key = self.api_key
             self.client = openai
             self.client_version = "legacy"
-            logger.info("Using OpenAI API legacy client")
-
-    def generate_message(self, lead_data: Dict[str, Any], retries: int = 3) -> Optional[str]:
+            logger.info("Using legacy OpenAI client (fallback after error)")def generate_message(self, lead_data: Dict[str, Any], retries: int = 3) -> Optional[str]:
         """Generates a personalized outreach message using OpenAI's GPT model."""
         prompt = (
             f"""

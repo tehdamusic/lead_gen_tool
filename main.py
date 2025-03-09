@@ -40,10 +40,6 @@ def check_environment() -> bool:
     required_vars = [
         'LINKEDIN_USERNAME',
         'LINKEDIN_PASSWORD',
-        'REDDIT_CLIENT_ID',
-        'REDDIT_CLIENT_SECRET',
-        'REDDIT_USERNAME',
-        'REDDIT_PASSWORD',
         'OPENAI_API_KEY',
         'EMAIL_ADDRESS',
         'EMAIL_PASSWORD',
@@ -76,8 +72,6 @@ def check_dependencies() -> bool:
         print("✓ BeautifulSoup")
         
         # API clients
-        import praw
-        print("✓ PRAW (Reddit API)")
         import openai
         print("✓ OpenAI API")
         import gspread
@@ -105,94 +99,6 @@ def check_dependencies() -> bool:
         print(f"Error: Missing dependency: {str(e)}")
         print("Please install all required dependencies using 'pip install -r requirements.txt'")
         return False
-
-def test_google_sheets_connection():
-    """Test connection to Google Sheets."""
-    try:
-        print("Testing Google Sheets connection...")
-        
-        # Import sheets_manager module
-        from utils.sheets_manager import get_sheets_client, create_sheet_if_not_exists
-        
-        # Try connecting
-        client = get_sheets_client()
-        
-        # Try creating a test sheet
-        worksheet = create_sheet_if_not_exists('LeadGenerationData', 'TestSheet')
-        
-        # Write a test row
-        worksheet.append_row(['Test', 'Data', datetime.now().strftime("%Y-%m-%d %H:%M:%S")])
-        
-        print("✓ Google Sheets connection successful!")
-        return True
-    except Exception as e:
-        logger.error(f"Error connecting to Google Sheets: {str(e)}")
-        print(f"Error connecting to Google Sheets: {str(e)}")
-        print("\nPossible troubleshooting steps:")
-        print("1. Verify your credentials.json file is correct and in the right location")
-        print("2. Make sure you've enabled the Google Sheets API in your Google Cloud Console")
-        print("3. Check that your GOOGLE_SHEETS_SPREADSHEET_ID in .env is correct")
-        return False
-
-def start_gui():
-    """Start the Lead Generation GUI."""
-    try:
-        # Create logs directory if it doesn't exist
-        os.makedirs('logs', exist_ok=True)
-        
-        # Import gui module and create the GUI application
-        from gui.lead_gen_gui import LeadGenerationGUI
-        import tkinter as tk
-        
-        root = tk.Tk()
-        app = LeadGenerationGUI(root)
-        root.mainloop()
-    except Exception as e:
-        logger.error(f"Error starting GUI: {str(e)}")
-        print(f"Error starting GUI: {str(e)}")
-        print(f"Error details: {type(e).__name__}: {str(e)}")
-        traceback.print_exc()
-        print("\nPossible troubleshooting steps:")
-        print("1. Check that GUI module exists in the correct location")
-        print("2. Ensure all required dependencies are installed (especially tkinter)")
-        print("3. Check the import paths in main.py and GUI files")
-        sys.exit(1)
-
-def run_linkedin_scraper(args):
-    """Run LinkedIn scraper component."""
-    try:
-        # Import from the new modular structure
-        from scrapers.linkedin import run_linkedin_scraper as linkedin_scraper_runner
-        from utils.sheets_manager import get_sheets_client
-        
-        print("Starting LinkedIn scraper...")
-        sheets_client = get_sheets_client()
-        
-        # Get max leads from args or use default
-        max_leads = getattr(args, 'max_leads', 50)
-        headless = getattr(args, 'headless', True)
-        
-        # Run the scraper
-        leads = linkedin_scraper_runner(sheets_client, max_leads=max_leads, headless=headless)
-        
-        results = {
-            "leads_scraped": len(leads),
-            "source": "linkedin",
-            "success": True
-        }
-        
-        print(f"LinkedIn scraper completed. Collected {len(leads)} leads.")
-        return results
-    except Exception as e:
-        logger.error(f"Error running LinkedIn scraper: {str(e)}")
-        print(f"Error running LinkedIn scraper: {str(e)}")
-        traceback.print_exc()
-        return {
-            "leads_scraped": 0,
-            "source": "linkedin",
-            "success": False,
-            "error": str(e)
-        }
 
 def _original_run_reddit_scraper(args) -> Dict[str, Any]:
     """Run Reddit scraper component."""
@@ -357,76 +263,6 @@ def run_email_reporter(args) -> Dict[str, Any]:
 
 
 # Patch for Reddit API fallback
-def run_alternative_scraper_if_reddit_fails(args) -> Dict[str, Any]:
-    """Run the alternative scraper as a fallback if Reddit API fails."""
-    try:
-        # First try the regular Reddit scraper
-        logger.info("Attempting to use Reddit API scraper...")
-        results = run_reddit_scraper(args)
-        
-        # Check if we got any results
-        if results.get("leads_scraped", 0) > 0:
-            logger.info("Reddit API scraper succeeded!")
-            return results
-            
-        # If no results, fall back to alternative scraper
-        logger.warning("Reddit API scraper failed or returned no results. Falling back to alternative scraper.")
-        print("Reddit API connection failed. Using alternative data sources...")
-        
-        # Import the alternative scraper
-        try:
-            from alternative_scraper import run_alternative_scraper
-        except ImportError:
-            logger.error("Could not import alternative_scraper module")
-            return {
-                "leads_scraped": 0,
-                "source": "reddit_alternative",
-                "success": False,
-                "error": "Alternative scraper not available"
-            }
-        
-        # Get parameters from args
-        max_leads = getattr(args, 'max_leads', 50)
-        subreddits = getattr(args, 'subreddits', None)
-        keywords = getattr(args, 'keywords', None)
-        
-        # If keywords were originally comma-separated, split them
-        if isinstance(keywords, str):
-            keywords = [k.strip() for k in keywords.split(",") if k.strip()]
-        
-        # Run the alternative scraper
-        try:
-            from utils.sheets_manager import get_sheets_client
-            sheets_client = get_sheets_client()
-        except:
-            sheets_client = None
-            
-        articles = run_alternative_scraper(
-            sheets_client=sheets_client,
-            keywords=keywords,
-            max_leads=max_leads,
-            save_csv=True
-        )
-        
-        # Return results in the same format as run_reddit_scraper
-        return {
-            "leads_scraped": len(articles),
-            "source": "reddit_alternative",
-            "success": True
-        }
-        
-    except Exception as e:
-        logger.error(f"Both Reddit API and alternative scraper failed: {str(e)}")
-        print(f"Error in Reddit fallback system: {str(e)}")
-        traceback.print_exc()
-        return {
-            "leads_scraped": 0,
-            "source": "reddit_alternative",
-            "success": False,
-            "error": str(e)
-        }
-
-
 def run_reddit_scraper(args) -> Dict[str, Any]:
     """Run Reddit scraper component."""
     try:
