@@ -547,6 +547,22 @@ class LinkedInScraper:
         filename = "data/life_coaching_leads.csv"
         save_profiles_to_csv(unique_leads, filename)
         
+        # Save to Google Sheets
+        try:
+            # Import here to avoid circular imports
+            sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+            from utils.sheets_manager import save_leads_to_sheet
+            
+            # Save to the coaching prospects worksheet
+            sheets_result = save_leads_to_sheet(unique_leads, "CoachingProspects")
+            
+            if sheets_result:
+                logger.info(f"Successfully saved {len(unique_leads)} coaching leads to Google Sheets")
+            else:
+                logger.warning("Failed to save coaching leads to Google Sheets")
+        except Exception as e:
+            logger.error(f"Error saving to Google Sheets: {str(e)}")
+        
         return unique_leads
 
     def close(self):
@@ -583,9 +599,18 @@ def run_linkedin_scraper(sheets_client=None, max_leads=50, headless=False):
         # Save to Google Sheets if client provided
         if sheets_client:
             try:
-                worksheet = sheets_client.open('LeadGenerationData').worksheet('LinkedInLeads')
+                # Try to get existing worksheet or create new one
+                try:
+                    worksheet = sheets_client.open('LeadGenerationData').worksheet('LinkedInLeads')
+                except:
+                    # If worksheet doesn't exist, create it
+                    spreadsheet = sheets_client.open('LeadGenerationData')
+                    worksheet = spreadsheet.add_worksheet(title='LinkedInLeads', rows=1000, cols=20)
+                    # Add header row
+                    worksheet.append_row(['Name', 'Headline', 'Location', 'Profile URL', 'Coaching Fit Score', 'Coaching Notes', 'Date Added'])
                 
-                # Prepare data for sheets
+                # Prepare data for sheets with current date
+                current_date = datetime.now().strftime("%Y-%m-%d")
                 rows = []
                 for lead in leads:
                     row = [
@@ -594,7 +619,8 @@ def run_linkedin_scraper(sheets_client=None, max_leads=50, headless=False):
                         lead.get('location', ''),
                         lead.get('profile_url', ''),
                         lead.get('coaching_fit_score', 0),
-                        lead.get('coaching_notes', '')
+                        lead.get('coaching_notes', ''),
+                        current_date
                     ]
                     rows.append(row)
                 
@@ -604,6 +630,10 @@ def run_linkedin_scraper(sheets_client=None, max_leads=50, headless=False):
                 logger.info(f"Successfully saved {len(rows)} LinkedIn leads to Google Sheets")
             except Exception as e:
                 logger.error(f"Error saving to Google Sheets: {str(e)}")
+                # Save the detailed error for debugging
+                with open("logs/sheets_error.txt", "w") as f:
+                    f.write(f"Error: {str(e)}\n\n")
+                    f.write(f"Traceback: {traceback.format_exc()}")
         
         # Close the scraper
         scraper.close()
@@ -612,3 +642,44 @@ def run_linkedin_scraper(sheets_client=None, max_leads=50, headless=False):
     except Exception as e:
         logger.error(f"Error running LinkedIn scraper: {str(e)}")
         return []
+        
+        return leads
+    except Exception as e:
+        logger.error(f"Error running LinkedIn scraper: {str(e)}")
+        return []
+
+
+if __name__ == "__main__":
+    # Test directly
+    import sys
+    from datetime import datetime
+    
+    print("\n=== LinkedIn Scraper Test ===\n")
+    
+    try:
+        start_time = datetime.now()
+        print(f"Starting scraper test at {start_time.strftime('%H:%M:%S')}")
+        
+        # Run the scraper
+        leads = run_linkedin_scraper(
+            max_leads=20,
+            headless=False
+        )
+        
+        end_time = datetime.now()
+        duration = (end_time - start_time).total_seconds() / 60.0
+        
+        print(f"\nTest completed at {end_time.strftime('%H:%M:%S')}")
+        print(f"Duration: {duration:.2f} minutes")
+        print(f"Leads collected: {len(leads)}")
+        
+        if leads:
+            print("\nSample lead:")
+            for k, v in sorted(leads[0].items()):
+                print(f"  {k}: {v}")
+        
+        print("\n=== Test Finished ===\n")
+    except Exception as e:
+        print(f"\nTest failed: {str(e)}\n")
+        import traceback
+        traceback.print_exc()
