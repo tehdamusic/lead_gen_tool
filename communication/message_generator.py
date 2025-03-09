@@ -22,7 +22,7 @@ class MessageGenerator:
     AI-powered message generator for personalized outreach.
     """
     
-        def __init__(self, model="gpt-4"):
+    def __init__(self, model="gpt-4"):
         """
         Initialize AI-powered message generator with a scoring threshold.
         
@@ -79,7 +79,9 @@ class MessageGenerator:
             openai.api_key = self.api_key
             self.client = openai
             self.client_version = "legacy"
-            logger.info("Using legacy OpenAI client (fallback after error)")def generate_message(self, lead_data: Dict[str, Any], retries: int = 3) -> Optional[str]:
+            logger.info("Using legacy OpenAI client (fallback after error)")
+
+    def generate_message(self, lead_data: Dict[str, Any], retries: int = 3) -> Optional[str]:
         """Generates a personalized outreach message using OpenAI's GPT model."""
         prompt = (
             f"""
@@ -116,7 +118,28 @@ class MessageGenerator:
                         temperature=0.7,
                         max_tokens=500
                     )
-                    message = response.choices[0].message.content.strip()
+                    
+                    # Handle response formats for different OpenAI SDK versions
+                    try:
+                        # Modern OpenAI SDK returns a Pydantic object
+                        if hasattr(response.choices[0].message, 'content'):
+                            message = response.choices[0].message.content.strip()
+                        else:
+                            # Alternate format for some SDK versions
+                            message = response.choices[0].message['content'].strip()
+                    except (AttributeError, KeyError, TypeError) as e:
+                        # Fallback for different response formats
+                        logger.warning(f"Error extracting message from standard format: {e}")
+                        try:
+                            if isinstance(response, dict):
+                                message = response["choices"][0]["message"]["content"].strip()
+                            elif hasattr(response, 'choices'):
+                                message = str(response.choices[0].message).strip()
+                            else:
+                                message = str(response).strip()
+                        except Exception as e2:
+                            logger.error(f"Failed all attempts to extract message: {e2}")
+                            return None
                 else:
                     # Legacy API style
                     response = self.client.ChatCompletion.create(
@@ -128,7 +151,13 @@ class MessageGenerator:
                         temperature=0.7,
                         max_tokens=500
                     )
-                    message = response["choices"][0]["message"]["content"].strip()
+                    
+                    # Extract message from legacy format
+                    try:
+                        message = response["choices"][0]["message"]["content"].strip()
+                    except (KeyError, TypeError) as e:
+                        logger.error(f"Error extracting message from legacy format: {e}")
+                        return None
                 
                 return message
             except Exception as e:
@@ -184,31 +213,7 @@ class MessageGenerator:
         logger.info(f"Successfully generated messages for {count} out of {len(processed_leads)} LinkedIn leads")
         return processed_leads
     
-    def process_reddit_leads(self, leads_data:
-            # Normalize web scraper data to ensure compatibility
-            for lead in leads_data:
-                # Ensure all necessary fields exist
-                if 'post_title' not in lead and 'title' in lead:
-                    lead['post_title'] = lead['title']
-                if 'post_content' not in lead and 'selftext' in lead:
-                    lead['post_content'] = lead['selftext']
-                if 'username' not in lead and 'author' in lead:
-                    lead['username'] = lead['author']
-                if 'post_url' not in lead and 'url' in lead:
-                    lead['post_url'] = lead['url']
-            
-            # Normalize web scraper data to ensure compatibility
-            for lead in leads_data:
-                # Ensure all necessary fields exist
-                if 'post_title' not in lead and 'title' in lead:
-                    lead['post_title'] = lead['title']
-                if 'post_content' not in lead and 'selftext' in lead:
-                    lead['post_content'] = lead['selftext']
-                if 'username' not in lead and 'author' in lead:
-                    lead['username'] = lead['author']
-                if 'post_url' not in lead and 'url' in lead:
-                    lead['post_url'] = lead['url']
-             List[Dict[str, Any]], max_leads: int = 10) -> List[Dict[str, Any]]:
+    def process_reddit_leads(self, leads_data: List[Dict[str, Any]], max_leads: int = 10) -> List[Dict[str, Any]]:
         """
         Process Reddit leads and generate personalized messages.
         
@@ -219,6 +224,18 @@ class MessageGenerator:
         Returns:
             List of leads with generated messages
         """
+        # Normalize web scraper data to ensure compatibility
+        for lead in leads_data:
+            # Ensure all necessary fields exist
+            if 'post_title' not in lead and 'title' in lead:
+                lead['post_title'] = lead['title']
+            if 'post_content' not in lead and 'selftext' in lead:
+                lead['post_content'] = lead['selftext']
+            if 'username' not in lead and 'author' in lead:
+                lead['username'] = lead['author']
+            if 'post_url' not in lead and 'url' in lead:
+                lead['post_url'] = lead['url']
+        
         logger.info(f"Processing up to {max_leads} Reddit leads")
         
         processed_leads = []
@@ -233,16 +250,13 @@ class MessageGenerator:
                     context = lead.get('post_content', '')[:1000]
                 elif lead.get('selftext'): # API format
                     context = lead.get('selftext', '')[:1000]
-                # Web scraper provides 'post_content' directly, so we need to handle both formats
-                context = ''
-                if lead.get('post_content'):
-                    context = lead.get('post_content', '')[:1000]
-                elif lead.get('selftext'): # API format
-                    context = lead.get('selftext', '')[:1000]
-                context = lead.get('post_content', '')[:1000] if lead.get('post_content') else ''
                 
                 # Add additional context for Reddit-specific message
-                lead['interests'] = lead.get('matched_keywords', '')
+                # Handle both web scraper (matched_keywords) and API (matched_keywords) formats
+                if isinstance(lead.get('matched_keywords'), list):
+                    lead['interests'] = ', '.join(lead.get('matched_keywords', []))
+                else:
+                    lead['interests'] = lead.get('matched_keywords', '')
                 lead['industry'] = 'Unknown (Reddit user)'
                 
                 # Customize prompt for Reddit
@@ -278,7 +292,27 @@ class MessageGenerator:
                                 temperature=0.7,
                                 max_tokens=500
                             )
-                            message = response.choices[0].message.content.strip()
+                            # Handle response formats for different OpenAI SDK versions
+                            try:
+                                # Modern OpenAI SDK returns a Pydantic object
+                                if hasattr(response.choices[0].message, 'content'):
+                                    message = response.choices[0].message.content.strip()
+                                else:
+                                    # Alternate format for some SDK versions
+                                    message = response.choices[0].message['content'].strip()
+                            except (AttributeError, KeyError, TypeError) as e:
+                                # Fallback for different response formats
+                                logger.warning(f"Error extracting message from standard format: {e}")
+                                try:
+                                    if isinstance(response, dict):
+                                        message = response["choices"][0]["message"]["content"].strip()
+                                    elif hasattr(response, 'choices'):
+                                        message = str(response.choices[0].message).strip()
+                                    else:
+                                        message = str(response).strip()
+                                except Exception as e2:
+                                    logger.error(f"Failed all attempts to extract message: {e2}")
+                                    continue
                         else:
                             # Legacy API style
                             response = self.client.ChatCompletion.create(
@@ -290,7 +324,12 @@ class MessageGenerator:
                                 temperature=0.7,
                                 max_tokens=500
                             )
-                            message = response["choices"][0]["message"]["content"].strip()
+                            # Extract message from legacy format
+                            try:
+                                message = response["choices"][0]["message"]["content"].strip()
+                            except (KeyError, TypeError) as e:
+                                logger.error(f"Error extracting message from legacy format: {e}")
+                                continue
                         break
                     except Exception as e:
                         logger.error(f"OpenAI API error for Reddit message: {e}")
