@@ -1,0 +1,4 @@
+2025-03-09 19:08:21,156 - INFO - Starting lead scorer (AI: True, Model: gpt-4)
+2025-03-09 19:08:22,200 - ERROR - Error running lead scorer: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-03-09 19:13:00,549 - INFO - Starting lead scorer (AI: True, Model: gpt-4)
+2025-03-09 19:13:00,552 - ERROR - Error running lead scorer: Client.__init__() got an unexpected keyword argument 'proxies'

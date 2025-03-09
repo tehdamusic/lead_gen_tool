@@ -1,0 +1,52 @@
+2025-03-09 19:12:05,640 - INFO - Reddit web scraper initialized
+2025-03-09 19:12:05,643 - INFO - Reddit HTML parser initialized
+2025-03-09 19:12:05,654 - INFO - Fetching subreddit: r/Entrepreneur (time: month, limit: 5)
+2025-03-09 19:12:06,497 - INFO - Successfully fetched r/Entrepreneur (status: 200)
+2025-03-09 19:12:06,705 - INFO - Extracted 0 posts from HTML for r/Entrepreneur
+2025-03-09 19:12:06,710 - INFO - Fetching subreddit: r/Productivity (time: month, limit: 5)
+2025-03-09 19:12:07,277 - INFO - Successfully fetched r/Productivity (status: 200)
+2025-03-09 19:12:07,333 - INFO - Extracted 0 posts from HTML for r/Productivity
+2025-03-09 19:12:07,339 - INFO - Fetching subreddit: r/MentalHealth (time: month, limit: 5)
+2025-03-09 19:12:07,799 - INFO - Successfully fetched r/MentalHealth (status: 200)
+2025-03-09 19:12:07,850 - INFO - Extracted 0 posts from HTML for r/MentalHealth
+2025-03-09 19:12:07,855 - INFO - Fetching subreddit: r/WorkReform (time: month, limit: 5)
+2025-03-09 19:12:08,470 - INFO - Successfully fetched r/WorkReform (status: 200)
+2025-03-09 19:12:08,695 - INFO - Extracted 0 posts from HTML for r/WorkReform
+2025-03-09 19:12:08,702 - INFO - Fetching subreddit: r/careerguidance (time: month, limit: 5)
+2025-03-09 19:12:09,311 - INFO - Successfully fetched r/careerguidance (status: 200)
+2025-03-09 19:12:09,524 - INFO - Extracted 0 posts from HTML for r/careerguidance
+2025-03-09 19:12:09,533 - INFO - Searching Reddit for: 'burnout' (time: month, limit: 50)
+2025-03-09 19:12:10,740 - INFO - Successfully searched for 'burnout' (status: 200)
+2025-03-09 19:12:11,008 - INFO - Extracted 0 posts from HTML for search: 'burnout'
+2025-03-09 19:12:11,016 - INFO - Searching Reddit for: 'career transition' (time: month, limit: 50)
+2025-03-09 19:12:12,251 - INFO - Successfully searched for 'career transition' (status: 200)
+2025-03-09 19:12:12,604 - INFO - Extracted 0 posts from HTML for search: 'career transition'
+2025-03-09 19:12:12,611 - INFO - Searching Reddit for: 'work-life balance' (time: month, limit: 50)
+2025-03-09 19:12:14,020 - INFO - Successfully searched for 'work-life balance' (status: 200)
+2025-03-09 19:12:14,344 - INFO - Extracted 0 posts from HTML for search: 'work-life balance'
+2025-03-09 19:12:36,418 - INFO - Reddit web scraper initialized
+2025-03-09 19:12:36,420 - INFO - Reddit HTML parser initialized
+2025-03-09 19:12:36,434 - INFO - Fetching subreddit: r/Entrepreneur (time: year, limit: 50)
+2025-03-09 19:12:37,389 - INFO - Successfully fetched r/Entrepreneur (status: 200)
+2025-03-09 19:12:37,625 - INFO - Extracted 0 posts from HTML for r/Entrepreneur
+2025-03-09 19:12:37,633 - INFO - Fetching subreddit: r/Productivity (time: year, limit: 50)
+2025-03-09 19:12:38,041 - INFO - Successfully fetched r/Productivity (status: 200)
+2025-03-09 19:12:38,121 - INFO - Extracted 0 posts from HTML for r/Productivity
+2025-03-09 19:12:38,132 - INFO - Fetching subreddit: r/MentalHealth (time: year, limit: 50)
+2025-03-09 19:12:38,671 - INFO - Successfully fetched r/MentalHealth (status: 200)
+2025-03-09 19:12:38,707 - INFO - Extracted 0 posts from HTML for r/MentalHealth
+2025-03-09 19:12:38,715 - INFO - Fetching subreddit: r/WorkReform (time: year, limit: 50)
+2025-03-09 19:12:39,357 - INFO - Successfully fetched r/WorkReform (status: 200)
+2025-03-09 19:12:39,549 - INFO - Extracted 0 posts from HTML for r/WorkReform
+2025-03-09 19:12:39,555 - INFO - Fetching subreddit: r/careerguidance (time: year, limit: 50)
+2025-03-09 19:12:40,624 - INFO - Successfully fetched r/careerguidance (status: 200)
+2025-03-09 19:12:40,847 - INFO - Extracted 0 posts from HTML for r/careerguidance
+2025-03-09 19:12:40,855 - INFO - Searching Reddit for: 'overwhelmed' (time: year, limit: 50)
+2025-03-09 19:12:42,008 - INFO - Successfully searched for 'overwhelmed' (status: 200)
+2025-03-09 19:12:42,379 - INFO - Extracted 0 posts from HTML for search: 'overwhelmed'
+2025-03-09 19:12:42,512 - INFO - Searching Reddit for: 'anxiety' (time: year, limit: 50)
+2025-03-09 19:12:43,667 - INFO - Successfully searched for 'anxiety' (status: 200)
+2025-03-09 19:12:43,940 - INFO - Extracted 0 posts from HTML for search: 'anxiety'
+2025-03-09 19:12:43,948 - INFO - Searching Reddit for: 'career change' (time: year, limit: 50)
+2025-03-09 19:12:45,178 - INFO - Successfully searched for 'career change' (status: 200)
+2025-03-09 19:12:45,501 - INFO - Extracted 0 posts from HTML for search: 'career change'

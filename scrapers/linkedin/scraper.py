@@ -554,7 +554,7 @@ class LinkedInScraper:
             try:
                 from utils.sheets_manager import save_leads_to_sheet
             except ImportError:
-                logger.error(\"Could not import save_leads_to_sheet from utils.sheets_manager\")
+                logger.error("Could not import save_leads_to_sheet from utils.sheets_manager")
                 return unique_leads
             
             # Save to the coaching prospects worksheet

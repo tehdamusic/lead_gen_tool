@@ -1,0 +1,194 @@
+2025-03-09 18:53:36,665 - main - INFO - All required dependencies are installed
+2025-03-09 18:53:36,666 - main - ERROR - Error starting GUI: No module named 'gui'
+2025-03-09 18:54:50,640 - main - INFO - All required dependencies are installed
+2025-03-09 18:54:50,829 - main - WARNING - Could not import from lead_gen.ui.app: No module named 'lead_gen.ui.views.logs_view'
+2025-03-09 18:54:50,831 - main - ERROR - Could not import GUI from any known location
+2025-03-09 19:04:55,294 - main - INFO - All required dependencies are installed
+2025-03-09 19:04:55,438 - main - WARNING - Could not import from lead_gen.ui.app: No module named 'lead_gen.ui.views.logs_view'
+2025-03-09 19:04:55,439 - main - ERROR - Could not import GUI from any known location
+2025-03-09 19:06:15,926 - root - INFO - Application initialized
+2025-03-09 19:06:49,538 - linkedin_view - ERROR - Error in LinkedIn scraper: unexpected character after line continuation character (scraper.py, line 557)
+2025-03-09 19:07:18,483 - linkedin_view - ERROR - Error in LinkedIn scraper: unexpected character after line continuation character (scraper.py, line 557)
+2025-03-09 19:08:02,632 - reddit_view - ERROR - Error in Reddit scraper: unexpected character after line continuation character (scraper.py, line 557)
+2025-03-09 19:08:21,155 - scoring_view - INFO - Starting lead scoring (AI: True, Model: gpt-4)
+2025-03-09 19:08:21,156 - lead_scorer - INFO - Starting lead scorer (AI: True, Model: gpt-4)
+2025-03-09 19:08:22,200 - lead_scorer - ERROR - Error running lead scorer: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-03-09 19:09:41,003 - linkedin_view - ERROR - Error in LinkedIn scraper: unexpected character after line continuation character (scraper.py, line 557)
+2025-03-09 19:10:49,674 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 19:10:49,675 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 19:10:51,396 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 19:10:51,396 - linkedin_view - INFO - Starting LinkedIn scrape for Consulting Manager
+2025-03-09 19:10:51,399 - linkedin.scraper - INFO - Logging into LinkedIn...
+2025-03-09 19:11:08,506 - linkedin.scraper - INFO - Successfully logged into LinkedIn.
+2025-03-09 19:11:08,526 - linkedin.scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Consulting%20Manager&origin=GLOBAL_SEARCH_HEADER
+2025-03-09 19:11:20,767 - linkedin.scraper - INFO - Saved LinkedIn search page HTML for debugging.
+2025-03-09 19:11:20,943 - linkedin.scraper - INFO - Scraping page 1 of 3
+2025-03-09 19:11:24,981 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 19:11:24,982 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 19:11:25,030 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 19:11:25,041 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,050 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,058 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,066 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,073 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,080 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,089 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,097 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,105 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,113 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,114 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 19:11:25,115 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 19:11:25,115 - linkedin.extractors - INFO - Attempting emergency profile extraction method
+2025-03-09 19:11:25,281 - linkedin.extractors - INFO - Found 2 potential profile links
+2025-03-09 19:11:27,501 - linkedin.extractors - INFO - Emergency extraction found 2 profiles
+2025-03-09 19:11:27,501 - linkedin.scraper - INFO - Extracted 1 profiles from page 1
+2025-03-09 19:11:32,141 - linkedin.scraper - INFO - Scraping page 2 of 3
+2025-03-09 19:11:36,120 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 19:11:36,121 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 19:11:36,160 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 19:11:36,168 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,177 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,188 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,196 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,206 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,216 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,226 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,235 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,243 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,252 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,254 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 19:11:36,257 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 19:11:36,258 - linkedin.extractors - INFO - Attempting emergency profile extraction method
+2025-03-09 19:11:36,412 - linkedin.extractors - INFO - Found 2 potential profile links
+2025-03-09 19:11:37,752 - linkedin.extractors - INFO - Emergency extraction found 2 profiles
+2025-03-09 19:11:37,754 - linkedin.scraper - INFO - Extracted 1 profiles from page 2
+2025-03-09 19:11:41,145 - linkedin.scraper - INFO - Scraping page 3 of 3
+2025-03-09 19:11:45,178 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 19:11:45,181 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 19:11:45,218 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 19:11:45,229 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,238 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,249 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,259 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,270 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,279 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,288 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,297 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,307 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,318 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,321 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 19:11:45,322 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 19:11:45,324 - linkedin.extractors - INFO - Attempting emergency profile extraction method
+2025-03-09 19:11:45,431 - linkedin.extractors - INFO - Found 6 potential profile links
+2025-03-09 19:11:49,231 - linkedin.extractors - INFO - Emergency extraction found 6 profiles
+2025-03-09 19:11:49,233 - linkedin.scraper - INFO - Extracted 3 profiles from page 3
+2025-03-09 19:11:49,236 - linkedin.utils - INFO - Saved 5 profiles to data/linkedin_leads.csv
+2025-03-09 19:11:51,469 - linkedin.scraper - INFO - WebDriver closed.
+2025-03-09 19:12:05,637 - reddit_view - INFO - Starting Reddit scrape with 5 subreddits and 3 keywords
+2025-03-09 19:12:05,640 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 19:12:05,643 - reddit.parser - INFO - Reddit HTML parser initialized
+2025-03-09 19:12:05,646 - reddit_scraper - INFO - Reddit scraper initialized with 5 subreddits and 3 keywords
+2025-03-09 19:12:05,650 - reddit_scraper - INFO - Scraping subreddit: r/Entrepreneur
+2025-03-09 19:12:05,654 - reddit.web_scraper - INFO - Fetching subreddit: r/Entrepreneur (time: month, limit: 5)
+2025-03-09 19:12:06,497 - reddit.web_scraper - INFO - Successfully fetched r/Entrepreneur (status: 200)
+2025-03-09 19:12:06,705 - reddit.parser - INFO - Extracted 0 posts from HTML for r/Entrepreneur
+2025-03-09 19:12:06,706 - reddit_scraper - INFO - Found 0 relevant posts in r/Entrepreneur
+2025-03-09 19:12:06,709 - reddit_scraper - INFO - Scraping subreddit: r/Productivity
+2025-03-09 19:12:06,710 - reddit.web_scraper - INFO - Fetching subreddit: r/Productivity (time: month, limit: 5)
+2025-03-09 19:12:07,277 - reddit.web_scraper - INFO - Successfully fetched r/Productivity (status: 200)
+2025-03-09 19:12:07,333 - reddit.parser - INFO - Extracted 0 posts from HTML for r/Productivity
+2025-03-09 19:12:07,335 - reddit_scraper - INFO - Found 0 relevant posts in r/Productivity
+2025-03-09 19:12:07,337 - reddit_scraper - INFO - Scraping subreddit: r/MentalHealth
+2025-03-09 19:12:07,339 - reddit.web_scraper - INFO - Fetching subreddit: r/MentalHealth (time: month, limit: 5)
+2025-03-09 19:12:07,799 - reddit.web_scraper - INFO - Successfully fetched r/MentalHealth (status: 200)
+2025-03-09 19:12:07,850 - reddit.parser - INFO - Extracted 0 posts from HTML for r/MentalHealth
+2025-03-09 19:12:07,852 - reddit_scraper - INFO - Found 0 relevant posts in r/MentalHealth
+2025-03-09 19:12:07,852 - reddit_scraper - INFO - Scraping subreddit: r/WorkReform
+2025-03-09 19:12:07,855 - reddit.web_scraper - INFO - Fetching subreddit: r/WorkReform (time: month, limit: 5)
+2025-03-09 19:12:08,470 - reddit.web_scraper - INFO - Successfully fetched r/WorkReform (status: 200)
+2025-03-09 19:12:08,695 - reddit.parser - INFO - Extracted 0 posts from HTML for r/WorkReform
+2025-03-09 19:12:08,697 - reddit_scraper - INFO - Found 0 relevant posts in r/WorkReform
+2025-03-09 19:12:08,699 - reddit_scraper - INFO - Scraping subreddit: r/careerguidance
+2025-03-09 19:12:08,702 - reddit.web_scraper - INFO - Fetching subreddit: r/careerguidance (time: month, limit: 5)
+2025-03-09 19:12:09,311 - reddit.web_scraper - INFO - Successfully fetched r/careerguidance (status: 200)
+2025-03-09 19:12:09,524 - reddit.parser - INFO - Extracted 0 posts from HTML for r/careerguidance
+2025-03-09 19:12:09,527 - reddit_scraper - INFO - Found 0 relevant posts in r/careerguidance
+2025-03-09 19:12:09,529 - reddit_scraper - INFO - Collected a total of 0 leads from 5 subreddits
+2025-03-09 19:12:09,531 - reddit_scraper - INFO - Searching Reddit for query: 'burnout'
+2025-03-09 19:12:09,533 - reddit.web_scraper - INFO - Searching Reddit for: 'burnout' (time: month, limit: 50)
+2025-03-09 19:12:10,740 - reddit.web_scraper - INFO - Successfully searched for 'burnout' (status: 200)
+2025-03-09 19:12:11,008 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'burnout'
+2025-03-09 19:12:11,011 - reddit_scraper - INFO - Found 0 relevant posts for query 'burnout'
+2025-03-09 19:12:11,014 - reddit_scraper - INFO - Searching Reddit for query: 'career transition'
+2025-03-09 19:12:11,016 - reddit.web_scraper - INFO - Searching Reddit for: 'career transition' (time: month, limit: 50)
+2025-03-09 19:12:12,251 - reddit.web_scraper - INFO - Successfully searched for 'career transition' (status: 200)
+2025-03-09 19:12:12,604 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'career transition'
+2025-03-09 19:12:12,607 - reddit_scraper - INFO - Found 0 relevant posts for query 'career transition'
+2025-03-09 19:12:12,609 - reddit_scraper - INFO - Searching Reddit for query: 'work-life balance'
+2025-03-09 19:12:12,611 - reddit.web_scraper - INFO - Searching Reddit for: 'work-life balance' (time: month, limit: 50)
+2025-03-09 19:12:14,020 - reddit.web_scraper - INFO - Successfully searched for 'work-life balance' (status: 200)
+2025-03-09 19:12:14,344 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'work-life balance'
+2025-03-09 19:12:14,348 - reddit_scraper - INFO - Found 0 relevant posts for query 'work-life balance'
+2025-03-09 19:12:14,350 - reddit_scraper - INFO - Collected a total of 0 unique leads from 3 keyword searches
+2025-03-09 19:12:14,352 - reddit_scraper - INFO - Combined results: 0 unique leads
+2025-03-09 19:12:14,354 - reddit_scraper - WARNING - No leads to save to CSV
+2025-03-09 19:12:36,414 - reddit_view - INFO - Starting Reddit scrape with 5 subreddits and 3 keywords
+2025-03-09 19:12:36,418 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 19:12:36,420 - reddit.parser - INFO - Reddit HTML parser initialized
+2025-03-09 19:12:36,423 - reddit_scraper - INFO - Reddit scraper initialized with 5 subreddits and 3 keywords
+2025-03-09 19:12:36,430 - reddit_scraper - INFO - Scraping subreddit: r/Entrepreneur
+2025-03-09 19:12:36,434 - reddit.web_scraper - INFO - Fetching subreddit: r/Entrepreneur (time: year, limit: 50)
+2025-03-09 19:12:37,389 - reddit.web_scraper - INFO - Successfully fetched r/Entrepreneur (status: 200)
+2025-03-09 19:12:37,625 - reddit.parser - INFO - Extracted 0 posts from HTML for r/Entrepreneur
+2025-03-09 19:12:37,628 - reddit_scraper - INFO - Found 0 relevant posts in r/Entrepreneur
+2025-03-09 19:12:37,631 - reddit_scraper - INFO - Scraping subreddit: r/Productivity
+2025-03-09 19:12:37,633 - reddit.web_scraper - INFO - Fetching subreddit: r/Productivity (time: year, limit: 50)
+2025-03-09 19:12:38,041 - reddit.web_scraper - INFO - Successfully fetched r/Productivity (status: 200)
+2025-03-09 19:12:38,121 - reddit.parser - INFO - Extracted 0 posts from HTML for r/Productivity
+2025-03-09 19:12:38,125 - reddit_scraper - INFO - Found 0 relevant posts in r/Productivity
+2025-03-09 19:12:38,128 - reddit_scraper - INFO - Scraping subreddit: r/MentalHealth
+2025-03-09 19:12:38,132 - reddit.web_scraper - INFO - Fetching subreddit: r/MentalHealth (time: year, limit: 50)
+2025-03-09 19:12:38,671 - reddit.web_scraper - INFO - Successfully fetched r/MentalHealth (status: 200)
+2025-03-09 19:12:38,707 - reddit.parser - INFO - Extracted 0 posts from HTML for r/MentalHealth
+2025-03-09 19:12:38,709 - reddit_scraper - INFO - Found 0 relevant posts in r/MentalHealth
+2025-03-09 19:12:38,713 - reddit_scraper - INFO - Scraping subreddit: r/WorkReform
+2025-03-09 19:12:38,715 - reddit.web_scraper - INFO - Fetching subreddit: r/WorkReform (time: year, limit: 50)
+2025-03-09 19:12:39,357 - reddit.web_scraper - INFO - Successfully fetched r/WorkReform (status: 200)
+2025-03-09 19:12:39,549 - reddit.parser - INFO - Extracted 0 posts from HTML for r/WorkReform
+2025-03-09 19:12:39,551 - reddit_scraper - INFO - Found 0 relevant posts in r/WorkReform
+2025-03-09 19:12:39,553 - reddit_scraper - INFO - Scraping subreddit: r/careerguidance
+2025-03-09 19:12:39,555 - reddit.web_scraper - INFO - Fetching subreddit: r/careerguidance (time: year, limit: 50)
+2025-03-09 19:12:40,624 - reddit.web_scraper - INFO - Successfully fetched r/careerguidance (status: 200)
+2025-03-09 19:12:40,847 - reddit.parser - INFO - Extracted 0 posts from HTML for r/careerguidance
+2025-03-09 19:12:40,849 - reddit_scraper - INFO - Found 0 relevant posts in r/careerguidance
+2025-03-09 19:12:40,851 - reddit_scraper - INFO - Collected a total of 0 leads from 5 subreddits
+2025-03-09 19:12:40,853 - reddit_scraper - INFO - Searching Reddit for query: 'overwhelmed'
+2025-03-09 19:12:40,855 - reddit.web_scraper - INFO - Searching Reddit for: 'overwhelmed' (time: year, limit: 50)
+2025-03-09 19:12:42,008 - reddit.web_scraper - INFO - Successfully searched for 'overwhelmed' (status: 200)
+2025-03-09 19:12:42,379 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'overwhelmed'
+2025-03-09 19:12:42,508 - reddit_scraper - INFO - Found 0 relevant posts for query 'overwhelmed'
+2025-03-09 19:12:42,510 - reddit_scraper - INFO - Searching Reddit for query: 'anxiety'
+2025-03-09 19:12:42,512 - reddit.web_scraper - INFO - Searching Reddit for: 'anxiety' (time: year, limit: 50)
+2025-03-09 19:12:43,667 - reddit.web_scraper - INFO - Successfully searched for 'anxiety' (status: 200)
+2025-03-09 19:12:43,940 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'anxiety'
+2025-03-09 19:12:43,944 - reddit_scraper - INFO - Found 0 relevant posts for query 'anxiety'
+2025-03-09 19:12:43,946 - reddit_scraper - INFO - Searching Reddit for query: 'career change'
+2025-03-09 19:12:43,948 - reddit.web_scraper - INFO - Searching Reddit for: 'career change' (time: year, limit: 50)
+2025-03-09 19:12:45,178 - reddit.web_scraper - INFO - Successfully searched for 'career change' (status: 200)
+2025-03-09 19:12:45,501 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'career change'
+2025-03-09 19:12:45,502 - reddit_scraper - INFO - Found 0 relevant posts for query 'career change'
+2025-03-09 19:12:45,504 - reddit_scraper - INFO - Collected a total of 0 unique leads from 3 keyword searches
+2025-03-09 19:12:45,507 - reddit_scraper - INFO - Combined results: 0 unique leads
+2025-03-09 19:12:45,508 - reddit_scraper - WARNING - No leads to save to CSV
+2025-03-09 19:13:00,542 - scoring_view - INFO - Starting lead scoring (AI: True, Model: gpt-4)
+2025-03-09 19:13:00,549 - lead_scorer - INFO - Starting lead scorer (AI: True, Model: gpt-4)
+2025-03-09 19:13:00,552 - lead_scorer - ERROR - Error running lead scorer: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-03-09 19:13:16,097 - message_view - INFO - Starting message generation with model gpt-4
+2025-03-09 19:13:16,100 - message_generator - INFO - Starting message generation with model gpt-4
+2025-03-09 19:13:16,103 - message_generator - INFO - Initialized MessageGenerator with model: gpt-4
+2025-03-09 19:13:16,107 - message_generator - ERROR - Error initializing OpenAI client: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-03-09 19:13:16,110 - message_generator - ERROR - Error running message generator: Failed to initialize OpenAI client: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-03-09 19:13:25,225 - email_view - INFO - Generating email report preview
+2025-03-09 19:13:25,227 - email_reporter - INFO - Email Reporter initialized with sender: thomas@tehdamusic.com
+2025-03-09 19:13:25,230 - email_reporter - INFO - Found 0 total messages generated (0 LinkedIn, 0 Reddit)
+2025-03-09 19:13:25,235 - email_view - ERROR - Error generating report: division by zero

@@ -10,12 +10,16 @@ import os
 import sys
 import logging
 import traceback
-import traceback
 import argparse
 from typing import Dict, Any
-from dotenv import load_dotenv
+from pathlib import Path
 
-from scrapers.linkedin.scraper import run_linkedin_scraper
+# Add project root to path
+project_root = Path(__file__).parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
+from dotenv import load_dotenv
 
 # Configure base logging
 os.makedirs('logs', exist_ok=True)
@@ -30,19 +34,9 @@ logging.basicConfig(
 logger = logging.getLogger('main')
 
 # Ensure necessary directories exist
-def ensure_directories():
-    """Create all necessary directories for the application."""
-    directories = [
-        'data',
-        'data/cache',
-        'data/output',
-        'logs',
-        'debug'
-    ]
-    for directory in directories:
-        os.makedirs(directory, exist_ok=True)
-        
-ensure_directories()
+os.makedirs('data', exist_ok=True)
+os.makedirs('data/cache', exist_ok=True)
+os.makedirs('data/output', exist_ok=True)
 
 # Load environment variables
 load_dotenv()
@@ -66,7 +60,7 @@ def check_environment() -> bool:
     if missing_vars:
         logger.error(f"Missing environment variables: {', '.join(missing_vars)}")
         print(f"Error: Missing environment variables: {', '.join(missing_vars)}")
-        print("Please create a .env file with all required variables.")
+        print("Please create a .env file with all required variables (see .env.example).")
         return False
     
     return True
@@ -113,8 +107,13 @@ def check_dependencies() -> bool:
             print("✓ python-dotenv")
         else:
             raise ImportError("python-dotenv is not installed")
-        import tkinter
-        print("✓ tkinter")
+        
+        # Check for tkinter, but don't fail if not found (CLI mode would still work)
+        try:
+            import tkinter
+            print("✓ tkinter")
+        except ImportError:
+            print("⚠ tkinter not found. GUI mode will not work.")
         
         print("All dependencies successfully imported!")
         logger.info("All required dependencies are installed")
@@ -122,8 +121,93 @@ def check_dependencies() -> bool:
     except ImportError as e:
         logger.error(f"Missing dependency: {str(e)}")
         print(f"Error: Missing dependency: {str(e)}")
-        print("Please install all required dependencies using 'pip install -r requirements.txt'")
+        print("Please install all required dependencies using 'pip install -e .'")
         return False
+
+def run_linkedin_scraper(args) -> Dict[str, Any]:
+    """Run the LinkedIn scraper component."""
+    try:
+        from scrapers.linkedin.scraper import run_linkedin_scraper as linkedin_scraper_runner
+        from utils.sheets_manager import get_sheets_client
+        
+        print("Starting LinkedIn scraper...")
+        sheets_client = get_sheets_client()
+        
+        # Get parameters from args or use defaults
+        max_leads = getattr(args, 'max_leads', 50)
+        headless = getattr(args, 'headless', True)
+        
+        # Run the scraper
+        leads = linkedin_scraper_runner(
+            sheets_client=sheets_client,
+            max_leads=max_leads,
+            headless=headless
+        )
+        
+        results = {
+            "leads_scraped": len(leads),
+            "source": "linkedin",
+            "success": True
+        }
+        
+        print(f"LinkedIn scraper completed. Collected {len(leads)} leads.")
+        return results
+    except Exception as e:
+        logger.error(f"Error running LinkedIn scraper: {str(e)}")
+        print(f"Error running LinkedIn scraper: {str(e)}")
+        traceback.print_exc()
+        return {
+            "leads_scraped": 0,
+            "source": "linkedin",
+            "success": False,
+            "error": str(e)
+        }
+
+def run_reddit_scraper(args) -> Dict[str, Any]:
+    """Run Reddit scraper component."""
+    try:
+        from scrapers.reddit.scraper import run_reddit_scraper as reddit_scraper_runner
+        from utils.sheets_manager import get_sheets_client
+        
+        print("Starting Reddit scraper...")
+        sheets_client = get_sheets_client()
+        
+        # Get max leads from args or use default
+        max_leads = getattr(args, 'max_leads', 50)
+        save_csv = getattr(args, 'save_csv', True)
+        
+        # Get custom subreddits and keywords if provided
+        subreddits = getattr(args, 'subreddits', None)
+        keywords = getattr(args, 'keywords', None)
+        
+        # Run the scraper
+        leads = reddit_scraper_runner(
+            sheets_client=sheets_client,
+            subreddits=subreddits,
+            keywords=keywords,
+            time_filter="month",
+            post_limit=max_leads,
+            save_csv=save_csv
+        )
+        
+        results = {
+            "leads_scraped": len(leads),
+            "source": "reddit",
+            "success": True
+        }
+        
+        print(f"Reddit scraper completed. Collected {len(leads)} leads.")
+        return results
+    except Exception as e:
+        logger.error(f"Error running Reddit scraper: {str(e)}")
+        print(f"Error running Reddit scraper: {str(e)}")
+        traceback.print_exc()
+        return {
+            "leads_scraped": 0,
+            "source": "reddit",
+            "success": False,
+            "error": str(e)
+        }
 
 def run_lead_scorer(args) -> Dict[str, Any]:
     """Run lead scoring component."""
@@ -240,54 +324,6 @@ def run_email_reporter(args) -> Dict[str, Any]:
             "error": str(e)
         }
 
-
-# Patch for Reddit API fallback
-def run_reddit_scraper(args) -> Dict[str, Any]:
-    """Run Reddit scraper component."""
-    try:
-        from scrapers.reddit.scraper import run_reddit_scraper as reddit_scraper_runner
-        from utils.sheets_manager import get_sheets_client
-        
-        print("Starting Reddit scraper...")
-        sheets_client = get_sheets_client()
-        
-        # Get max leads from args or use default
-        max_leads = getattr(args, 'max_leads', 50)
-        save_csv = getattr(args, 'save_csv', True)
-        
-        # Get custom subreddits and keywords if provided
-        subreddits = getattr(args, 'subreddits', None)
-        keywords = getattr(args, 'keywords', None)
-        
-        # Run the scraper
-        leads = reddit_scraper_runner(
-            sheets_client=sheets_client,
-            subreddits=subreddits,
-            keywords=keywords,
-            time_filter="month",
-            post_limit=max_leads,
-            save_csv=save_csv
-        )
-        
-        results = {
-            "leads_scraped": len(leads),
-            "source": "reddit",
-            "success": True
-        }
-        
-        print(f"Reddit scraper completed. Collected {len(leads)} leads.")
-        return results
-    except Exception as e:
-        logger.error(f"Error running Reddit scraper: {str(e)}")
-        print(f"Error running Reddit scraper: {str(e)}")
-        traceback.print_exc()
-        return {
-            "leads_scraped": 0,
-            "source": "reddit",
-            "success": False,
-            "error": str(e)
-        }
-
 def run_full_pipeline(args) -> Dict[str, Any]:
     """Run the complete lead generation pipeline."""
     results = {
@@ -350,6 +386,49 @@ def run_full_pipeline(args) -> Dict[str, Any]:
     print("=========================\n")
     
     return results
+
+def start_gui():
+    """Start the Lead Generation GUI."""
+    try:
+        # Create logs directory if it doesn't exist
+        os.makedirs('logs', exist_ok=True)
+        
+        # Try the correct import path based on the project structure
+        try:
+            from lead_gen.ui.app import LeadGenerationApp
+            print("Starting Lead Generation App...")
+            app = LeadGenerationApp()
+            app.run()
+            return
+        except ImportError as e:
+            logger.warning(f"Could not import from lead_gen.ui.app: {str(e)}")
+            print(f"Primary GUI import failed: {str(e)}")
+            
+            # Try fallback import path
+            try:
+                from gui.lead_gen_gui import LeadGenerationGUI
+                import tkinter as tk
+                
+                root = tk.Tk()
+                app = LeadGenerationGUI(root)
+                root.mainloop()
+                return
+            except ImportError:
+                logger.error("Could not import GUI from any known location")
+                print("Failed to import GUI from any known location")
+    except Exception as e:
+        logger.error(f"Error starting GUI: {str(e)}")
+        print(f"Error starting GUI: {str(e)}")
+        print(f"Error details: {type(e).__name__}: {str(e)}")
+        traceback.print_exc()
+        print("\nPossible troubleshooting steps:")
+        print("1. Make sure the lead_gen package is in your PYTHONPATH")
+        print("2. Ensure all required dependencies are installed (especially tkinter)")
+        print("3. Try running directly from the lead_gen directory with: python -m lead_gen")
+        
+        sys.exit(1)
+
+
 def main():
     """Main entry point for the application."""
     parser = argparse.ArgumentParser(description='Lead Generation Automation Tool')
@@ -431,36 +510,6 @@ def main():
     else:
         # Default: start GUI
         start_gui()
-
-def start_gui():
-    """Start the Lead Generation GUI."""
-    try:
-        # Create logs directory if it doesn't exist
-        os.makedirs('logs', exist_ok=True)
-        
-        # First try to import the lead_gen GUI
-        try:
-            from lead_gen.ui.app import LeadGenerationApp
-            app = LeadGenerationApp()
-            app.run()
-        except ImportError:
-            # Fall back to the legacy GUI
-            from gui.lead_gen_gui import LeadGenerationGUI
-            import tkinter as tk
-            
-            root = tk.Tk()
-            app = LeadGenerationGUI(root)
-            root.mainloop()
-    except Exception as e:
-        logger.error(f"Error starting GUI: {str(e)}")
-        print(f"Error starting GUI: {str(e)}")
-        print(f"Error details: {type(e).__name__}: {str(e)}")
-        traceback.print_exc()
-print("Possible troubleshooting steps:")
-print("1. Check that GUI module exists in the correct location")
-print("2. Ensure all required dependencies are installed (especially tkinter)")
-print("3. Check the import paths in main.py and GUI files")
-sys.exit(1)
 
 
 if __name__ == "__main__":

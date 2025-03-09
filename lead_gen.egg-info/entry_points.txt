@@ -1,0 +1,2 @@
+[console_scripts]
+lead-gen = lead_gen.__main__:main

@@ -1,0 +1,4 @@
+2025-03-09 19:13:16,100 - INFO - Starting message generation with model gpt-4
+2025-03-09 19:13:16,103 - INFO - Initialized MessageGenerator with model: gpt-4
+2025-03-09 19:13:16,107 - ERROR - Error initializing OpenAI client: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-03-09 19:13:16,110 - ERROR - Error running message generator: Failed to initialize OpenAI client: Client.__init__() got an unexpected keyword argument 'proxies'

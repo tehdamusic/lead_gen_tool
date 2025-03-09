@@ -1,0 +1,69 @@
+2025-03-09 19:10:49,674 - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 19:10:49,675 - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 19:10:51,396 - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 19:10:51,399 - INFO - Logging into LinkedIn...
+2025-03-09 19:11:08,506 - INFO - Successfully logged into LinkedIn.
+2025-03-09 19:11:08,526 - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Consulting%20Manager&origin=GLOBAL_SEARCH_HEADER
+2025-03-09 19:11:20,767 - INFO - Saved LinkedIn search page HTML for debugging.
+2025-03-09 19:11:20,943 - INFO - Scraping page 1 of 3
+2025-03-09 19:11:24,981 - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 19:11:24,982 - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 19:11:25,030 - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 19:11:25,041 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,050 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,058 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,066 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,073 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,080 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,089 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,097 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,105 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,113 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:25,114 - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 19:11:25,115 - WARNING - No profiles extracted using either method
+2025-03-09 19:11:25,115 - INFO - Attempting emergency profile extraction method
+2025-03-09 19:11:25,281 - INFO - Found 2 potential profile links
+2025-03-09 19:11:27,501 - INFO - Emergency extraction found 2 profiles
+2025-03-09 19:11:27,501 - INFO - Extracted 1 profiles from page 1
+2025-03-09 19:11:32,141 - INFO - Scraping page 2 of 3
+2025-03-09 19:11:36,120 - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 19:11:36,121 - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 19:11:36,160 - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 19:11:36,168 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,177 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,188 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,196 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,206 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,216 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,226 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,235 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,243 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,252 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:36,254 - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 19:11:36,257 - WARNING - No profiles extracted using either method
+2025-03-09 19:11:36,258 - INFO - Attempting emergency profile extraction method
+2025-03-09 19:11:36,412 - INFO - Found 2 potential profile links
+2025-03-09 19:11:37,752 - INFO - Emergency extraction found 2 profiles
+2025-03-09 19:11:37,754 - INFO - Extracted 1 profiles from page 2
+2025-03-09 19:11:41,145 - INFO - Scraping page 3 of 3
+2025-03-09 19:11:45,178 - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 19:11:45,181 - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 19:11:45,218 - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 19:11:45,229 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,238 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,249 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,259 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,270 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,279 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,288 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,297 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,307 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,318 - WARNING - Could not find profile URL, skipping profile
+2025-03-09 19:11:45,321 - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 19:11:45,322 - WARNING - No profiles extracted using either method
+2025-03-09 19:11:45,324 - INFO - Attempting emergency profile extraction method
+2025-03-09 19:11:45,431 - INFO - Found 6 potential profile links
+2025-03-09 19:11:49,231 - INFO - Emergency extraction found 6 profiles
+2025-03-09 19:11:49,233 - INFO - Extracted 3 profiles from page 3
+2025-03-09 19:11:49,236 - INFO - Saved 5 profiles to data/linkedin_leads.csv
+2025-03-09 19:11:51,469 - INFO - WebDriver closed.
