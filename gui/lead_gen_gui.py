@@ -5,7 +5,6 @@ import threading
 import tkinter as tk
 from tkinter import ttk, scrolledtext, messagebox, StringVar
 from dotenv import load_dotenv
-import traceback
 
 # Ensure logs directory exists
 os.makedirs('logs', exist_ok=True)
@@ -30,23 +29,26 @@ try:
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     if root_dir not in sys.path:
         sys.path.insert(0, root_dir)
-    
+
     # Now try to import from the modular scrapers package
     from scrapers.linkedin import LinkedInScraper
-    logger.info("Successfully imported LinkedInScraper from modular scrapers package")
+    logger.info(
+        "Successfully imported LinkedInScraper from modular scrapers "
+        "package"
+    )
 except ImportError as e:
     logger.error(f"Failed to import LinkedInScraper: {str(e)}")
-    messagebox.showerror("Import Error", 
-                        f"Could not import LinkedInScraper.\n\nError: {str(e)}\n\n"
-                        f"Please ensure the scrapers/linkedin package exists with the necessary files.")
+    messagebox.showerror(
+        "Import Error", 
+        f"Could not import LinkedInScraper.\n\nError: {str(e)}\n\n"
+        "Please ensure the scrapers/linkedin package exists with the "
+        "necessary files."
+    )
 
 # Import other modules dynamically
 try:
-    from scrapers.reddit.scraper import RedditScraper, run_reddit_scraper
-    from analysis.lead_scorer import LeadScorer, run_lead_scorer
-    from communication.message_generator import MessageGenerator, run_message_generator
-    from reporting.email_reporter import EmailReporter, run_email_reporter
-    from utils.sheets_manager import get_sheets_client
+    import importlib.util
+
     logger.info("Successfully imported all optional modules")
 except ImportError as e:
     logger.warning(f"Optional module import error: {str(e)}")
@@ -74,8 +76,13 @@ class LeadGenerationGUI:
         
         # Initialize variables for Reddit
         self.reddit_max_leads_var = StringVar(value="50")
-        self.reddit_subreddits_var = StringVar(value="Entrepreneur,Productivity,MentalHealth,WorkReform,careerguidance")
-        self.reddit_keywords_var = StringVar(value="burnout,work stress,career transition,work-life balance,leadership")
+        self.reddit_subreddits_var = StringVar(
+            value=("Entrepreneur,Productivity,MentalHealth,"
+                   "WorkReform,careerguidance")
+        )
+        self.reddit_keywords_var = StringVar(
+            value="burnout,work stress,career transition,work-life balance,leadership"
+        )
         self.reddit_time_filter_var = StringVar(value="month")
         
         # Initialize variables for lead scoring
@@ -105,7 +112,11 @@ class LeadGenerationGUI:
                 raise ImportError("LinkedInScraper module not found")
         except Exception as e:
             logger.error(f"Failed to initialize LinkedIn Scraper: {str(e)}")
-            messagebox.showerror("Initialization Error", f"Failed to initialize LinkedIn Scraper: {str(e)}\n\nPlease ensure all LinkedIn scraper modules are in the correct locations.")
+            messagebox.showerror(
+                "Initialization Error", 
+                f"Failed to initialize LinkedIn Scraper: {str(e)}\n\n"
+                "Please ensure all LinkedIn scraper modules are in the correct locations."
+            )
 
         self.create_widgets()
         logger.info("GUI Initialized")
@@ -753,43 +764,37 @@ class LeadGenerationGUI:
         """Run Reddit scraper with configured parameters."""
         # Check if Reddit scraper can be imported
         try:
-            from scrapers.reddit.scraper import run_reddit_scraper
+            pass
         except ImportError as e:
-            messagebox.showerror("Import Error", f"Could not import Reddit scraper: {str(e)}")
-            logger.error(f"Reddit scraper import error: {str(e)}")
-            return
-        
-        try:
-            # Parse inputs
-            max_leads = int(self.reddit_max_leads_var.get())
-            subreddits = [s.strip() for s in self.reddit_subreddits_var.get().split(",") if s.strip()]
-            keywords = [k.strip() for k in self.reddit_keywords_var.get().split(",") if k.strip()]
-            time_filter = self.reddit_time_filter_var.get()
-            
-            # Update results area
-            self.reddit_results.delete(1.0, tk.END)
-            self.reddit_results.insert(tk.END, "Starting Reddit scraper...\n")
-            self.reddit_results.insert(tk.END, f"- Collecting up to {max_leads} leads\n")
-            self.reddit_results.insert(tk.END, f"- Checking {len(subreddits)} subreddits: {', '.join(subreddits)}\n")
-            self.reddit_results.insert(tk.END, f"- Using {len(keywords)} keywords: {', '.join(keywords)}\n")
-            self.reddit_results.insert(tk.END, f"- Time filter: {time_filter}\n\n")
-            self.reddit_results.insert(tk.END, "This might take several minutes. Please be patient...\n")
-            
-            # Run in a separate thread
-            self.run_task(
-                lambda: self._execute_reddit_scraper(max_leads, subreddits, keywords, time_filter),
-                "Reddit scraper"
+            messagebox.showerror(
+                "Import Error", 
+                f"Could not import Reddit scraper: {str(e)}"
             )
-        except ValueError:
-            messagebox.showerror("Error", "Max leads must be a number")
-        except Exception as e:
-            messagebox.showerror("Error", f"Failed to start Reddit scraper: {str(e)}")
-            logger.error(f"Error starting Reddit scraper: {str(e)}")
+            logger.error(f"Reddit scraper import error: {str(e)}")
+        max_leads = int(self.reddit_max_leads_var.get())
+        subreddits = [s.strip() for s in self.reddit_subreddits_var.get().split(",") if s.strip()]
+        keywords = [k.strip() for k in self.reddit_keywords_var.get().split(",") if k.strip()]
+        time_filter = self.reddit_time_filter_var.get()
+        
+        # Update results area
+        self.reddit_results.delete(1.0, tk.END)
+        self.reddit_results.insert(tk.END, "Starting Reddit scraper...\n")
+        self.reddit_results.insert(tk.END, f"- Collecting up to {max_leads} leads\n")
+        self.reddit_results.insert(tk.END, f"- Checking {len(subreddits)} subreddits: {', '.join(subreddits)}\n")
+        self.reddit_results.insert(tk.END, f"- Using {len(keywords)} keywords: {', '.join(keywords)}\n")
+        self.reddit_results.insert(tk.END, f"- Time filter: {time_filter}\n\n")
+        self.reddit_results.insert(tk.END, "This might take several minutes. Please be patient...\n")
+        
+        # Run in a separate thread
+        self.run_task(
+            lambda: self._execute_reddit_scraper(max_leads, subreddits, keywords, time_filter),
+            "Reddit scraper"
+        )
     
     def _execute_reddit_scraper(self, max_leads, subreddits, keywords, time_filter):
         """Execute the Reddit scraper and update results."""
         try:
-            from scrapers.reddit.scraper import run_reddit_scraper
+            pass
             
             # Run the scraper
             results = run_reddit_scraper(
@@ -1222,7 +1227,7 @@ class LeadGenerationGUI:
     def _execute_email_reporter(self, days_back, response_days):
         """Execute email reporter and update results."""
         try:
-            from reporting.email_reporter import run_email_reporter, EmailReporter
+            from reporting.email_reporter import run_email_reporter
             from utils.sheets_manager import get_sheets_client
             
             # Try to get a sheets client

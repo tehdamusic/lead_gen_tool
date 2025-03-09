@@ -1,1 +1,362 @@
 Log file created on 2025-03-08 11:25:54
+2025-03-09 15:29:15,007 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 15:29:15,007 - reddit.parser - INFO - Reddit HTML parser initialized
+2025-03-09 15:29:15,007 - reddit_scraper - INFO - Reddit scraper initialized with 2 subreddits and 2 keywords
+2025-03-09 15:29:15,007 - reddit_scraper - INFO - Scraping subreddit: r/Entrepreneur
+2025-03-09 15:29:15,007 - reddit.web_scraper - INFO - Fetching subreddit: r/Entrepreneur (time: week, limit: 5)
+2025-03-09 15:29:17,069 - reddit.web_scraper - INFO - Successfully fetched r/Entrepreneur (status: 200)
+2025-03-09 15:29:17,261 - reddit.parser - INFO - Extracted 0 posts from HTML for r/Entrepreneur
+2025-03-09 15:29:17,261 - reddit_scraper - INFO - Found 0 relevant posts in r/Entrepreneur
+2025-03-09 15:30:59,275 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 15:30:59,276 - reddit.parser - INFO - Reddit HTML parser initialized
+2025-03-09 15:30:59,276 - reddit_scraper - INFO - Reddit scraper initialized with 1 subreddits and 1 keywords
+2025-03-09 15:30:59,276 - reddit_scraper - INFO - Scraping subreddit: r/Entrepreneur
+2025-03-09 15:30:59,276 - reddit.web_scraper - INFO - Fetching subreddit: r/Entrepreneur (time: week, limit: 5)
+2025-03-09 15:31:00,236 - reddit.web_scraper - INFO - Successfully fetched r/Entrepreneur (status: 200)
+2025-03-09 15:31:00,423 - reddit.parser - INFO - Extracted 0 posts from HTML for r/Entrepreneur
+2025-03-09 15:31:00,423 - reddit_scraper - INFO - Found 0 relevant posts in r/Entrepreneur
+2025-03-09 15:31:00,424 - reddit_scraper - INFO - Searching Reddit for query: 'career'
+2025-03-09 15:31:00,424 - reddit.web_scraper - INFO - Searching Reddit for: 'career' (time: week, limit: 5)
+2025-03-09 15:31:01,833 - reddit.web_scraper - INFO - Successfully searched for 'career' (status: 200)
+2025-03-09 15:31:02,165 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'career'
+2025-03-09 15:31:02,166 - reddit_scraper - INFO - Found 0 relevant posts for query 'career'
+2025-03-09 15:31:02,239 - lead_scorer - INFO - Lead scorer initialized with threshold: 0.5, AI: False
+2025-03-09 15:31:02,245 - message_generator - INFO - Initialized MessageGenerator with model: gpt-4
+2025-03-09 15:42:59,151 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 15:43:00,406 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 15:43:00,407 - reddit.parser - INFO - Reddit HTML parser initialized
+2025-03-09 15:43:00,407 - reddit_scraper - INFO - Reddit scraper initialized with 1 subreddits and 3 keywords
+2025-03-09 15:43:00,408 - reddit_scraper - INFO - Scraping subreddit: r/AskReddit
+2025-03-09 15:43:00,408 - reddit.web_scraper - INFO - Fetching subreddit: r/AskReddit (time: week, limit: 5)
+2025-03-09 15:43:01,330 - reddit.web_scraper - INFO - Successfully fetched r/AskReddit (status: 200)
+2025-03-09 15:43:01,550 - reddit.parser - INFO - Extracted 0 posts from HTML for r/AskReddit
+2025-03-09 15:43:01,566 - reddit_scraper - INFO - Found 0 relevant posts in r/AskReddit
+2025-03-09 15:43:01,567 - reddit_scraper - INFO - Searching Reddit for query: 'help'
+2025-03-09 15:43:01,567 - reddit.web_scraper - INFO - Searching Reddit for: 'help' (time: week, limit: 5)
+2025-03-09 15:43:02,716 - reddit.web_scraper - INFO - Successfully searched for 'help' (status: 200)
+2025-03-09 15:43:03,031 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'help'
+2025-03-09 15:43:03,031 - reddit_scraper - INFO - Found 0 relevant posts for query 'help'
+2025-03-09 15:43:03,988 - sheets_manager - INFO - Successfully connected to Google Sheets
+2025-03-09 15:43:03,988 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 15:43:03,988 - reddit.parser - INFO - Reddit HTML parser initialized
+2025-03-09 15:43:03,988 - reddit_scraper - INFO - Reddit scraper initialized with 9 subreddits and 20 keywords
+2025-03-09 15:43:03,989 - reddit_scraper - INFO - Scraping subreddit: r/A
+2025-03-09 15:43:03,989 - reddit.web_scraper - INFO - Fetching subreddit: r/A (time: month, limit: 5)
+2025-03-09 15:43:04,443 - reddit.web_scraper - INFO - Successfully fetched r/A (status: 200)
+2025-03-09 15:43:04,492 - reddit.parser - INFO - Extracted 0 posts from HTML for r/A
+2025-03-09 15:43:04,493 - reddit_scraper - INFO - Found 0 relevant posts in r/A
+2025-03-09 15:43:04,493 - reddit_scraper - INFO - Scraping subreddit: r/s
+2025-03-09 15:43:04,493 - reddit.web_scraper - INFO - Fetching subreddit: r/s (time: month, limit: 5)
+2025-03-09 15:43:04,655 - reddit.web_scraper - INFO - Successfully fetched r/s (status: 200)
+2025-03-09 15:43:04,692 - reddit.parser - INFO - Extracted 0 posts from HTML for r/s
+2025-03-09 15:43:04,692 - reddit_scraper - INFO - Found 0 relevant posts in r/s
+2025-03-09 15:43:04,692 - reddit_scraper - INFO - Scraping subreddit: r/k
+2025-03-09 15:43:04,692 - reddit.web_scraper - INFO - Fetching subreddit: r/k (time: month, limit: 5)
+2025-03-09 15:43:04,917 - reddit.web_scraper - INFO - Successfully fetched r/k (status: 200)
+2025-03-09 15:43:04,946 - reddit.parser - INFO - Extracted 0 posts from HTML for r/k
+2025-03-09 15:43:04,947 - reddit_scraper - INFO - Found 0 relevant posts in r/k
+2025-03-09 15:43:04,947 - reddit_scraper - INFO - Scraping subreddit: r/R
+2025-03-09 15:43:04,947 - reddit.web_scraper - INFO - Fetching subreddit: r/R (time: month, limit: 5)
+2025-03-09 15:43:05,487 - reddit.web_scraper - INFO - Successfully fetched r/R (status: 200)
+2025-03-09 15:43:05,512 - reddit.parser - INFO - Extracted 0 posts from HTML for r/R
+2025-03-09 15:43:05,512 - reddit_scraper - INFO - Found 0 relevant posts in r/R
+2025-03-09 15:43:05,512 - reddit_scraper - INFO - Scraping subreddit: r/e
+2025-03-09 15:43:05,512 - reddit.web_scraper - INFO - Fetching subreddit: r/e (time: month, limit: 5)
+2025-03-09 15:43:06,202 - reddit.web_scraper - INFO - Successfully fetched r/e (status: 200)
+2025-03-09 15:43:06,257 - reddit.parser - INFO - Extracted 0 posts from HTML for r/e
+2025-03-09 15:43:06,257 - reddit_scraper - INFO - Found 0 relevant posts in r/e
+2025-03-09 15:43:06,258 - reddit_scraper - INFO - Scraping subreddit: r/d
+2025-03-09 15:43:06,258 - reddit.web_scraper - INFO - Fetching subreddit: r/d (time: month, limit: 5)
+2025-03-09 15:43:06,945 - reddit.web_scraper - INFO - Successfully fetched r/d (status: 200)
+2025-03-09 15:43:06,996 - reddit.parser - INFO - Extracted 0 posts from HTML for r/d
+2025-03-09 15:43:06,996 - reddit_scraper - INFO - Found 0 relevant posts in r/d
+2025-03-09 15:43:06,996 - reddit_scraper - INFO - Scraping subreddit: r/d
+2025-03-09 15:43:06,996 - reddit.web_scraper - INFO - Fetching subreddit: r/d (time: month, limit: 5)
+2025-03-09 15:43:07,269 - reddit.web_scraper - INFO - Successfully fetched r/d (status: 200)
+2025-03-09 15:43:07,327 - reddit.parser - INFO - Extracted 0 posts from HTML for r/d
+2025-03-09 15:43:07,327 - reddit_scraper - INFO - Found 0 relevant posts in r/d
+2025-03-09 15:43:07,327 - reddit_scraper - INFO - Scraping subreddit: r/i
+2025-03-09 15:43:07,327 - reddit.web_scraper - INFO - Fetching subreddit: r/i (time: month, limit: 5)
+2025-03-09 15:43:07,706 - reddit.web_scraper - INFO - Successfully fetched r/i (status: 200)
+2025-03-09 15:43:07,744 - reddit.parser - INFO - Extracted 0 posts from HTML for r/i
+2025-03-09 15:43:07,744 - reddit_scraper - INFO - Found 0 relevant posts in r/i
+2025-03-09 15:43:07,745 - reddit_scraper - INFO - Scraping subreddit: r/t
+2025-03-09 15:43:07,745 - reddit.web_scraper - INFO - Fetching subreddit: r/t (time: month, limit: 5)
+2025-03-09 15:43:07,956 - reddit.web_scraper - INFO - Successfully fetched r/t (status: 200)
+2025-03-09 15:43:08,022 - reddit.parser - INFO - Extracted 0 posts from HTML for r/t
+2025-03-09 15:43:08,022 - reddit_scraper - INFO - Found 0 relevant posts in r/t
+2025-03-09 15:43:08,022 - reddit_scraper - INFO - Collected a total of 0 leads from 9 subreddits
+2025-03-09 15:43:08,022 - reddit_scraper - INFO - Searching Reddit for query: 'h'
+2025-03-09 15:43:08,023 - reddit.web_scraper - INFO - Searching Reddit for: 'h' (time: month, limit: 50)
+2025-03-09 15:43:09,197 - reddit.web_scraper - INFO - Successfully searched for 'h' (status: 200)
+2025-03-09 15:43:09,487 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'h'
+2025-03-09 15:43:09,487 - reddit_scraper - INFO - Found 0 relevant posts for query 'h'
+2025-03-09 15:43:09,487 - reddit_scraper - INFO - Searching Reddit for query: 'e'
+2025-03-09 15:43:09,488 - reddit.web_scraper - INFO - Searching Reddit for: 'e' (time: month, limit: 50)
+2025-03-09 15:43:10,839 - reddit.web_scraper - INFO - Successfully searched for 'e' (status: 200)
+2025-03-09 15:43:11,141 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'e'
+2025-03-09 15:43:11,143 - reddit_scraper - INFO - Found 0 relevant posts for query 'e'
+2025-03-09 15:43:11,143 - reddit_scraper - INFO - Searching Reddit for query: 'l'
+2025-03-09 15:43:11,143 - reddit.web_scraper - INFO - Searching Reddit for: 'l' (time: month, limit: 50)
+2025-03-09 15:43:12,069 - reddit.web_scraper - INFO - Successfully searched for 'l' (status: 200)
+2025-03-09 15:43:12,385 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'l'
+2025-03-09 15:43:12,385 - reddit_scraper - INFO - Found 0 relevant posts for query 'l'
+2025-03-09 15:43:12,387 - reddit_scraper - INFO - Searching Reddit for query: 'p'
+2025-03-09 15:43:12,387 - reddit.web_scraper - INFO - Searching Reddit for: 'p' (time: month, limit: 50)
+2025-03-09 15:43:13,724 - reddit.web_scraper - INFO - Successfully searched for 'p' (status: 200)
+2025-03-09 15:43:14,054 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'p'
+2025-03-09 15:43:14,054 - reddit_scraper - INFO - Found 0 relevant posts for query 'p'
+2025-03-09 15:43:14,054 - reddit_scraper - INFO - Searching Reddit for query: ','
+2025-03-09 15:43:14,054 - reddit.web_scraper - INFO - Searching Reddit for: ',' (time: month, limit: 50)
+2025-03-09 15:43:15,136 - reddit.web_scraper - INFO - Successfully searched for ',' (status: 200)
+2025-03-09 15:43:15,395 - reddit.parser - INFO - Extracted 0 posts from HTML for search: ','
+2025-03-09 15:43:15,395 - reddit_scraper - INFO - Found 0 relevant posts for query ','
+2025-03-09 15:43:15,395 - reddit_scraper - INFO - Searching Reddit for query: 'a'
+2025-03-09 15:43:15,395 - reddit.web_scraper - INFO - Searching Reddit for: 'a' (time: month, limit: 50)
+2025-03-09 15:43:16,660 - reddit.web_scraper - INFO - Successfully searched for 'a' (status: 200)
+2025-03-09 15:43:17,022 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'a'
+2025-03-09 15:43:17,022 - reddit_scraper - INFO - Found 0 relevant posts for query 'a'
+2025-03-09 15:43:17,022 - reddit_scraper - INFO - Searching Reddit for query: 'd'
+2025-03-09 15:43:17,022 - reddit.web_scraper - INFO - Searching Reddit for: 'd' (time: month, limit: 50)
+2025-03-09 15:43:18,133 - reddit.web_scraper - INFO - Successfully searched for 'd' (status: 200)
+2025-03-09 15:43:18,400 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'd'
+2025-03-09 15:43:18,401 - reddit_scraper - INFO - Found 0 relevant posts for query 'd'
+2025-03-09 15:43:18,401 - reddit_scraper - INFO - Searching Reddit for query: 'v'
+2025-03-09 15:43:18,401 - reddit.web_scraper - INFO - Searching Reddit for: 'v' (time: month, limit: 50)
+2025-03-09 15:43:19,490 - reddit.web_scraper - INFO - Successfully searched for 'v' (status: 200)
+2025-03-09 15:43:19,836 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'v'
+2025-03-09 15:43:19,838 - reddit_scraper - INFO - Found 0 relevant posts for query 'v'
+2025-03-09 15:43:19,838 - reddit_scraper - INFO - Searching Reddit for query: 'i'
+2025-03-09 15:43:19,838 - reddit.web_scraper - INFO - Searching Reddit for: 'i' (time: month, limit: 50)
+2025-03-09 15:43:21,065 - reddit.web_scraper - INFO - Successfully searched for 'i' (status: 200)
+2025-03-09 15:43:21,342 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'i'
+2025-03-09 15:43:21,342 - reddit_scraper - INFO - Found 0 relevant posts for query 'i'
+2025-03-09 15:43:21,342 - reddit_scraper - INFO - Searching Reddit for query: 'c'
+2025-03-09 15:43:21,342 - reddit.web_scraper - INFO - Searching Reddit for: 'c' (time: month, limit: 50)
+2025-03-09 15:43:22,816 - reddit.web_scraper - INFO - Successfully searched for 'c' (status: 200)
+2025-03-09 15:43:23,190 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'c'
+2025-03-09 15:43:23,190 - reddit_scraper - INFO - Found 0 relevant posts for query 'c'
+2025-03-09 15:43:23,190 - reddit_scraper - INFO - Searching Reddit for query: 'e'
+2025-03-09 15:43:23,191 - reddit.web_scraper - INFO - Searching Reddit for: 'e' (time: month, limit: 50)
+2025-03-09 15:43:23,888 - reddit.web_scraper - INFO - Successfully searched for 'e' (status: 200)
+2025-03-09 15:43:24,189 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'e'
+2025-03-09 15:43:24,189 - reddit_scraper - INFO - Found 0 relevant posts for query 'e'
+2025-03-09 15:43:24,189 - reddit_scraper - INFO - Searching Reddit for query: ','
+2025-03-09 15:43:24,189 - reddit.web_scraper - INFO - Searching Reddit for: ',' (time: month, limit: 50)
+2025-03-09 15:43:24,966 - reddit.web_scraper - INFO - Successfully searched for ',' (status: 200)
+2025-03-09 15:43:25,296 - reddit.parser - INFO - Extracted 0 posts from HTML for search: ','
+2025-03-09 15:43:25,296 - reddit_scraper - INFO - Found 0 relevant posts for query ','
+2025-03-09 15:43:25,297 - reddit_scraper - INFO - Searching Reddit for query: 'q'
+2025-03-09 15:43:25,297 - reddit.web_scraper - INFO - Searching Reddit for: 'q' (time: month, limit: 50)
+2025-03-09 15:43:26,124 - reddit.web_scraper - INFO - Successfully searched for 'q' (status: 200)
+2025-03-09 15:43:26,411 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'q'
+2025-03-09 15:43:26,411 - reddit_scraper - INFO - Found 0 relevant posts for query 'q'
+2025-03-09 15:43:26,411 - reddit_scraper - INFO - Searching Reddit for query: 'u'
+2025-03-09 15:43:26,411 - reddit.web_scraper - INFO - Searching Reddit for: 'u' (time: month, limit: 50)
+2025-03-09 15:43:27,566 - reddit.web_scraper - INFO - Successfully searched for 'u' (status: 200)
+2025-03-09 15:43:27,919 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'u'
+2025-03-09 15:43:27,919 - reddit_scraper - INFO - Found 0 relevant posts for query 'u'
+2025-03-09 15:43:27,919 - reddit_scraper - INFO - Searching Reddit for query: 'e'
+2025-03-09 15:43:27,919 - reddit.web_scraper - INFO - Searching Reddit for: 'e' (time: month, limit: 50)
+2025-03-09 15:43:28,652 - reddit.web_scraper - INFO - Successfully searched for 'e' (status: 200)
+2025-03-09 15:43:28,956 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'e'
+2025-03-09 15:43:28,956 - reddit_scraper - INFO - Found 0 relevant posts for query 'e'
+2025-03-09 15:43:28,956 - reddit_scraper - INFO - Searching Reddit for query: 's'
+2025-03-09 15:43:28,956 - reddit.web_scraper - INFO - Searching Reddit for: 's' (time: month, limit: 50)
+2025-03-09 15:43:29,993 - reddit.web_scraper - INFO - Successfully searched for 's' (status: 200)
+2025-03-09 15:43:30,365 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 's'
+2025-03-09 15:43:30,366 - reddit_scraper - INFO - Found 0 relevant posts for query 's'
+2025-03-09 15:43:30,366 - reddit_scraper - INFO - Searching Reddit for query: 't'
+2025-03-09 15:43:30,366 - reddit.web_scraper - INFO - Searching Reddit for: 't' (time: month, limit: 50)
+2025-03-09 15:43:31,558 - reddit.web_scraper - INFO - Successfully searched for 't' (status: 200)
+2025-03-09 15:43:31,841 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 't'
+2025-03-09 15:43:31,841 - reddit_scraper - INFO - Found 0 relevant posts for query 't'
+2025-03-09 15:43:31,841 - reddit_scraper - INFO - Searching Reddit for query: 'i'
+2025-03-09 15:43:31,841 - reddit.web_scraper - INFO - Searching Reddit for: 'i' (time: month, limit: 50)
+2025-03-09 15:43:32,869 - reddit.web_scraper - INFO - Successfully searched for 'i' (status: 200)
+2025-03-09 15:43:33,216 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'i'
+2025-03-09 15:43:33,240 - reddit_scraper - INFO - Found 0 relevant posts for query 'i'
+2025-03-09 15:43:33,240 - reddit_scraper - INFO - Searching Reddit for query: 'o'
+2025-03-09 15:43:33,240 - reddit.web_scraper - INFO - Searching Reddit for: 'o' (time: month, limit: 50)
+2025-03-09 15:43:34,314 - reddit.web_scraper - INFO - Successfully searched for 'o' (status: 200)
+2025-03-09 15:43:34,638 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'o'
+2025-03-09 15:43:34,638 - reddit_scraper - INFO - Found 0 relevant posts for query 'o'
+2025-03-09 15:43:34,638 - reddit_scraper - INFO - Searching Reddit for query: 'n'
+2025-03-09 15:43:34,638 - reddit.web_scraper - INFO - Searching Reddit for: 'n' (time: month, limit: 50)
+2025-03-09 15:43:35,686 - reddit.web_scraper - INFO - Successfully searched for 'n' (status: 200)
+2025-03-09 15:43:36,016 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'n'
+2025-03-09 15:43:36,016 - reddit_scraper - INFO - Found 0 relevant posts for query 'n'
+2025-03-09 15:43:36,016 - reddit_scraper - INFO - Collected a total of 0 unique leads from 20 keyword searches
+2025-03-09 15:43:36,016 - reddit_scraper - INFO - Combined results: 0 unique leads
+2025-03-09 15:43:36,016 - reddit_scraper - WARNING - No leads to save to Google Sheets
+2025-03-09 15:43:36,016 - reddit_scraper - WARNING - No leads to save to CSV
+2025-03-09 15:43:36,024 - lead_scorer - INFO - Lead scorer initialized with threshold: 0.5, AI: False
+2025-03-09 15:52:17,944 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 15:52:19,006 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 15:52:19,006 - reddit.parser - INFO - Reddit HTML parser initialized
+2025-03-09 15:52:19,006 - reddit_scraper - INFO - Reddit scraper initialized with 1 subreddits and 3 keywords
+2025-03-09 15:52:19,006 - reddit_scraper - INFO - Scraping subreddit: r/AskReddit
+2025-03-09 15:52:19,007 - reddit.web_scraper - INFO - Fetching subreddit: r/AskReddit (time: week, limit: 5)
+2025-03-09 15:52:20,576 - reddit.web_scraper - INFO - Successfully fetched r/AskReddit (status: 200)
+2025-03-09 15:52:20,868 - reddit.parser - INFO - Extracted 0 posts from HTML for r/AskReddit
+2025-03-09 15:52:20,868 - reddit_scraper - INFO - Found 0 relevant posts in r/AskReddit
+2025-03-09 15:52:20,869 - reddit_scraper - INFO - Searching Reddit for query: 'help'
+2025-03-09 15:52:20,869 - reddit.web_scraper - INFO - Searching Reddit for: 'help' (time: week, limit: 5)
+2025-03-09 15:52:21,651 - reddit.web_scraper - INFO - Successfully searched for 'help' (status: 200)
+2025-03-09 15:52:21,922 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'help'
+2025-03-09 15:52:21,922 - reddit_scraper - INFO - Found 0 relevant posts for query 'help'
+2025-03-09 15:52:22,159 - sheets_manager - INFO - Successfully connected to Google Sheets
+2025-03-09 15:52:22,159 - reddit.web_scraper - INFO - Reddit web scraper initialized
+2025-03-09 15:52:22,159 - reddit.parser - INFO - Reddit HTML parser initialized
+2025-03-09 15:52:22,159 - reddit_scraper - INFO - Reddit scraper initialized with 9 subreddits and 20 keywords
+2025-03-09 15:52:22,159 - reddit_scraper - INFO - Scraping subreddit: r/A
+2025-03-09 15:52:22,160 - reddit.web_scraper - INFO - Fetching subreddit: r/A (time: month, limit: 5)
+2025-03-09 15:52:22,562 - reddit.web_scraper - INFO - Successfully fetched r/A (status: 200)
+2025-03-09 15:52:22,634 - reddit.parser - INFO - Extracted 0 posts from HTML for r/A
+2025-03-09 15:52:22,634 - reddit_scraper - INFO - Found 0 relevant posts in r/A
+2025-03-09 15:52:22,634 - reddit_scraper - INFO - Scraping subreddit: r/s
+2025-03-09 15:52:22,634 - reddit.web_scraper - INFO - Fetching subreddit: r/s (time: month, limit: 5)
+2025-03-09 15:52:22,934 - reddit.web_scraper - INFO - Successfully fetched r/s (status: 200)
+2025-03-09 15:52:22,991 - reddit.parser - INFO - Extracted 0 posts from HTML for r/s
+2025-03-09 15:52:22,991 - reddit_scraper - INFO - Found 0 relevant posts in r/s
+2025-03-09 15:52:22,991 - reddit_scraper - INFO - Scraping subreddit: r/k
+2025-03-09 15:52:22,991 - reddit.web_scraper - INFO - Fetching subreddit: r/k (time: month, limit: 5)
+2025-03-09 15:52:23,166 - reddit.web_scraper - INFO - Successfully fetched r/k (status: 200)
+2025-03-09 15:52:23,198 - reddit.parser - INFO - Extracted 0 posts from HTML for r/k
+2025-03-09 15:52:23,199 - reddit_scraper - INFO - Found 0 relevant posts in r/k
+2025-03-09 15:52:23,199 - reddit_scraper - INFO - Scraping subreddit: r/R
+2025-03-09 15:52:23,199 - reddit.web_scraper - INFO - Fetching subreddit: r/R (time: month, limit: 5)
+2025-03-09 15:52:23,523 - reddit.web_scraper - INFO - Successfully fetched r/R (status: 200)
+2025-03-09 15:52:23,563 - reddit.parser - INFO - Extracted 0 posts from HTML for r/R
+2025-03-09 15:52:23,563 - reddit_scraper - INFO - Found 0 relevant posts in r/R
+2025-03-09 15:52:23,563 - reddit_scraper - INFO - Scraping subreddit: r/e
+2025-03-09 15:52:23,563 - reddit.web_scraper - INFO - Fetching subreddit: r/e (time: month, limit: 5)
+2025-03-09 15:52:23,857 - reddit.web_scraper - INFO - Successfully fetched r/e (status: 200)
+2025-03-09 15:52:23,927 - reddit.parser - INFO - Extracted 0 posts from HTML for r/e
+2025-03-09 15:52:23,927 - reddit_scraper - INFO - Found 0 relevant posts in r/e
+2025-03-09 15:52:23,927 - reddit_scraper - INFO - Scraping subreddit: r/d
+2025-03-09 15:52:23,929 - reddit.web_scraper - INFO - Fetching subreddit: r/d (time: month, limit: 5)
+2025-03-09 15:52:24,234 - reddit.web_scraper - INFO - Successfully fetched r/d (status: 200)
+2025-03-09 15:52:24,298 - reddit.parser - INFO - Extracted 0 posts from HTML for r/d
+2025-03-09 15:52:24,298 - reddit_scraper - INFO - Found 0 relevant posts in r/d
+2025-03-09 15:52:24,299 - reddit_scraper - INFO - Scraping subreddit: r/d
+2025-03-09 15:52:24,299 - reddit.web_scraper - INFO - Fetching subreddit: r/d (time: month, limit: 5)
+2025-03-09 15:52:24,562 - reddit.web_scraper - INFO - Successfully fetched r/d (status: 200)
+2025-03-09 15:52:24,625 - reddit.parser - INFO - Extracted 0 posts from HTML for r/d
+2025-03-09 15:52:24,625 - reddit_scraper - INFO - Found 0 relevant posts in r/d
+2025-03-09 15:52:24,626 - reddit_scraper - INFO - Scraping subreddit: r/i
+2025-03-09 15:52:24,626 - reddit.web_scraper - INFO - Fetching subreddit: r/i (time: month, limit: 5)
+2025-03-09 15:52:24,944 - reddit.web_scraper - INFO - Successfully fetched r/i (status: 200)
+2025-03-09 15:52:24,968 - reddit.parser - INFO - Extracted 0 posts from HTML for r/i
+2025-03-09 15:52:24,968 - reddit_scraper - INFO - Found 0 relevant posts in r/i
+2025-03-09 15:52:24,968 - reddit_scraper - INFO - Scraping subreddit: r/t
+2025-03-09 15:52:24,968 - reddit.web_scraper - INFO - Fetching subreddit: r/t (time: month, limit: 5)
+2025-03-09 15:52:25,508 - reddit.web_scraper - INFO - Successfully fetched r/t (status: 200)
+2025-03-09 15:52:25,606 - reddit.parser - INFO - Extracted 0 posts from HTML for r/t
+2025-03-09 15:52:25,606 - reddit_scraper - INFO - Found 0 relevant posts in r/t
+2025-03-09 15:52:25,606 - reddit_scraper - INFO - Collected a total of 0 leads from 9 subreddits
+2025-03-09 15:52:25,606 - reddit_scraper - INFO - Searching Reddit for query: 'h'
+2025-03-09 15:52:25,606 - reddit.web_scraper - INFO - Searching Reddit for: 'h' (time: month, limit: 50)
+2025-03-09 15:52:26,799 - reddit.web_scraper - INFO - Successfully searched for 'h' (status: 200)
+2025-03-09 15:52:27,086 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'h'
+2025-03-09 15:52:27,086 - reddit_scraper - INFO - Found 0 relevant posts for query 'h'
+2025-03-09 15:52:27,087 - reddit_scraper - INFO - Searching Reddit for query: 'e'
+2025-03-09 15:52:27,087 - reddit.web_scraper - INFO - Searching Reddit for: 'e' (time: month, limit: 50)
+2025-03-09 15:52:27,979 - reddit.web_scraper - INFO - Successfully searched for 'e' (status: 200)
+2025-03-09 15:52:28,324 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'e'
+2025-03-09 15:52:28,324 - reddit_scraper - INFO - Found 0 relevant posts for query 'e'
+2025-03-09 15:52:28,324 - reddit_scraper - INFO - Searching Reddit for query: 'l'
+2025-03-09 15:52:28,324 - reddit.web_scraper - INFO - Searching Reddit for: 'l' (time: month, limit: 50)
+2025-03-09 15:52:28,995 - reddit.web_scraper - INFO - Successfully searched for 'l' (status: 200)
+2025-03-09 15:52:29,315 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'l'
+2025-03-09 15:52:29,315 - reddit_scraper - INFO - Found 0 relevant posts for query 'l'
+2025-03-09 15:52:29,315 - reddit_scraper - INFO - Searching Reddit for query: 'p'
+2025-03-09 15:52:29,315 - reddit.web_scraper - INFO - Searching Reddit for: 'p' (time: month, limit: 50)
+2025-03-09 15:52:30,259 - reddit.web_scraper - INFO - Successfully searched for 'p' (status: 200)
+2025-03-09 15:52:30,584 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'p'
+2025-03-09 15:52:30,584 - reddit_scraper - INFO - Found 0 relevant posts for query 'p'
+2025-03-09 15:52:30,584 - reddit_scraper - INFO - Searching Reddit for query: ','
+2025-03-09 15:52:30,584 - reddit.web_scraper - INFO - Searching Reddit for: ',' (time: month, limit: 50)
+2025-03-09 15:52:31,319 - reddit.web_scraper - INFO - Successfully searched for ',' (status: 200)
+2025-03-09 15:52:31,619 - reddit.parser - INFO - Extracted 0 posts from HTML for search: ','
+2025-03-09 15:52:31,619 - reddit_scraper - INFO - Found 0 relevant posts for query ','
+2025-03-09 15:52:31,619 - reddit_scraper - INFO - Searching Reddit for query: 'a'
+2025-03-09 15:52:31,619 - reddit.web_scraper - INFO - Searching Reddit for: 'a' (time: month, limit: 50)
+2025-03-09 15:52:32,489 - reddit.web_scraper - INFO - Successfully searched for 'a' (status: 200)
+2025-03-09 15:52:32,889 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'a'
+2025-03-09 15:52:32,890 - reddit_scraper - INFO - Found 0 relevant posts for query 'a'
+2025-03-09 15:52:32,890 - reddit_scraper - INFO - Searching Reddit for query: 'd'
+2025-03-09 15:52:32,890 - reddit.web_scraper - INFO - Searching Reddit for: 'd' (time: month, limit: 50)
+2025-03-09 15:52:36,083 - reddit.web_scraper - INFO - Successfully searched for 'd' (status: 200)
+2025-03-09 15:52:36,380 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'd'
+2025-03-09 15:52:36,380 - reddit_scraper - INFO - Found 0 relevant posts for query 'd'
+2025-03-09 15:52:36,381 - reddit_scraper - INFO - Searching Reddit for query: 'v'
+2025-03-09 15:52:36,381 - reddit.web_scraper - INFO - Searching Reddit for: 'v' (time: month, limit: 50)
+2025-03-09 15:52:37,358 - reddit.web_scraper - INFO - Successfully searched for 'v' (status: 200)
+2025-03-09 15:52:37,712 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'v'
+2025-03-09 15:52:37,712 - reddit_scraper - INFO - Found 0 relevant posts for query 'v'
+2025-03-09 15:52:37,713 - reddit_scraper - INFO - Searching Reddit for query: 'i'
+2025-03-09 15:52:37,713 - reddit.web_scraper - INFO - Searching Reddit for: 'i' (time: month, limit: 50)
+2025-03-09 15:52:38,657 - reddit.web_scraper - INFO - Successfully searched for 'i' (status: 200)
+2025-03-09 15:52:38,927 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'i'
+2025-03-09 15:52:38,927 - reddit_scraper - INFO - Found 0 relevant posts for query 'i'
+2025-03-09 15:52:38,927 - reddit_scraper - INFO - Searching Reddit for query: 'c'
+2025-03-09 15:52:38,927 - reddit.web_scraper - INFO - Searching Reddit for: 'c' (time: month, limit: 50)
+2025-03-09 15:52:39,612 - reddit.web_scraper - INFO - Successfully searched for 'c' (status: 200)
+2025-03-09 15:52:39,953 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'c'
+2025-03-09 15:52:39,954 - reddit_scraper - INFO - Found 0 relevant posts for query 'c'
+2025-03-09 15:52:39,954 - reddit_scraper - INFO - Searching Reddit for query: 'e'
+2025-03-09 15:52:39,954 - reddit.web_scraper - INFO - Searching Reddit for: 'e' (time: month, limit: 50)
+2025-03-09 15:52:40,658 - reddit.web_scraper - INFO - Successfully searched for 'e' (status: 200)
+2025-03-09 15:52:40,918 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'e'
+2025-03-09 15:52:40,918 - reddit_scraper - INFO - Found 0 relevant posts for query 'e'
+2025-03-09 15:52:40,918 - reddit_scraper - INFO - Searching Reddit for query: ','
+2025-03-09 15:52:40,918 - reddit.web_scraper - INFO - Searching Reddit for: ',' (time: month, limit: 50)
+2025-03-09 15:52:41,685 - reddit.web_scraper - INFO - Successfully searched for ',' (status: 200)
+2025-03-09 15:52:42,006 - reddit.parser - INFO - Extracted 0 posts from HTML for search: ','
+2025-03-09 15:52:42,006 - reddit_scraper - INFO - Found 0 relevant posts for query ','
+2025-03-09 15:52:42,007 - reddit_scraper - INFO - Searching Reddit for query: 'q'
+2025-03-09 15:52:42,007 - reddit.web_scraper - INFO - Searching Reddit for: 'q' (time: month, limit: 50)
+2025-03-09 15:52:42,792 - reddit.web_scraper - INFO - Successfully searched for 'q' (status: 200)
+2025-03-09 15:52:43,091 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'q'
+2025-03-09 15:52:43,091 - reddit_scraper - INFO - Found 0 relevant posts for query 'q'
+2025-03-09 15:52:43,091 - reddit_scraper - INFO - Searching Reddit for query: 'u'
+2025-03-09 15:52:43,092 - reddit.web_scraper - INFO - Searching Reddit for: 'u' (time: month, limit: 50)
+2025-03-09 15:52:43,944 - reddit.web_scraper - INFO - Successfully searched for 'u' (status: 200)
+2025-03-09 15:52:44,292 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'u'
+2025-03-09 15:52:44,292 - reddit_scraper - INFO - Found 0 relevant posts for query 'u'
+2025-03-09 15:52:44,292 - reddit_scraper - INFO - Searching Reddit for query: 'e'
+2025-03-09 15:52:44,292 - reddit.web_scraper - INFO - Searching Reddit for: 'e' (time: month, limit: 50)
+2025-03-09 15:52:45,046 - reddit.web_scraper - INFO - Successfully searched for 'e' (status: 200)
+2025-03-09 15:52:45,307 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'e'
+2025-03-09 15:52:45,307 - reddit_scraper - INFO - Found 0 relevant posts for query 'e'
+2025-03-09 15:52:45,307 - reddit_scraper - INFO - Searching Reddit for query: 's'
+2025-03-09 15:52:45,307 - reddit.web_scraper - INFO - Searching Reddit for: 's' (time: month, limit: 50)
+2025-03-09 15:52:45,947 - reddit.web_scraper - INFO - Successfully searched for 's' (status: 200)
+2025-03-09 15:52:46,272 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 's'
+2025-03-09 15:52:46,272 - reddit_scraper - INFO - Found 0 relevant posts for query 's'
+2025-03-09 15:52:46,272 - reddit_scraper - INFO - Searching Reddit for query: 't'
+2025-03-09 15:52:46,272 - reddit.web_scraper - INFO - Searching Reddit for: 't' (time: month, limit: 50)
+2025-03-09 15:52:47,246 - reddit.web_scraper - INFO - Successfully searched for 't' (status: 200)
+2025-03-09 15:52:47,533 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 't'
+2025-03-09 15:52:47,533 - reddit_scraper - INFO - Found 0 relevant posts for query 't'
+2025-03-09 15:52:47,533 - reddit_scraper - INFO - Searching Reddit for query: 'i'
+2025-03-09 15:52:47,533 - reddit.web_scraper - INFO - Searching Reddit for: 'i' (time: month, limit: 50)
+2025-03-09 15:52:48,209 - reddit.web_scraper - INFO - Successfully searched for 'i' (status: 200)
+2025-03-09 15:52:48,551 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'i'
+2025-03-09 15:52:48,551 - reddit_scraper - INFO - Found 0 relevant posts for query 'i'
+2025-03-09 15:52:48,551 - reddit_scraper - INFO - Searching Reddit for query: 'o'
+2025-03-09 15:52:48,551 - reddit.web_scraper - INFO - Searching Reddit for: 'o' (time: month, limit: 50)
+2025-03-09 15:52:49,321 - reddit.web_scraper - INFO - Successfully searched for 'o' (status: 200)
+2025-03-09 15:52:49,615 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'o'
+2025-03-09 15:52:49,615 - reddit_scraper - INFO - Found 0 relevant posts for query 'o'
+2025-03-09 15:52:49,616 - reddit_scraper - INFO - Searching Reddit for query: 'n'
+2025-03-09 15:52:49,616 - reddit.web_scraper - INFO - Searching Reddit for: 'n' (time: month, limit: 50)
+2025-03-09 15:52:50,305 - reddit.web_scraper - INFO - Successfully searched for 'n' (status: 200)
+2025-03-09 15:52:50,690 - reddit.parser - INFO - Extracted 0 posts from HTML for search: 'n'
+2025-03-09 15:52:50,690 - reddit_scraper - INFO - Found 0 relevant posts for query 'n'
+2025-03-09 15:52:50,691 - reddit_scraper - INFO - Collected a total of 0 unique leads from 20 keyword searches
+2025-03-09 15:52:50,691 - reddit_scraper - INFO - Combined results: 0 unique leads
+2025-03-09 15:52:50,691 - reddit_scraper - WARNING - No leads to save to Google Sheets
+2025-03-09 15:52:50,691 - reddit_scraper - WARNING - No leads to save to CSV
+2025-03-09 15:52:50,703 - lead_scorer - INFO - Lead scorer initialized with threshold: 0.5, AI: False

@@ -11,10 +11,9 @@ import sys
 import logging
 import traceback
 import argparse
+from datetime import datetime
 from typing import Dict, Any
 from dotenv import load_dotenv
-
-from scrapers.linkedin.scraper import run_linkedin_scraper
 
 # Configure base logging
 os.makedirs('logs', exist_ok=True)
@@ -67,41 +66,29 @@ def check_dependencies() -> bool:
         print("Checking dependencies...")
         
         # Web scraping
-        import importlib.util
-        if importlib.util.find_spec("selenium"):
-            print("✓ Selenium")
-        else:
-            raise ImportError("Selenium is not installed")
+        import selenium
+        print("✓ Selenium")
         import bs4
         print("✓ BeautifulSoup")
         
         # API clients
-        if importlib.util.find_spec("openai"):
-            print("✓ OpenAI API")
-        else:
-            raise ImportError("OpenAI API is not installed")
-        if importlib.util.find_spec("gspread"):
-            print("✓ gspread (Google Sheets API)")
-        else:
-            raise ImportError("gspread is not installed")
-        if importlib.util.find_spec("googleapiclient"):
-            print("✓ Google API Client")
-        else:
-            raise ImportError("Google API Client is not installed")
+                print("✓ PRAW (Reddit API)")
+        import openai
+        print("✓ OpenAI API")
+        import gspread
+        print("✓ gspread (Google Sheets API)")
+        import googleapiclient
+        print("✓ Google API Client")
         
         # Data processing
-        if importlib.util.find_spec("pandas"):
-            print("✓ Pandas")
-        else:
-            raise ImportError("Pandas is not installed")
+        import pandas
+        print("✓ Pandas")
         import numpy
         print("✓ NumPy")
         
         # Environment & GUI
-        if importlib.util.find_spec("dotenv"):
-            print("✓ python-dotenv")
-        else:
-            raise ImportError("python-dotenv is not installed")
+        import dotenv
+        print("✓ python-dotenv")
         import tkinter
         print("✓ tkinter")
         
@@ -113,6 +100,94 @@ def check_dependencies() -> bool:
         print(f"Error: Missing dependency: {str(e)}")
         print("Please install all required dependencies using 'pip install -r requirements.txt'")
         return False
+
+def test_google_sheets_connection():
+    """Test connection to Google Sheets."""
+    try:
+        print("Testing Google Sheets connection...")
+        
+        # Import sheets_manager module
+        from utils.sheets_manager import get_sheets_client, create_sheet_if_not_exists
+        
+        # Try connecting
+        client = get_sheets_client()
+        
+        # Try creating a test sheet
+        worksheet = create_sheet_if_not_exists('LeadGenerationData', 'TestSheet')
+        
+        # Write a test row
+        worksheet.append_row(['Test', 'Data', datetime.now().strftime("%Y-%m-%d %H:%M:%S")])
+        
+        print("✓ Google Sheets connection successful!")
+        return True
+    except Exception as e:
+        logger.error(f"Error connecting to Google Sheets: {str(e)}")
+        print(f"Error connecting to Google Sheets: {str(e)}")
+        print("\nPossible troubleshooting steps:")
+        print("1. Verify your credentials.json file is correct and in the right location")
+        print("2. Make sure you've enabled the Google Sheets API in your Google Cloud Console")
+        print("3. Check that your GOOGLE_SHEETS_SPREADSHEET_ID in .env is correct")
+        return False
+
+def start_gui():
+    """Start the Lead Generation GUI."""
+    try:
+        # Create logs directory if it doesn't exist
+        os.makedirs('logs', exist_ok=True)
+        
+        # Import gui module and create the GUI application
+        from gui.lead_gen_gui import LeadGenerationGUI
+        import tkinter as tk
+        
+        root = tk.Tk()
+        app = LeadGenerationGUI(root)
+        root.mainloop()
+    except Exception as e:
+        logger.error(f"Error starting GUI: {str(e)}")
+        print(f"Error starting GUI: {str(e)}")
+        print(f"Error details: {type(e).__name__}: {str(e)}")
+        traceback.print_exc()
+        print("\nPossible troubleshooting steps:")
+        print("1. Check that GUI module exists in the correct location")
+        print("2. Ensure all required dependencies are installed (especially tkinter)")
+        print("3. Check the import paths in main.py and GUI files")
+        sys.exit(1)
+
+def run_linkedin_scraper(args):
+    """Run LinkedIn scraper component."""
+    try:
+        # Import from the new modular structure
+        from scrapers.linkedin import run_linkedin_scraper as linkedin_scraper_runner
+        from utils.sheets_manager import get_sheets_client
+        
+        print("Starting LinkedIn scraper...")
+        sheets_client = get_sheets_client()
+        
+        # Get max leads from args or use default
+        max_leads = getattr(args, 'max_leads', 50)
+        headless = getattr(args, 'headless', True)
+        
+        # Run the scraper
+        leads = linkedin_scraper_runner(sheets_client, max_leads=max_leads, headless=headless)
+        
+        results = {
+            "leads_scraped": len(leads),
+            "source": "linkedin",
+            "success": True
+        }
+        
+        print(f"LinkedIn scraper completed. Collected {len(leads)} leads.")
+        return results
+    except Exception as e:
+        logger.error(f"Error running LinkedIn scraper: {str(e)}")
+        print(f"Error running LinkedIn scraper: {str(e)}")
+        traceback.print_exc()
+        return {
+            "leads_scraped": 0,
+            "source": "linkedin",
+            "success": False,
+            "error": str(e)
+        }
 
 def _original_run_reddit_scraper(args) -> Dict[str, Any]:
     """Run Reddit scraper component."""
@@ -385,6 +460,7 @@ def run_full_pipeline(args) -> Dict[str, Any]:
     print("=========================\n")
     
     return results
+
 def main():
     """Main entry point for the application."""
     parser = argparse.ArgumentParser(description='Lead Generation Automation Tool')
@@ -393,7 +469,7 @@ def main():
     subparsers = parser.add_subparsers(dest='command', help='Command to run')
     
     # GUI command
-    subparsers.add_parser('gui', help='Start the graphical user interface')
+    gui_parser = subparsers.add_parser('gui', help='Start the graphical user interface')
     
     # LinkedIn scraper command
     linkedin_parser = subparsers.add_parser('linkedin', help='Run LinkedIn scraper')
@@ -466,30 +542,6 @@ def main():
     else:
         # Default: start GUI
         start_gui()
-
-def start_gui():
-    """Start the Lead Generation GUI."""
-    try:
-        # Create logs directory if it doesn't exist
-        os.makedirs('logs', exist_ok=True)
-        
-        # Import gui module and create the GUI application
-        from gui.lead_gen_gui import LeadGenerationGUI
-        import tkinter as tk
-        
-        root = tk.Tk()
-        app = LeadGenerationGUI(root)
-        root.mainloop()
-    except Exception as e:
-        logger.error(f"Error starting GUI: {str(e)}")
-        print(f"Error starting GUI: {str(e)}")
-        print(f"Error details: {type(e).__name__}: {str(e)}")
-        traceback.print_exc()
-        print("\nPossible troubleshooting steps:")
-        print("1. Check that GUI module exists in the correct location")
-        print("2. Ensure all required dependencies are installed (especially tkinter)")
-        print("3. Check the import paths in main.py and GUI files")
-        sys.exit(1)
 
 
 if __name__ == "__main__":

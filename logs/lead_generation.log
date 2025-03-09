@@ -392,3 +392,4 @@
 2025-03-09 14:37:12,229 - reddit_scraper - INFO - Combined results: 0 unique leads
 2025-03-09 14:37:12,229 - reddit_scraper - WARNING - No leads to save to CSV
 2025-03-09 14:37:12,229 - lead_gen_gui - INFO - Reddit scraper completed successfully.
+2025-03-09 15:52:59,282 - main - INFO - All required dependencies are installed
