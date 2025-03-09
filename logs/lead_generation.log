@@ -778,3 +778,180 @@ Stacktrace:
 2025-03-08 21:27:03,260 - lead_gen_gui - INFO - GUI Initialized
 2025-03-08 22:52:17,457 - main - INFO - All required dependencies are installed
 2025-03-08 22:52:17,495 - main - ERROR - Error starting GUI: invalid syntax (scraper.py, line 57)
+2025-03-09 07:41:24,569 - main - INFO - All required dependencies are installed
+2025-03-09 07:41:25,399 - lead_gen_gui - ERROR - Failed to import LinkedInScraper: cannot import name 'extract_additional_info' from 'scrapers.linkedin.extractors' (D:\lead_gen_tool\scrapers\linkedin\extractors.py)
+2025-03-09 07:47:40,820 - main - INFO - All required dependencies are installed
+2025-03-09 07:47:40,900 - lead_gen_gui - ERROR - Failed to import LinkedInScraper: cannot import name 'run_scraper' from 'scrapers.reddit.scraper' (D:\lead_gen_tool\scrapers\reddit\scraper.py)
+2025-03-09 07:47:48,691 - lead_gen_gui - ERROR - Failed to initialize LinkedIn Scraper: name 'LinkedInScraper' is not defined
+2025-03-09 07:47:50,121 - lead_gen_gui - INFO - GUI Initialized
+2025-03-09 07:48:48,685 - main - INFO - All required dependencies are installed
+2025-03-09 07:48:48,745 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 07:48:48,846 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 07:48:48,846 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 07:48:50,201 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 07:48:50,201 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 07:48:50,253 - lead_gen_gui - INFO - GUI Initialized
+2025-03-09 07:48:55,948 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
+2025-03-09 07:48:55,957 - linkedin.scraper - WARNING - Not logged in. Logging in first.
+2025-03-09 07:48:55,958 - linkedin.scraper - INFO - Logging into LinkedIn...
+2025-03-09 07:49:12,700 - linkedin.scraper - INFO - Successfully logged into LinkedIn.
+2025-03-09 07:49:12,700 - linkedin.scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Technology%20CEO&origin=GLOBAL_SEARCH_HEADER
+2025-03-09 07:49:25,162 - linkedin.scraper - INFO - Saved LinkedIn search page HTML for debugging.
+2025-03-09 07:49:25,406 - linkedin.scraper - INFO - Scraping page 1 of 3
+2025-03-09 07:49:31,634 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 07:49:31,635 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 07:49:31,676 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 07:49:31,676 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 07:49:31,677 - linkedin.scraper - WARNING - No profiles extracted on page 1
+2025-03-09 07:49:35,453 - linkedin.scraper - INFO - Scraping page 2 of 3
+2025-03-09 07:49:38,708 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 07:49:38,709 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 07:49:38,717 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 07:49:38,717 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 07:49:38,717 - linkedin.scraper - WARNING - No profiles extracted on page 2
+2025-03-09 07:49:42,088 - linkedin.scraper - INFO - Scraping page 3 of 3
+2025-03-09 07:49:48,355 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 07:49:48,355 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 07:49:48,362 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 07:49:48,362 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 07:49:48,362 - linkedin.scraper - WARNING - No profiles extracted on page 3
+2025-03-09 07:49:48,363 - linkedin.utils - INFO - Saved 0 profiles to data/linkedin_leads.csv
+2025-03-09 07:49:48,363 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
+2025-03-09 08:07:15,281 - main - INFO - All required dependencies are installed
+2025-03-09 08:07:15,474 - main - ERROR - Error starting GUI: expected 'except' or 'finally' block (extractors.py, line 330)
+2025-03-09 08:12:28,821 - main - INFO - All required dependencies are installed
+2025-03-09 08:12:28,884 - main - ERROR - Error starting GUI: expected 'except' or 'finally' block (extractors.py, line 330)
+2025-03-09 08:14:20,558 - main - INFO - All required dependencies are installed
+2025-03-09 08:14:20,614 - main - ERROR - Error starting GUI: expected 'except' or 'finally' block (extractors.py, line 330)
+2025-03-09 08:17:34,560 - main - INFO - All required dependencies are installed
+2025-03-09 08:17:34,652 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 08:17:34,778 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 08:17:34,779 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 08:17:36,062 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 08:17:36,062 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 08:17:36,145 - lead_gen_gui - INFO - GUI Initialized
+2025-03-09 08:17:40,290 - lead_gen_gui - INFO - Starting LinkedIn search for Technology CEO...
+2025-03-09 08:17:40,299 - linkedin.scraper - WARNING - Not logged in. Logging in first.
+2025-03-09 08:17:40,299 - linkedin.scraper - INFO - Logging into LinkedIn...
+2025-03-09 08:17:57,770 - linkedin.scraper - INFO - Successfully logged into LinkedIn.
+2025-03-09 08:17:57,770 - linkedin.scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=Technology%20CEO&origin=GLOBAL_SEARCH_HEADER
+2025-03-09 08:18:10,681 - linkedin.scraper - INFO - Saved LinkedIn search page HTML for debugging.
+2025-03-09 08:18:10,909 - linkedin.scraper - INFO - Scraping page 1 of 3
+2025-03-09 08:18:18,976 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 08:18:18,976 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 08:18:19,033 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 08:18:19,042 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,050 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,057 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,064 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,073 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,081 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,089 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,096 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,104 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,111 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:19,111 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 08:18:19,112 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 08:18:19,112 - linkedin.extractors - INFO - Attempting emergency profile extraction method
+2025-03-09 08:18:19,250 - linkedin.extractors - INFO - Found 12 potential profile links
+2025-03-09 08:18:25,360 - linkedin.extractors - INFO - Emergency extraction found 10 profiles
+2025-03-09 08:18:25,361 - linkedin.scraper - INFO - Extracted 5 profiles from page 1
+2025-03-09 08:18:28,904 - linkedin.scraper - INFO - Scraping page 2 of 3
+2025-03-09 08:18:32,978 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 08:18:32,978 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 08:18:33,022 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 08:18:33,029 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,038 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,045 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,054 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,062 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,070 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,078 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,086 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,093 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,101 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:33,101 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 08:18:33,102 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 08:18:33,102 - linkedin.extractors - INFO - Attempting emergency profile extraction method
+2025-03-09 08:18:33,203 - linkedin.extractors - INFO - Found 14 potential profile links
+2025-03-09 08:18:39,757 - linkedin.extractors - INFO - Emergency extraction found 10 profiles
+2025-03-09 08:18:39,758 - linkedin.scraper - INFO - Extracted 5 profiles from page 2
+2025-03-09 08:18:43,409 - linkedin.scraper - INFO - Scraping page 3 of 3
+2025-03-09 08:18:51,498 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 08:18:51,498 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 08:18:51,527 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 08:18:51,534 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,542 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,549 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,567 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,624 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,631 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,636 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,642 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,649 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,654 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:18:51,655 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 08:18:51,655 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 08:18:51,655 - linkedin.extractors - INFO - Attempting emergency profile extraction method
+2025-03-09 08:18:51,744 - linkedin.extractors - INFO - Found 16 potential profile links
+2025-03-09 08:18:58,696 - linkedin.extractors - INFO - Emergency extraction found 10 profiles
+2025-03-09 08:18:58,696 - linkedin.scraper - INFO - Extracted 6 profiles from page 3
+2025-03-09 08:18:58,698 - linkedin.utils - INFO - Saved 16 profiles to data/linkedin_leads.csv
+2025-03-09 08:18:58,698 - lead_gen_gui - INFO - LinkedIn search for Technology CEO completed successfully.
+2025-03-09 08:19:24,810 - lead_gen_gui - INFO - LinkedIn results save function called
+2025-03-09 08:20:45,988 - main - INFO - All required dependencies are installed
+2025-03-09 08:20:46,053 - lead_gen_gui - INFO - Successfully imported LinkedInScraper from modular scrapers package
+2025-03-09 08:20:46,154 - linkedin.utils - INFO - Found ChromeDriver at: chromedriver.exe
+2025-03-09 08:20:46,154 - linkedin.scraper - INFO - Using ChromeDriver at: chromedriver.exe
+2025-03-09 08:20:47,291 - linkedin.scraper - INFO - Successfully initialized WebDriver with ChromeDriver at chromedriver.exe.
+2025-03-09 08:20:47,291 - lead_gen_gui - INFO - LinkedIn Scraper initialized
+2025-03-09 08:20:47,351 - lead_gen_gui - INFO - GUI Initialized
+2025-03-09 08:20:54,072 - lead_gen_gui - INFO - Reddit scraper function called (not implemented)
+2025-03-09 08:21:05,524 - lead_gen_gui - INFO - Starting Coaching prospect search for 'burnout'...
+2025-03-09 08:21:05,532 - linkedin.scraper - WARNING - Not logged in. Logging in first.
+2025-03-09 08:21:05,533 - linkedin.scraper - INFO - Logging into LinkedIn...
+2025-03-09 08:21:22,465 - linkedin.scraper - INFO - Successfully logged into LinkedIn.
+2025-03-09 08:21:22,466 - linkedin.scraper - INFO - Navigating to search URL: https://www.linkedin.com/search/results/people/?keywords=burnout&origin=GLOBAL_SEARCH_HEADER
+2025-03-09 08:21:34,489 - linkedin.scraper - INFO - Saved LinkedIn search page HTML for debugging.
+2025-03-09 08:21:34,640 - linkedin.scraper - INFO - Scraping page 1 of 2
+2025-03-09 08:21:42,444 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 08:21:42,445 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 08:21:42,492 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 08:21:42,503 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,509 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,516 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,524 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,530 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,537 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,545 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,551 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,558 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,564 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:42,565 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 08:21:42,566 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 08:21:42,566 - linkedin.extractors - INFO - Attempting emergency profile extraction method
+2025-03-09 08:21:42,666 - linkedin.extractors - INFO - Found 5 potential profile links
+2025-03-09 08:21:45,617 - linkedin.extractors - INFO - Emergency extraction found 5 profiles
+2025-03-09 08:21:45,619 - linkedin.scraper - INFO - Extracted 3 profiles from page 1
+2025-03-09 08:21:49,938 - linkedin.scraper - INFO - Scraping page 2 of 2
+2025-03-09 08:21:53,995 - linkedin.extractors - WARNING - No profiles found on the page using JavaScript extraction
+2025-03-09 08:21:53,995 - linkedin.extractors - INFO - JavaScript extraction returned no results, trying Selenium extraction
+2025-03-09 08:21:54,027 - linkedin.extractors - INFO - Found 10 profile containers using selector: li.ember-view
+2025-03-09 08:21:54,034 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,041 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,048 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,056 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,062 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,069 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,075 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,082 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,089 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,096 - linkedin.extractors - WARNING - Could not find profile URL, skipping profile
+2025-03-09 08:21:54,096 - linkedin.extractors - INFO - Successfully extracted 0 profiles via Selenium
+2025-03-09 08:21:54,096 - linkedin.extractors - WARNING - No profiles extracted using either method
+2025-03-09 08:21:54,097 - linkedin.extractors - INFO - Attempting emergency profile extraction method
+2025-03-09 08:21:54,194 - linkedin.extractors - INFO - Found 2 potential profile links
+2025-03-09 08:21:54,602 - linkedin.extractors - INFO - Emergency extraction found 2 profiles
+2025-03-09 08:21:54,602 - linkedin.scraper - INFO - Extracted 1 profiles from page 2
+2025-03-09 08:21:54,603 - linkedin.utils - INFO - Saved 4 profiles to data/linkedin_leads.csv
+2025-03-09 08:21:54,603 - lead_gen_gui - INFO - Coaching prospect search for 'burnout' completed successfully.

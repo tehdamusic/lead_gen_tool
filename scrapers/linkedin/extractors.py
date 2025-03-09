@@ -313,7 +313,8 @@ def extract_profiles(driver):
                                     break
                             except:
                                 continue
-                except:
+                except Exception as e:
+                    logger.warning(f"Error in emergency extraction: {str(e)}")
                     continue
                     
             if emergency_profiles:
@@ -326,6 +327,8 @@ def extract_profiles(driver):
                         seen_urls.add(p['url'])
                         unique_profiles.append(p)
                 return unique_profiles
+        except Exception as e:
+            logger.error(f"Emergency extraction failed: {str(e)}")
     
     return profiles
 
