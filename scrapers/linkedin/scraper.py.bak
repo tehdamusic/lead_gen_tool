@@ -7,7 +7,6 @@ import time
 import random
 import logging
 import csv
-import traceback
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -551,11 +550,8 @@ class LinkedInScraper:
         # Save to Google Sheets
         try:
             # Import here to avoid circular imports
-            try:
-                from utils.sheets_manager import save_leads_to_sheet
-            except ImportError:
-                logger.error(\"Could not import save_leads_to_sheet from utils.sheets_manager\")
-                return unique_leads
+            sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+            from utils.sheets_manager import save_leads_to_sheet
             
             # Save to the coaching prospects worksheet
             sheets_result = save_leads_to_sheet(unique_leads, "CoachingProspects")
@@ -641,6 +637,11 @@ def run_linkedin_scraper(sheets_client=None, max_leads=50, headless=False):
         
         # Close the scraper
         scraper.close()
+        
+        return leads
+    except Exception as e:
+        logger.error(f"Error running LinkedIn scraper: {str(e)}")
+        return []
         
         return leads
     except Exception as e:

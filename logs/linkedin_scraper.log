@@ -1,0 +1,2 @@
+2025-03-09 16:49:37,804 - main - INFO - All required dependencies are installed
+2025-03-09 16:49:37,805 - main - ERROR - Error starting GUI: No module named 'gui'

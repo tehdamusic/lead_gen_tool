@@ -239,12 +239,6 @@ def save_leads_to_sheet(leads, worksheet_name="LinkedInLeads"):
         logger.info(f"Successfully saved {len(rows)} leads to Google Sheets in worksheet {worksheet_name}")
         return True
         
-    except gspread.exceptions.APIError as e:
-        logger.error(f"Google Sheets API error: {str(e)}")
-        return False
-    except (ValueError, KeyError) as e:
-        logger.error(f"Data formatting error: {str(e)}")
-        return False
     except Exception as e:
         logger.error(f"Error saving leads to Google Sheets: {str(e)}")
         return False

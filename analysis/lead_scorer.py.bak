@@ -167,14 +167,7 @@ class LeadScorer:
             return None
             
         except Exception as e:
-            error_msg = str(e)
-            if "Rate limit" in error_msg:
-                logger.warning(f"OpenAI API rate limit reached: {error_msg}")
-                # Sleep and retry could be implemented here
-            elif "API key" in error_msg:
-                logger.error(f"OpenAI API key issue: {error_msg}")
-            else:
-                logger.error(f"Error in AI scoring: {error_msg}")
+            logger.error(f"Error in AI scoring: {str(e)}")
             return None
     
     def _create_scoring_prompt(self, lead: Dict[str, Any]) -> str:
