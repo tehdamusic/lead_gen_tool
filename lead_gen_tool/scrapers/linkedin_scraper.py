@@ -12,6 +12,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 from pymongo import MongoClient
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import openai
 
 # Configure Advanced Logging
 logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -26,6 +27,21 @@ leads_collection = db["leads"]
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Get current script directory
 GOOGLE_SHEETS_CREDENTIALS = os.path.join(BASE_DIR, "../config/google_sheets_credentials.json")
 SHEET_NAME = "Peak Transformation Coaching Leads"
+
+# OpenAI API Key - Load from environment variable
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# Coach/Competitor Exclusion Keywords (expanded list)
+EXCLUDED_TITLES = [
+    "coach", "mentor", "consultant", "advisor", "trainer", "counselor", "therapist",
+    "life coach", "business coach", "career coach", "executive coach", "personal coach",
+    "leadership coach", "wellness coach", "mindset coach", "transformation coach",
+    "performance coach", "success coach", "professional mentor", "life mentor",
+    "business consultant", "lifestyle consultant", "career counselor", 
+    "personal development", "self-help", "motivational speaker", "business advisor",
+    "career strategist", "wellness consultant", "life strategist", "success strategist",
+    "empowerment specialist", "transformation specialist", "mindfulness teacher"
+]
 
 def connect_to_google_sheets():
     """Connect to Google Sheets and return the active sheet."""
@@ -50,8 +66,40 @@ SEARCH_TERMS = [
     "feeling stuck career site:linkedin.com/in/"
 ]
 
-# Job titles to exclude (Coaches, Consultants, Mentors, etc.)
-EXCLUDED_TITLES = ["coach", "consultant", "mentor", "trainer", "advisor", "strategist", "speaker"]
+def is_coach_competitor(name, job_title, description=""):
+    """
+    AI-powered check to determine if a person is a coach/competitor
+    Uses both keyword matching and AI analysis
+    """
+    # Basic keyword exclusion check
+    if any(excluded.lower() in job_title.lower() for excluded in EXCLUDED_TITLES):
+        return True, "Excluded job title found via keyword matching"
+    
+    # Combine available information for AI analysis
+    profile_info = f"Name: {name}\nJob Title: {job_title}\nDescription: {description}"
+    
+    try:
+        # Use OpenAI to detect if profile is a coach/competitor
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": """Analyze if this person is a personal coach, life coach, 
+                 career coach, mentor, consultant, or similar competitor in the personal/professional 
+                 development space. Return 'Yes' if they appear to be a coach/competitor, or 'No' otherwise."""},
+                {"role": "user", "content": profile_info}
+            ],
+            max_tokens=50
+        )
+        
+        ai_decision = response.choices[0].message.content.strip().lower()
+        
+        if "yes" in ai_decision:
+            return True, "AI detected profile as coach/competitor"
+            
+    except Exception as e:
+        logging.warning(f"⚠️ AI filtering error: {e}. Falling back to keyword matching only.")
+    
+    return False, "Not detected as coach/competitor"
 
 def scrape_google_for_linkedin_profiles(max_profiles=50):
     """Scrape Google for LinkedIn profiles related to career struggles."""
@@ -80,11 +128,15 @@ def scrape_google_for_linkedin_profiles(max_profiles=50):
         for result in results:
             profile_url = result.get("link", "")
             name = result.get("title", "").split("-")[0].strip()
-            job_title = result.get("title", "").split("-")[-1].strip().lower()
+            job_title = result.get("title", "").split("-")[-1].strip()
+            description = result.get("snippet", "")
 
             if "linkedin.com/in/" in profile_url:
-                if any(excluded in job_title for excluded in EXCLUDED_TITLES):
-                    logging.info(f"⏩ Skipping {name} - {job_title} (Excluded Title)")
+                # Check if profile is a coach/competitor
+                is_competitor, reason = is_coach_competitor(name, job_title, description)
+                
+                if is_competitor:
+                    logging.info(f"⏩ Skipping {name} - {job_title} ({reason})")
                     continue
                 
                 lead = {"name": name, "job_title": job_title, "platform": "linkedin", "url": profile_url}
@@ -128,19 +180,26 @@ def scrape_linkedin_posts():
         for post in posts[:10]:
             try:
                 post_text = post.text[:500]  # Extract preview of post text
+                author_element = post.find_element(By.CSS_SELECTOR, "span.feed-shared-actor__title")
+                author_name = author_element.text.strip() if author_element else "Unknown"
+                author_description = post.find_element(By.CSS_SELECTOR, "span.feed-shared-actor__description").text.strip() if post.find_elements(By.CSS_SELECTOR, "span.feed-shared-actor__description") else ""
+                
                 post_url_element = post.find_element(By.TAG_NAME, "a")
                 post_url = post_url_element.get_attribute("href") if post_url_element else ""
 
-                if any(keyword in post_text.lower() for keyword in ["burnout", "career change", "stressed", "overwhelmed", "feeling stuck"]):
-                    if "coach" in post_text.lower():
-                        logging.info(f"⏩ Skipping post about coaching: {post_url}")
-                        continue
+                # Check if post author is a coach/competitor
+                is_competitor, reason = is_coach_competitor(author_name, author_description, post_text)
+                
+                if is_competitor:
+                    logging.info(f"⏩ Skipping post from {author_name} ({reason}): {post_url}")
+                    continue
 
-                    lead = {"platform": "linkedin", "url": post_url, "post_text": post_text}
+                if any(keyword in post_text.lower() for keyword in ["burnout", "career change", "stressed", "overwhelmed", "feeling stuck"]):
+                    lead = {"platform": "linkedin", "url": post_url, "post_text": post_text, "author": author_name}
 
                     if not leads_collection.find_one({"url": post_url}):
                         leads_collection.insert_one(lead)
-                        sheet.append_row([post_url, post_text])
+                        sheet.append_row([post_url, post_text, author_name])
                         logging.info(f"🔎 Saved LinkedIn Post: {post_url}")
 
             except Exception as e:
